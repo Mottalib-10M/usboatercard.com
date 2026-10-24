@@ -122,7 +122,10 @@ export default function BoaterCheck({ lang = 'en', state = 'FL', idPrefix = 'c',
           <tr><td className="py-1.5 pr-2 text-navy-700">{L.card}</td><td className="py-1.5 text-right text-navy-900">{cardName(st, lang) ?? L.nc}</td></tr>
           <tr><td className="py-1.5 pr-2 text-navy-700">{L.fee}</td><td className="tabular-nums py-1.5 text-right text-navy-900">{feeL}</td></tr>
           <tr><td className="py-1.5 pr-2 text-navy-700">{L.free}</td><td className="py-1.5 text-right text-navy-900">{fc === 'approved' ? L.ok : fc === 'not-approved' ? L.notOk : fc === 'not-available' ? L.na : L.nc}</td></tr>
-          <tr><td className="py-1.5 pr-2 text-navy-700">{L.cost}</td><td className="tabular-nums py-1.5 text-right text-navy-900">{cost.total != null && fc === 'approved' ? money(cost.total, lang) : '–'}<span className="block text-xs text-navy-600">{route}</span></td></tr>
+          <tr><td className="py-1.5 pr-2 text-navy-700">{L.cost}</td><td className="tabular-nums py-1.5 text-right text-navy-900">{cost.total != null && fc === 'approved' ? <>{money(cost.total, lang)}<span className="block text-xs text-navy-600">{route}</span></>
+            // Frais de l'État non publiés mais cours gratuit accepté : on le dit, au lieu d'un « – » (Floride, 2026-10-24).
+            : fc === 'approved' ? <>{lang === 'es' ? 'Curso gratis' : 'Free course'}<span className="block text-xs text-navy-600">{lang === 'es' ? 'tasa estatal no publicada' : 'state fee not published'}</span></>
+            : <>–<span className="block text-xs text-navy-600">{route}</span></>}</td></tr>
         </tbody></table>
         {ver && ruleText(st, lang) && <p className="mt-3 text-xs text-navy-700">{ruleText(st, lang)}</p>}
         <p className="mt-2 text-xs text-navy-600">{L.src}: <a href={st.agencyUrl} target="_blank" rel="nofollow noopener noreferrer" className="underline">{st.agency}</a> · {L.checked} {dateL(st.checked, lang)}</p>
