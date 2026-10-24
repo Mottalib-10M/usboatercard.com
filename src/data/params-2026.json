@@ -16,6 +16,7 @@
   "cfr25": { "url": "https://www.ecfr.gov/current/title-46/chapter-I/subchapter-C/part-25", "label": { "en": "eCFR, 46 CFR part 25: fire extinguishers on motorboats", "es": "eCFR, 46 CFR parte 25: extintores en embarcaciones de motor" } },
   "ecos": { "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title46/html/USCODE-2023-title46-subtitleII-partB-chap43-sec4312.htm", "label": { "en": "46 U.S.C. 4312: engine cut-off switches (GovInfo)", "es": "46 U.S.C. 4312: interruptores de corte del motor (GovInfo)" } },
   "usc2303": { "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title46/html/USCODE-2023-title46-subtitleII-partA-chap23-sec2303.htm", "label": { "en": "46 U.S.C. 2303: duties after a marine casualty (GovInfo)", "es": "46 U.S.C. 2303: deberes tras un accidente náutico (GovInfo)" } },
+  "boatusAbout": { "url": "https://boatus.org/about/", "label": { "en": "BoatUS Foundation: about (501(c)(3) nonprofit status)", "es": "BoatUS Foundation: quiénes son (organización sin fines de lucro 501(c)(3))" } },
   "boatus": { "url": "https://boatus.org/free-courses/free-boating-safety-course/", "label": { "en": "BoatUS Foundation: free boating safety course, approval status by state", "es": "BoatUS Foundation: curso gratuito de seguridad náutica, aprobación por estado" } }
  }
 }

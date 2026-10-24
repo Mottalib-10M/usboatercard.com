@@ -4,9 +4,9 @@
  "es": "Arizona",
  "agency": "Arizona Game and Fish Department",
  "agencyUrl": "https://www.azgfd.com/education/boating-education/",
- "required": false,
+ "required": null,
  "rule": {
-  "kind": "none",
+  "kind": null,
   "bornOnOrAfter": null,
   "ageMax": null,
   "ageMin": null,
@@ -43,25 +43,29 @@
  "statute": null,
  "sources": [
   {
-   "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
-   "publisher": "Arizona Game and Fish Department (archived copy of 2026-04-07; live page answers 403 to scripts)",
+   "url": "https://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+   "publisher": "Arizona Game and Fish Department",
    "quote": "Need to complete a boating safety education course because of a boating ticket? Choose an option below to meet the court’s requirements.",
    "supports": [
-    "rule"
-   ]
+    "card.feeNote"
+   ],
+   "official": "https://www.azgfd.com/education/boating-education/",
+   "archived": "2026-04-07"
   },
   {
-   "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+   "url": "https://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
    "publisher": "Arizona Game and Fish Department",
    "quote": "Fill out the Home Study Packet Request Form or email [email protected] to get your free home study packet.",
    "supports": [
     "card.feeNote"
-   ]
+   ],
+   "official": "https://www.azgfd.com/education/boating-education/",
+   "archived": "2026-04-07"
   }
  ],
  "checked": "2026-10-24",
  "uncertain": [
-  "required (no explicit official sentence saying no requirement; AZGFD only describes court-ordered and voluntary courses)",
+  "required (no official sentence states whether boater education is required: the archived AZGFD page of 2026-04-07 only describes court-ordered and voluntary courses; azgfd.com answers 403 to scripts)",
   "minAge"
  ]
 }

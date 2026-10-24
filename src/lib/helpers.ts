@@ -1,7 +1,7 @@
 /** Writing helpers handed to every page: links, state figures read from the data, tables, sources. */
 import { route, hasRoute, ROUTES, type Locale } from '../i18n/routes';
-import { STATES, VERIFIED, UNVERIFIED, stateByCode, stateName, cardName, ruleText, freeCourse, verified, note, exemptions, META, type StateRec } from './engine/states';
-import { ruleOn } from './engine/boater';
+import { STATES, VERIFIED, UNVERIFIED, stateByCode, stateName, cardName, ruleText, freeCourse, verified, note, exemptions, META, archivedDates, type StateRec } from './engine/states';
+import { ruleOn, freeRoutePayment } from './engine/boater';
 import { whoShort } from './mini-specs';
 import { BANK, stateQuestions } from './engine/quiz';
 import { formatNumberL, money, pct, dateL } from './format-l';
@@ -35,6 +35,26 @@ export function helpers(lang: Locale, strict = false) {
   const nc = es ? 'no confirmado' : 'not confirmed';
   const yrs = es ? 'años' : 'years';
   const list = (xs: string[]) => (xs.length <= 1 ? xs.join('') : `${xs.slice(0, -1).join(', ')} ${es ? 'y' : 'and'} ${xs[xs.length - 1]}`);
+  /** One sentence on what BoatUS says must or may be paid on its free route, with a link to its state page. */
+  const payL = (s: StateRec): string => {
+    const p = s.boatus?.status === 'approved' ? s.boatus.payment : null;
+    if (!p) return '';
+    const lk = (t: string) => ext(p.url, t);
+    const amt = money(p.amount, lang);
+    if (p.kind === 'enrollment') return es ? `La BoatUS Foundation indica que cobra ${amt} al inscribirse en este estado (${lk('su página')}), así que la vía «gratis» cuesta ${amt}.` : `The BoatUS Foundation states that it collects ${amt} at enrollment in this state (${lk('its page')}), so the "free" route costs ${amt}.`;
+    if (p.kind === 'card-required') return es ? `La BoatUS Foundation indica que después del curso hay que comprar la tarjeta permanente por ${amt} (${lk('su página')}).` : `The BoatUS Foundation states that the permanent card must then be bought for ${amt} (${lk('its page')}).`;
+    return es ? `La BoatUS Foundation ofrece además una tarjeta de plástico opcional por ${amt} (${lk('su página')}); no es obligatoria.` : `The BoatUS Foundation also sells an optional plastic card for ${amt} (${lk('its page')}); it is not required.`;
+  };
+  /** "read on the official pages on <date>" or, for a state read on archived copies, "read on archived copies (web.archive.org) dated …". */
+  const readOnL = (s: StateRec): string => {
+    const ad = archivedDates(s);
+    const live = s.sources.some((x) => !x.archived);
+    if (!ad.length) return es ? `leída en las páginas oficiales el ${dateL(s.checked, lang)}` : `read on the official pages on ${dateL(s.checked, lang)}`;
+    const ds = list(ad.map((d) => dateL(d, lang)));
+    return es
+      ? `leída en copias archivadas (web.archive.org) de las páginas oficiales, fechadas ${ds}${live ? `, y en las páginas oficiales en vivo el ${dateL(s.checked, lang)}` : ''}, porque el sitio oficial rechaza la lectura automática`
+      : `read on archived copies (web.archive.org) of the official pages dated ${ds}${live ? `, and on the live official pages on ${dateL(s.checked, lang)}` : ''}, because the official site refuses automated reading`;
+  };
   const S = (code: string) => {
     const s = stateByCode(code);
     const r = ruleOn(s.rule, TODAY);
@@ -48,6 +68,15 @@ export function helpers(lang: Locale, strict = false) {
       feeL: s.card.stateFee == null ? nc : money(s.card.stateFee, lang), replL: s.card.replacementFee == null ? nc : money(s.card.replacementFee, lang), validL: validity,
       free: fc, freeOk: fc === 'approved', freeL: fc === 'approved' ? (es ? 'aceptado' : 'accepted') : fc === 'not-approved' ? (es ? 'no aceptado' : 'not accepted') : fc === 'not-available' ? (es ? 'no disponible' : 'not available') : nc,
       freeUrl: s.boatus?.url ?? P.sources.boatus.url,
+      /** Payment the BoatUS Foundation states on its own page for this state (fee at enrollment, card to buy, optional card). */
+      pay: s.boatus?.payment ?? null,
+      payL: payL(s),
+      /** Cheapest legal total by the free course: the payment BoatUS says is mandatory, else the state fee. */
+      cheapest: fc !== 'approved' ? null : (freeRoutePayment(s) ?? s.card.stateFee ?? null),
+      /** Mandatory payment on the free route (null when BoatUS states none). */
+      mustPay: freeRoutePayment(s),
+      archived: archivedDates(s),
+      readOnL: readOnL(s),
       motorAgeL: s.minAge.motorboat == null ? nc : `${s.minAge.motorboat} ${yrs}`, pwcAgeL: s.minAge.pwc == null ? nc : `${s.minAge.pwc} ${yrs}`,
       onlineL: s.card.onlineAllowed == null ? nc : s.card.onlineAllowed ? (es ? 'sí' : 'yes') : 'no',
       proctorL: s.card.inPersonExamRequired == null ? nc : s.card.inPersonExamRequired ? (es ? 'sí' : 'yes') : 'no',
@@ -61,12 +90,18 @@ export function helpers(lang: Locale, strict = false) {
     lang, es, a, sl, ext, os, src, m, num, pc, nc, yrs, list, S, STATES, VERIFIED, UNVERIFIED, META,
     table: (h: string[], r: Array<Array<string | number>>, c?: string, al: Array<'l' | 'r'> = []) => table(h, r, c, al, lang),
     date: (iso: string) => dateL(iso, lang), stateName: (s: StateRec) => stateName(s, lang),
-    counts: { questions: BANK.length, states: STATES.length, verified: VERIFIED.length, unverified: UNVERIFIED.length, stateQ: STATES.reduce((n, s) => n + stateQuestions(s).length, 0) },
+    counts: { questions: BANK.length, states: STATES.length, verified: VERIFIED.length, unverified: UNVERIFIED.length, archived: STATES.filter((s) => archivedDates(s).length > 0).length, stateQ: STATES.reduce((n, s) => n + stateQuestions(s).length, 0) },
     /** Ranking helper: states sorted by a numeric field (nulls dropped). */
     rank: (f: (s: StateRec) => number | null, dir: 1 | -1 = 1) => STATES.filter((s) => f(s) != null).sort((x, y) => dir * ((f(x) as number) - (f(y) as number))),
     /** States matching a predicate (verified records only). */
     where: (f: (s: StateRec) => boolean) => VERIFIED.filter(f),
     names: (xs: StateRec[]) => xs.map((s) => stateName(s, lang)),
+    /** "49 states and DC" / "50 states": exact wording of a count of jurisdictions. */
+    juris: (xs: StateRec[]) => { const dc = xs.some((s) => s.code === 'DC'); const n = xs.length - (dc ? 1 : 0); return es ? `${n} ${n === 1 ? 'estado' : 'estados'}${dc ? ' y DC' : ''}` : `${n} ${n === 1 ? 'state' : 'states'}${dc ? ' and DC' : ''}`; },
+    /** Names of the states read on archived copies, with the copy dates. */
+    archivedList: () => STATES.filter((s) => archivedDates(s).length > 0).map((s) => `${stateName(s, lang)} (${list(archivedDates(s).map((d) => dateL(d, lang)))})`),
+    /** Day the BoatUS state pages were read for payments. */
+    payRead: STATES.map((s) => s.boatus?.paymentRead).find((d): d is string => !!d) ?? TODAY,
     P, TODAY,
   };
 }

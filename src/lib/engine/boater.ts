@@ -31,7 +31,7 @@ export interface StateRec {
   rule: Rule;
   minAge: { motorboat: number | null; pwc: number | null; note: string | null };
   card: { nameEn: string | null; stateFee: number | null; feeNote: string | null; replacementFee: number | null; validity: string | null; inPersonExamRequired: boolean | null; onlineAllowed: boolean | null };
-  boatus?: { status: 'approved' | 'not-approved' | 'not-available'; url: string } | null;
+  boatus?: { status: 'approved' | 'not-approved' | 'not-available'; url: string; payment?: BoatUSPayment | null; paymentRead?: string | null } | null;
   checked: string;
   uncertain: string[];
 }
@@ -128,6 +128,12 @@ export function needsCard(st: StateRec, s: Situation): Answer {
   return { ...base, need: 'yes', reasons: reasons.length ? reasons : ['all-operators'] };
 }
 
+/** A payment the BoatUS Foundation states on its own state page: fee collected at enrollment,
+ * state card to buy after the course, or an optional plastic card. */
+export interface BoatUSPayment { kind: 'enrollment' | 'card-required' | 'optional-card'; amount: number; quote: string; url: string }
+/** What the free-course route must pay at minimum, as BoatUS states it (null = BoatUS states no mandatory payment). */
+export const freeRoutePayment = (st: StateRec): number | null => (st.boatus?.status === 'approved' && st.boatus.payment && st.boatus.payment.kind !== 'optional-card' ? st.boatus.payment.amount : null);
+
 export interface Cost {
   course: number;          // what the chosen course costs
   stateFee: number | null; // null = the state does not publish one
@@ -139,6 +145,9 @@ export function totalCost(st: StateRec, paidCoursePrice: number): Cost {
   const free = st.boatus ? st.boatus.status === 'approved' : null;
   const course = free ? 0 : Math.max(0, Number.isFinite(paidCoursePrice) ? paidCoursePrice : 0);
   const stateFee = st.card.stateFee;
+  // Free course route where BoatUS collects a fee or the state card must be bought: that amount is the minimum.
+  const pay = free ? freeRoutePayment(st) : null;
+  if (pay != null) return { course, stateFee, total: pay, freeCourseAccepted: free };
   return { course, stateFee, total: stateFee == null ? null : course + stateFee, freeCourseAccepted: free };
 }
 

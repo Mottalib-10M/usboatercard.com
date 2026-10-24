@@ -45,78 +45,96 @@
  "statute": null,
  "sources": [
   {
-   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+   "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
    "quote": "Effective January 1, 2012, no person born after December 31, 1985, shall operate a motorboat or personal watercraft on the waters of this state unless he or she has successfully completed a boating safety course approved by the commission and has been issued a valid boating safety certificate.",
    "supports": [
     "rule",
     "statute"
-   ]
+   ],
+   "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "archived": "2026-01-09"
   },
   {
-   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+   "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
    "quote": "No person under fourteen years of age shall operate a motorboat or personal watercraft on the waters of this state.",
    "supports": [
     "minAge"
-   ]
+   ],
+   "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "archived": "2026-01-09"
   },
   {
-   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+   "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
    "quote": "No person under sixteen years of age shall operate a motorboat or personal watercraft on the waters of this state with an individual in tow",
    "supports": [
     "minAge.note",
     "pwcExtra"
-   ]
+   ],
+   "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "archived": "2026-01-09"
   },
   {
-   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+   "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
    "quote": "The commission may charge a fee of no more than ten dollars for a boating safety course required by this section.",
    "supports": [
     "card.feeNote"
-   ]
+   ],
+   "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+   "archived": "2026-01-09"
   },
   {
-   "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-   "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+   "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
    "quote": "Nebraska law requires any boat operator born after December 31, 1985 to successfully complete a boating education course.",
    "supports": [
     "rule"
-   ]
+   ],
+   "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "archived": "2025-10-13"
   },
   {
-   "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-   "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+   "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
    "quote": "there is no charge for a replacement card.",
    "supports": [
     "card.replacementFee"
-   ]
+   ],
+   "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "archived": "2025-10-13"
   },
   {
-   "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-   "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+   "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
    "quote": "A certificate from another state is acceptable provided it is for a NASBLA-approved course and accepted by your home state (for non-residents). Residents of Nebraska must successfully complete the  Nebraska course .",
    "supports": [
     "nonResident"
-   ]
+   ],
+   "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "archived": "2025-10-13"
   },
   {
-   "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-   "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+   "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
    "quote": "When renting any craft powered by gas, diesel, or electric in Nebraska, boaters born after December 31, 1985 must have proof of successful completion of a  boating safety class .",
    "supports": [
     "rental"
-   ]
+   ],
+   "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "archived": "2025-10-13"
   },
   {
-   "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-   "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+   "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
    "quote": "Having a drivers license (for driving a car) has nothing to do with being capable of, or legally allowed to, operate a boat.",
    "supports": [
     "rule.altDriverLicense"
-   ]
+   ],
+   "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+   "archived": "2025-10-13"
   }
  ],
  "checked": "2026-10-24",

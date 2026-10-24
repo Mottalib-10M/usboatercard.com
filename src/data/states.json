@@ -70,7 +70,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/alaska/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/alaska/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering an Alaska Office of Boating Safety approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/alaska/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -167,7 +174,9 @@
    ],
    "boatus": {
     "status": "not-available",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/alabama/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/alabama/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -239,7 +248,9 @@
    ],
    "boatus": {
     "status": "not-available",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/arkansas/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/arkansas/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -248,9 +259,9 @@
    "es": "Arizona",
    "agency": "Arizona Game and Fish Department",
    "agencyUrl": "https://www.azgfd.com/education/boating-education/",
-   "required": false,
+   "required": null,
    "rule": {
-    "kind": "none",
+    "kind": null,
     "bornOnOrAfter": null,
     "ageMax": null,
     "ageMin": null,
@@ -287,30 +298,41 @@
    "statute": null,
    "sources": [
     {
-     "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
-     "publisher": "Arizona Game and Fish Department (archived copy of 2026-04-07; live page answers 403 to scripts)",
+     "url": "https://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+     "publisher": "Arizona Game and Fish Department",
      "quote": "Need to complete a boating safety education course because of a boating ticket? Choose an option below to meet the court’s requirements.",
      "supports": [
-      "rule"
-     ]
+      "card.feeNote"
+     ],
+     "official": "https://www.azgfd.com/education/boating-education/",
+     "archived": "2026-04-07"
     },
     {
-     "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+     "url": "https://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
      "publisher": "Arizona Game and Fish Department",
      "quote": "Fill out the Home Study Packet Request Form or email [email protected] to get your free home study packet.",
      "supports": [
       "card.feeNote"
-     ]
+     ],
+     "official": "https://www.azgfd.com/education/boating-education/",
+     "archived": "2026-04-07"
     }
    ],
    "checked": "2026-10-24",
    "uncertain": [
-    "required (no explicit official sentence saying no requirement; AZGFD only describes court-ordered and voluntary courses)",
+    "required (no official sentence states whether boater education is required: the archived AZGFD page of 2026-04-07 only describes court-ordered and voluntary courses; azgfd.com answers 403 to scripts)",
     "minAge"
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/arizona/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/arizona/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/arizona/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -435,7 +457,9 @@
    "uncertain": [],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/california/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/california/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -508,7 +532,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/colorado/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/colorado/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -613,7 +639,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/connecticut/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/connecticut/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -686,7 +714,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/washington-d-c/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/washington-d-c/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -767,7 +797,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/delaware/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/delaware/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/delaware/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -820,30 +857,36 @@
    "statute": null,
    "sources": [
     {
-     "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
-     "publisher": "Florida FWC (archived copy of 2026-06-06; live page blocked by Cloudflare for scripts)",
+     "url": "https://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+     "publisher": "Florida FWC",
      "quote": "To operate a motorboat of ten (10) horsepower or greater requires anyone who was born on or after Jan. 1, 1988 , to successfully complete an approved boating safety course and obtain a Boating Safety Education Identification Card issued by the FWC.",
      "supports": [
       "rule"
-     ]
+     ],
+     "official": "https://myfwc.com/boating/safety-education/faqs/",
+     "archived": "2026-06-06"
     },
     {
-     "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+     "url": "https://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
      "publisher": "Florida FWC",
      "quote": "A nonresident who has in his or her possession proof that he or she has completed a NASBLA-approved boater safety course or equivalency examination from another state AND a photographic I.D.",
      "supports": [
       "nonResident",
       "exemptions"
-     ]
+     ],
+     "official": "https://myfwc.com/boating/safety-education/faqs/",
+     "archived": "2026-06-06"
     },
     {
-     "url": "http://web.archive.org/web/2026/https://myfwc.com/boating/safety-education/temporary-certificate/",
+     "url": "https://web.archive.org/web/20260208081947/https://myfwc.com/boating/safety-education/temporary-certificate/",
      "publisher": "Florida FWC",
      "quote": "The temporary certificate cannot be submitted for issuance of a Boating Safety Education ID card that is valid for life.",
      "supports": [
       "card.validity",
       "rental"
-     ]
+     ],
+     "official": "https://myfwc.com/boating/safety-education/temporary-certificate/",
+     "archived": "2026-02-08"
     }
    ],
    "checked": "2026-10-24",
@@ -853,7 +896,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/florida/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/florida/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -944,7 +989,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/georgia/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/georgia/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1045,7 +1092,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/hawaii/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/hawaii/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1128,7 +1177,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/iowa/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/iowa/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/iowa/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1176,65 +1232,79 @@
    "statute": null,
    "sources": [
     {
-     "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
-     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+     "url": "https://web.archive.org/web/20260125/https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 edition)",
      "quote": "Although there is no statewide law specifying a minimum age to operate a vessel, all operators must be competent and are held responsible for knowing the navigation rules.",
      "supports": [
       "minAge"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "archived": "2026-01-25"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
-     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+     "url": "https://web.archive.org/web/20260125/https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 edition)",
      "quote": "Idaho law requires boater education under these conditions.",
      "supports": [
       "required",
       "rule"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "archived": "2026-01-25"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
-     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+     "url": "https://web.archive.org/web/20260125/https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 edition)",
      "quote": "PWC rental businesses must provide education to each person who will ride and operate the PWC. The operator of the PWC must carry a verification wallet card.",
      "supports": [
       "rental",
       "required"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "archived": "2026-01-25"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
-     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+     "url": "https://web.archive.org/web/20260125/https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 edition)",
      "quote": "boat operators are required to pass a boating course if they are convicted of operating under the influence of drugs or alcohol.",
      "supports": [
       "rule",
       "penalty"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "archived": "2026-01-25"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
-     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+     "url": "https://web.archive.org/web/20260125/https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 edition)",
      "quote": "Boat operators who are repeat offenders of any boating law or rule also are required to pass a boating course.",
      "supports": [
       "rule",
       "penalty"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+     "archived": "2026-01-25"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/park-activity/boating/",
-     "publisher": "Idaho Department of Parks and Recreation, Boating page (Wayback Machine copy of 2026-10-17)",
+     "url": "https://web.archive.org/web/20261017/https://parksandrecreation.idaho.gov/park-activity/boating/",
+     "publisher": "Idaho Department of Parks and Recreation, Boating page",
      "quote": "Home Study Guide . Review materials (in the guide) and take a test (in the same guide), all in the comfort of your own home at your own pace (no cost).",
      "supports": [
       "card.stateFee"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/park-activity/boating/",
+     "archived": "2026-10-17"
     },
     {
-     "url": "https://parksandrecreation.idaho.gov/park-activity/boating/",
-     "publisher": "Idaho Department of Parks and Recreation, Boating page (Wayback Machine copy of 2026-10-17)",
+     "url": "https://web.archive.org/web/20261017/https://parksandrecreation.idaho.gov/park-activity/boating/",
+     "publisher": "Idaho Department of Parks and Recreation, Boating page",
      "quote": "Online Education . The following vendors are   approved for the state of Idaho (fees may apply).",
      "supports": [
       "card.onlineAllowed",
       "card.feeNote"
-     ]
+     ],
+     "official": "https://parksandrecreation.idaho.gov/park-activity/boating/",
+     "archived": "2026-10-17"
     }
    ],
    "checked": "2026-10-24",
@@ -1245,7 +1315,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/idaho/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/idaho/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1327,7 +1399,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/illinois/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/illinois/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1393,7 +1467,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/indiana/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/indiana/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Indiana Department of Natural Resources approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/indiana/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1471,7 +1552,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/kansas/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/kansas/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Kansas Department of Wildlife, Parks and Tourism approved waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/kansas/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1545,7 +1633,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/kentucky/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/kentucky/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/kentucky/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1636,7 +1731,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/louisiana/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/louisiana/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -1837,7 +1934,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/massachusetts/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/massachusetts/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2031,7 +2130,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/maryland/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/maryland/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/maryland/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2111,7 +2217,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/maine/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/maine/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Maine Department of Inland Fisheries & Wildlife approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/maine/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2251,7 +2364,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/michigan/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/michigan/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2367,7 +2482,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/minnesota/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/minnesota/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2533,7 +2650,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/missouri/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/missouri/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2659,7 +2778,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/mississippi/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/mississippi/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Mississippi Department of Wildlife, Fisheries, & Parks approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/mississippi/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2786,7 +2912,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/montana/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/montana/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -2924,7 +3052,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/north-carolina/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/north-carolina/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a North Carolina Wildlife Resources Commission approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/north-carolina/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3052,7 +3187,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/north-dakota/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/north-dakota/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3102,78 +3239,96 @@
    "statute": null,
    "sources": [
     {
-     "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+     "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
      "quote": "Effective January 1, 2012, no person born after December 31, 1985, shall operate a motorboat or personal watercraft on the waters of this state unless he or she has successfully completed a boating safety course approved by the commission and has been issued a valid boating safety certificate.",
      "supports": [
       "rule",
       "statute"
-     ]
+     ],
+     "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "archived": "2026-01-09"
     },
     {
-     "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+     "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
      "quote": "No person under fourteen years of age shall operate a motorboat or personal watercraft on the waters of this state.",
      "supports": [
       "minAge"
-     ]
+     ],
+     "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "archived": "2026-01-09"
     },
     {
-     "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+     "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
      "quote": "No person under sixteen years of age shall operate a motorboat or personal watercraft on the waters of this state with an individual in tow",
      "supports": [
       "minAge.note",
       "pwcExtra"
-     ]
+     ],
+     "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "archived": "2026-01-09"
     },
     {
-     "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
-     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06 (Wayback Machine copy of 2026-01-09)",
+     "url": "https://web.archive.org/web/20260109/https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "publisher": "Nebraska Legislature, Neb. Rev. Stat. §37-1241.06",
      "quote": "The commission may charge a fee of no more than ten dollars for a boating safety course required by this section.",
      "supports": [
       "card.feeNote"
-     ]
+     ],
+     "official": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-1241.06",
+     "archived": "2026-01-09"
     },
     {
-     "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-     "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+     "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
      "quote": "Nebraska law requires any boat operator born after December 31, 1985 to successfully complete a boating education course.",
      "supports": [
       "rule"
-     ]
+     ],
+     "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "archived": "2025-10-13"
     },
     {
-     "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-     "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+     "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
      "quote": "there is no charge for a replacement card.",
      "supports": [
       "card.replacementFee"
-     ]
+     ],
+     "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "archived": "2025-10-13"
     },
     {
-     "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-     "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+     "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
      "quote": "A certificate from another state is acceptable provided it is for a NASBLA-approved course and accepted by your home state (for non-residents). Residents of Nebraska must successfully complete the  Nebraska course .",
      "supports": [
       "nonResident"
-     ]
+     ],
+     "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "archived": "2025-10-13"
     },
     {
-     "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-     "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+     "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
      "quote": "When renting any craft powered by gas, diesel, or electric in Nebraska, boaters born after December 31, 1985 must have proof of successful completion of a  boating safety class .",
      "supports": [
       "rental"
-     ]
+     ],
+     "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "archived": "2025-10-13"
     },
     {
-     "url": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
-     "publisher": "Nebraska Game and Parks Commission, Boating FAQ (Wayback Machine copy of 2025-10-13)",
+     "url": "https://web.archive.org/web/20251013/https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "publisher": "Nebraska Game and Parks Commission, Boating FAQ",
      "quote": "Having a drivers license (for driving a car) has nothing to do with being capable of, or legally allowed to, operate a boat.",
      "supports": [
       "rule.altDriverLicense"
-     ]
+     ],
+     "official": "https://outdoornebraska.gov/parks/go-boating/boating-regulations/boating-faq/",
+     "archived": "2025-10-13"
     }
    ],
    "checked": "2026-10-24",
@@ -3186,7 +3341,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/nebraska/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/nebraska/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3333,7 +3490,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-hampshire/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-hampshire/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3487,7 +3646,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-jersey/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-jersey/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3643,7 +3804,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-mexico/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-mexico/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a New Mexico Energy, Minerals & Natural Resources Department approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/new-mexico/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3759,7 +3927,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/nevada/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/nevada/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/nevada/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -3936,7 +4111,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-york/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/new-york/",
+    "payment": {
+     "kind": "card-required",
+     "amount": 15,
+     "quote": "you will also need to purchase a permanent boating education card for $15 or apply for the the New York Adventure License as described below.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/new-york/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4102,7 +4284,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/ohio/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/ohio/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/ohio/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4208,7 +4397,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/oklahoma/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/oklahoma/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4301,7 +4492,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/oregon/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/oregon/",
+    "payment": {
+     "kind": "card-required",
+     "amount": 20,
+     "quote": "requires that you purchase a Boating Safety Education Card. The card can be purchased in two ways: 1. To purchase your Boating Safety Education Card ($20)",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/oregon/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4462,7 +4660,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/",
+    "payment": {
+     "kind": "enrollment",
+     "amount": 17,
+     "quote": "Enrollment requires a $17 payment which is comprised of $15 for the state of PA to issue your permanent card and $2 to BoatUS Foundation for administration fees.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4516,77 +4721,95 @@
    "statute": "R.I. Gen. Laws §46-22-9.8",
    "sources": [
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "No person born on or after January 1, 1986 shall operate a vessel that is fitted with propulsion machinery of more than ten (10) horsepower on the waters of this state unless the person shall have successfully completed a boating safety education program",
      "supports": [
       "rule"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "Any person operating a personal watercraft as defined in § 46-22-2(6) on the waters of this state shall have successfully completed a boating safety education program",
      "supports": [
       "rule.pwc"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "A person who operates a vessel under training, directly supervised by a person on board the vessel who is eighteen (18) years of age or older and meets the requirements of subsection (a);",
      "supports": [
       "exemptions"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "Non-residents temporarily using the waters of this state who meet the requirements of their state of legal residence.",
      "supports": [
       "exemptions",
       "nonResident"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "New residents of this state will be given sixty (60) days to meet the requirements of this chapter.",
      "supports": [
       "exemptions"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "Any person having in his or her possession a certificate of completion of any boating safety course approved by NASBLA shall be considered to be in compliance with this chapter",
      "supports": [
       "nonResident"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "shall require all renters who do not comply with this section to watch a short instructional video approved by the director on boating safety for the type of craft rented, and pass a written examination.",
      "supports": [
       "rental"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "For a first offense completion of an approved boating safety course; (2)  For a second offense a fine not to exceed one hundred dollars ($100).",
      "supports": [
       "penalty"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     },
     {
-     "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
-     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+     "url": "https://web.archive.org/web/20250328/https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8",
      "quote": "The department shall issue a durable certificate of completion that meets the NASBLA guidelines.",
      "supports": [
       "card.nameEn"
-     ]
+     ],
+     "official": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+     "archived": "2025-03-28"
     }
    ],
    "checked": "2026-10-24",
@@ -4600,7 +4823,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/rhode-island/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/rhode-island/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4773,7 +4998,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/south-carolina/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/south-carolina/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/south-carolina/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4875,7 +5107,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/south-dakota/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/south-dakota/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a South Dakota Department of Game, Fish and Parks approved waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/south-dakota/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -4926,44 +5165,54 @@
    "statute": null,
    "sources": [
     {
-     "url": "https://www.tn.gov/twra/boating/boating-education.html",
-     "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+     "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+     "publisher": "Tennessee Wildlife Resources Agency",
      "quote": "If you are a Tennessee resident born after January 1, 1989, and operating a vessel with more than 8.5 horsepower, then you need the certification.",
      "supports": [
       "rule"
-     ]
+     ],
+     "official": "https://www.tn.gov/twra/boating/boating-education.html",
+     "archived": "2026-09-14"
     },
     {
-     "url": "https://www.tn.gov/twra/boating/boating-education.html",
-     "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+     "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+     "publisher": "Tennessee Wildlife Resources Agency",
      "quote": "The Boating Safety Certification of Completion is not required if there is an adult (18 years old or older, born before January 1, 1989) on board to take immediate control of the vessel.",
      "supports": [
       "exemptions"
-     ]
+     ],
+     "official": "https://www.tn.gov/twra/boating/boating-education.html",
+     "archived": "2026-09-14"
     },
     {
-     "url": "https://www.tn.gov/twra/boating/boating-education.html",
-     "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+     "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+     "publisher": "Tennessee Wildlife Resources Agency",
      "quote": "If you were born after January 1, 1989, TWRA will accept any National Association of State Boating Law Administrators (NASBLA) approved boating safety certificate",
      "supports": [
       "nonResident"
-     ]
+     ],
+     "official": "https://www.tn.gov/twra/boating/boating-education.html",
+     "archived": "2026-09-14"
     },
     {
-     "url": "https://www.tn.gov/twra/boating/boating-education.html",
-     "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+     "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+     "publisher": "Tennessee Wildlife Resources Agency",
      "quote": "Get your boating education certificate online!",
      "supports": [
       "card.onlineAllowed"
-     ]
+     ],
+     "official": "https://www.tn.gov/twra/boating/boating-education.html",
+     "archived": "2026-09-14"
     },
     {
-     "url": "https://www.tn.gov/twra/boating/boating-education.html",
-     "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+     "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+     "publisher": "Tennessee Wildlife Resources Agency",
      "quote": "students will receive a TWRA-issued Boating Safety Certification of Completion wallet card",
      "supports": [
       "card.nameEn"
-     ]
+     ],
+     "official": "https://www.tn.gov/twra/boating/boating-education.html",
+     "archived": "2026-09-14"
     }
    ],
    "checked": "2026-10-24",
@@ -4976,12 +5225,13 @@
     "card.inPersonExamRequired",
     "rental",
     "penalty",
-    "statute",
-    "source read from a Wayback copy dated 2026-09-14: tn.gov returns 403 to scripts"
+    "statute"
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/tennessee/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/tennessee/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5079,7 +5329,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/texas/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/texas/",
+    "payment": {
+     "kind": "enrollment",
+     "amount": 11,
+     "quote": "BoatUS will collect $11 upon enrollment. Once course is completed, we will send payment and information to the state.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/texas/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5229,7 +5486,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/utah/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/utah/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Utah waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/utah/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5313,7 +5577,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/virginia/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/virginia/",
+    "payment": {
+     "kind": "optional-card",
+     "amount": 15,
+     "quote": "option of ordering a Virginia Division of Natural Resources approved, waterproof plastic card for $15.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/virginia/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5449,7 +5720,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/vermont/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/vermont/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5651,7 +5924,14 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/washington/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/washington/",
+    "payment": {
+     "kind": "enrollment",
+     "amount": 10.5,
+     "quote": "We collect a $10.50 fee at enrollment and upon successful completion BoatUS will forward your information and payment to the state.",
+     "url": "https://boatus.org/free-courses/free-boating-safety-course/washington/"
+    },
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5820,7 +6100,9 @@
    ],
    "boatus": {
     "status": "not-approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/wisconsin/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/wisconsin/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -5950,7 +6232,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/west-virginia/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/west-virginia/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   },
   {
@@ -6058,7 +6342,9 @@
    ],
    "boatus": {
     "status": "approved",
-    "url": "https://boatus.org/free-courses/free-boating-safety-course/wyoming/"
+    "url": "https://boatus.org/free-courses/free-boating-safety-course/wyoming/",
+    "payment": null,
+    "paymentRead": "2026-10-24"
    }
   }
  ]

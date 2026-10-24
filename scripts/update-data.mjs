@@ -41,6 +41,11 @@ export function parseBoatUS(html) {
 async function main() {
   const files = fs.readdirSync(RAW).filter((f) => f.endsWith('.json')).sort();
   const states = files.map((f) => JSON.parse(fs.readFileSync(path.join(RAW, f), 'utf8')));
+  // Primary sources only: a relay site (FindLaw, Justia, Cornell LII, onecle, public.law) is never a source.
+  for (const s of states) for (const src of s.sources) {
+    if (/findlaw|justia|law\.cornell|onecle|public\.law/i.test(src.url + ' ' + (src.official ?? ''))) throw new Error(`${s.code}: relay site as a source (${src.url})`);
+    if (src.url.includes('web.archive.org') && !/^\d{4}-\d{2}-\d{2}$/.test(src.archived ?? '')) throw new Error(`${s.code}: archived copy without its date (${src.url})`);
+  }
   let boatus = {};
   const cache = path.join(ROOT, 'data', 'raw', 'boatus-status.json');
   if (!OFFLINE) {
@@ -54,7 +59,7 @@ async function main() {
   if (!OFFLINE) {
     const pages = new Map();
     for (const s of states) for (const src of s.sources) {
-      if (src.url.includes('web.archive.org')) continue; // archived copy: re-check by hand
+      if (src.url.includes('web.archive.org')) { drift.push(`${s.code} archived copy of ${src.archived ?? '?'}, re-check the live page by hand: ${src.official ?? src.url}`); continue; }
       if (/\.pdf(\?|$)/i.test(src.url)) { if (!pages.has(src.url)) { pages.set(src.url, null); drift.push(`${s.code} PDF source, re-check by hand: ${src.url}`); } continue; }
       if (!pages.has(src.url)) { try { const t = await get(src.url); if (t.startsWith('%PDF')) { pages.set(src.url, null); drift.push(`${s.code} PDF source, re-check by hand: ${src.url}`); } else pages.set(src.url, norm(t)); } catch (e) { pages.set(src.url, null); drift.push(`${s.code} unreachable ${src.url} (${e.message})`); } }
       const page = pages.get(src.url);
@@ -62,7 +67,11 @@ async function main() {
       if (page && !page.includes(probe)) drift.push(`${s.code} quote not found: "${probe}" @ ${src.url}`);
     }
   }
-  const data = states.map((s) => ({ ...s, boatus: boatus[s.code] ?? null }));
+  // Payments the BoatUS Foundation states on its own page for each state (the course is "free*"):
+  // fee collected at enrollment, state card to buy after the course, or optional plastic card.
+  const payFile = path.join(ROOT, 'data', 'raw', 'boatus-payments.json');
+  const pay = fs.existsSync(payFile) ? JSON.parse(fs.readFileSync(payFile, 'utf8')) : { states: {} };
+  const data = states.map((s) => ({ ...s, boatus: boatus[s.code] ? { ...boatus[s.code], payment: pay.states[s.code] ?? null, paymentRead: pay.read ?? null } : null }));
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify({ built: new Date().toISOString().slice(0, 10), count: data.length, states: data }, null, 1));
   console.log(`states.json: ${data.length} jurisdictions, BoatUS status for ${Object.keys(boatus).length}`);

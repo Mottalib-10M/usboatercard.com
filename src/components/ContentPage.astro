@@ -14,6 +14,7 @@ import { t } from '../i18n/ui';
 import { pageById } from '../lib/guides';
 import { helpers } from '../lib/helpers';
 import { stateByCode } from '../lib/engine/states';
+import { dateL } from '../lib/format-l';
 import P from '../data/params-2026.json';
 import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
 import { AUTHOR_NAME } from '../data/site-config';
@@ -37,7 +38,7 @@ if (page.state) {
   const s = stateByCode(page.state);
   const seen = new Set<string>();
   const add = (name: string, url: string) => { if (url && !seen.has(url)) { seen.add(url); sources.unshift({ name, url }); } };
-  for (const x of [...s.sources].reverse()) add(lang === 'es' ? `${x.publisher.replace(/\(archived copy.*?\)/, '(copia archivada)')}` : x.publisher, x.url);
+  for (const x of [...s.sources].reverse()) add(x.archived ? (lang === 'es' ? `${x.publisher} (copia archivada en web.archive.org del ${dateL(x.archived, lang)})` : `${x.publisher} (archived copy on web.archive.org, ${dateL(x.archived, lang)})`) : x.publisher, x.url);
   add(lang === 'es' ? `${s.agency}: página oficial` : `${s.agency}: official page`, s.agencyUrl);
 }
 const chunks: Array<{ html?: string; tool?: ToolDef }> = [];
@@ -54,6 +55,7 @@ for (let i = 0; i < parts.length; i += 3) { chunks.push({ html: parts[i] }); if 
     <Clamp text={T.resume(h)} id={`clamp-${page.id}`} lang={lang} class="mb-3" />
     {page.mini && <div class="mb-4"><Tool tool={page.mini} lang={lang} idPrefix="g" state={page.state} /></div>}
     <p class="mb-8 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method', lang)}</a></p>
+    {page.state && <p data-lecture class="-mt-6 mb-8 text-sm text-navy-600">{lang === 'es' ? `Datos de ${h.S(page.state).nameL}: ${h.S(page.state).readOnL}.` : `${h.S(page.state).nameL} facts: ${h.S(page.state).readOnL}.`}</p>}
     <div class="prose prose-slate max-w-none">
       {chunks.map((c, i) => c.html !== undefined ? <Fragment set:html={c.html} /> : <div class="not-prose"><Tool tool={c.tool!} lang={lang} idPrefix={`s${i}`} state={page.state} /></div>)}
     </div>

@@ -6,9 +6,11 @@ const F = (h: Helpers) => {
   const withFee = req.filter((s) => s.card.stateFee != null);
   const zero = withFee.filter((s) => s.card.stateFee === 0);
   const paid = withFee.filter((s) => (s.card.stateFee as number) > 0).sort((a, b) => (b.card.stateFee as number) - (a.card.stateFee as number));
-  const freeAndZero = req.filter((s) => s.boatus?.status === 'approved' && s.card.stateFee === 0);
+  // Free course, no state fee, and no payment stated by BoatUS (enrollment fee or card to buy).
+  const freeAndZero = req.filter((s) => s.boatus?.status === 'approved' && s.card.stateFee === 0 && !(s.boatus.payment && s.boatus.payment.kind !== 'optional-card'));
+  const mustPay = req.filter((s) => s.boatus?.status === 'approved' && s.boatus.payment && s.boatus.payment.kind !== 'optional-card');
   const repl = req.filter((s) => s.card.replacementFee != null);
-  return { req, withFee, zero, paid, freeAndZero, repl };
+  return { req, withFee, zero, paid, freeAndZero, repl, mustPay };
 };
 
 export default definePage({
@@ -28,9 +30,9 @@ export default definePage({
     h1: 'How much is a boating license?',
     intro: 'Two costs add up: the course, free or paid, and the fee your state charges for the card. Pick your state and enter the course price you found to see the total.',
     resume: (h) => {
-      const { req, withFee, zero, paid, freeAndZero } = F(h);
+      const { req, withFee, zero, paid, freeAndZero, mustPay } = F(h);
       const top = paid[0];
-      return `A boating license costs the price of an approved course plus whatever the state charges for the card, and in many states that total can be zero. The course part is free where the state approves the free online course of the BoatUS Foundation; elsewhere it is the price set by an approved provider or a classroom course, sometimes free when the state or a volunteer group runs it. The state part varies: among the ${withFee.length} verified states whose official page states a card fee, ${zero.length} charge nothing and ${paid.length} charge a fee${top ? `, the highest being ${h.m(top.card.stateFee as number)} in ${h.sl(top.code)}` : ''}. ${freeAndZero.length} states combine a free approved course with no state fee, so the card costs nothing at all. For the ${req.length - withFee.length} remaining states with a requirement, the agency page does not state a fee, and the tool says so rather than guess. A replacement for a lost card has its own small fee where published. The tool adds the course price you enter to your state's fee and shows the free route beside it.`;
+      return `A boating license costs the price of an approved course plus whatever the state charges for the card, and in some states that total can be zero. The course part is free where the state approves the free online course of the BoatUS Foundation; elsewhere it is the price set by an approved provider or a classroom course, sometimes free when the state or a volunteer group runs it. The state part varies: among the ${withFee.length} verified states whose official page states a card fee, ${zero.length} charge nothing and ${paid.length} charge a fee${top ? `, the highest being ${h.m(top.card.stateFee as number)} in ${h.sl(top.code)}` : ''}. ${freeAndZero.length} states combine a free approved course with no state fee and no payment stated by the Foundation, so the card costs nothing at all. In ${h.list(h.names(mustPay))}, the Foundation's state page states a payment on the free route (at enrollment or for the card), and the table uses that amount. For the ${req.length - withFee.length} remaining states with a requirement, the agency page does not state a fee, and the tool says so rather than guess. A replacement for a lost card has its own small fee where published. The tool adds the course price you enter to your state's fee and shows the free route beside it.`;
     },
     faqs: (h) => {
       const { paid, repl } = F(h);
@@ -42,10 +44,10 @@ export default definePage({
     },
     body: (h) => {
       const { req } = F(h);
-      const rows = req.map((s) => { const x = h.S(s.code); return [h.sl(s.code), x.feeL, x.freeL, x.freeOk && x.card.stateFee != null ? h.m(x.card.stateFee) : '–', x.replL]; });
+      const rows = req.map((s) => { const x = h.S(s.code); return [h.sl(s.code), x.feeL, x.freeL, x.cheapest != null ? h.m(x.cheapest) : '–', x.replL]; });
       return `
 <h2>The cost in each state</h2>
-<p>"Cheapest total" is the free approved course plus the state fee, when both are known. A dash means the free course is not approved or the state does not publish its fee.</p>
+<p>"Cheapest total" is the free approved course plus the state fee, when both are known, or the payment the BoatUS Foundation states on its page for the state when it collects one at enrollment or asks to buy the card. A dash means the free course is not approved or the state does not publish its fee.</p>
 ${h.table(['State', 'State fee', 'Free course', 'Cheapest total', 'Replacement'], rows, 'Verified states with an education requirement, from the official pages read.', ['l', 'r', 'r', 'r', 'r'])}
 <h2>The state fee, up close</h2>
 <p>What the state charges, and for what, differs: some charge for issuing the card after the course, some charge at the course, and some issue the card free. The mini-tool shows the fee, the replacement price and how long the card lasts in a state.</p>
@@ -69,9 +71,9 @@ ${h.table(['State', 'State fee', 'Free course', 'Cheapest total', 'Replacement']
     h1: '¿Cuánto cuesta la licencia de navegación?',
     intro: 'Se suman dos costos: el curso, gratis o de pago, y la tarifa que cobra su estado por la tarjeta. Elija su estado y escriba el precio del curso que encontró para ver el total.',
     resume: (h) => {
-      const { req, withFee, zero, paid, freeAndZero } = F(h);
+      const { req, withFee, zero, paid, freeAndZero, mustPay } = F(h);
       const top = paid[0];
-      return `Una licencia de navegación cuesta el precio de un curso aprobado más lo que el estado cobre por la tarjeta, y en muchos estados ese total puede ser cero. La parte del curso es gratis donde el estado aprueba el curso en línea gratuito de la BoatUS Foundation; en los demás es el precio que fija un proveedor aprobado o un curso presencial, a veces gratis cuando lo organiza el estado o un grupo voluntario. La parte del estado varía: entre los ${withFee.length} estados verificados cuya página oficial indica una tarifa, ${zero.length} no cobran nada y ${paid.length} cobran una tarifa${top ? `, la más alta de ${h.m(top.card.stateFee as number)} en ${h.sl(top.code)}` : ''}. ${freeAndZero.length} estados combinan un curso gratis aprobado sin tarifa estatal, así que la tarjeta no cuesta nada. En los otros ${req.length - withFee.length} estados con requisito, la página de la agencia no indica tarifa, y la herramienta lo dice en lugar de suponerla. Un duplicado por pérdida tiene su propia tarifa pequeña donde se publica. La herramienta suma el precio del curso que usted escribe a la tarifa de su estado y muestra al lado la vía gratuita.`;
+      return `Una licencia de navegación cuesta el precio de un curso aprobado más lo que el estado cobre por la tarjeta, y en algunos estados ese total puede ser cero. La parte del curso es gratis donde el estado aprueba el curso en línea gratuito de la BoatUS Foundation; en los demás es el precio que fija un proveedor aprobado o un curso presencial, a veces gratis cuando lo organiza el estado o un grupo voluntario. La parte del estado varía: entre los ${withFee.length} estados verificados cuya página oficial indica una tarifa, ${zero.length} no cobran nada y ${paid.length} cobran una tarifa${top ? `, la más alta de ${h.m(top.card.stateFee as number)} en ${h.sl(top.code)}` : ''}. ${freeAndZero.length} estados combinan un curso gratis aprobado sin tarifa estatal ni pago indicado por la fundación, así que la tarjeta no cuesta nada. En ${h.list(h.names(mustPay))}, la página de la fundación para el estado indica un pago en la vía gratuita (al inscribirse o por la tarjeta), y la tabla usa ese importe. En los otros ${req.length - withFee.length} estados con requisito, la página de la agencia no indica tarifa, y la herramienta lo dice en lugar de suponerla. Un duplicado por pérdida tiene su propia tarifa pequeña donde se publica. La herramienta suma el precio del curso que usted escribe a la tarifa de su estado y muestra al lado la vía gratuita.`;
     },
     faqs: (h) => {
       const { paid, repl } = F(h);
@@ -83,10 +85,10 @@ ${h.table(['State', 'State fee', 'Free course', 'Cheapest total', 'Replacement']
     },
     body: (h) => {
       const { req } = F(h);
-      const rows = req.map((s) => { const x = h.S(s.code); return [h.sl(s.code), x.feeL, x.freeL, x.freeOk && x.card.stateFee != null ? h.m(x.card.stateFee) : '–', x.replL]; });
+      const rows = req.map((s) => { const x = h.S(s.code); return [h.sl(s.code), x.feeL, x.freeL, x.cheapest != null ? h.m(x.cheapest) : '–', x.replL]; });
       return `
 <h2>El costo en cada estado</h2>
-<p>«Total más barato» es el curso gratis aprobado más la tarifa del estado, cuando se conocen los dos. Un guion significa que el curso gratis no está aprobado o que el estado no publica su tarifa.</p>
+<p>«Total más barato» es el curso gratis aprobado más la tarifa del estado, cuando se conocen los dos, o el pago que la BoatUS Foundation indica en su página del estado cuando lo cobra al inscribirse o pide comprar la tarjeta. Un guion significa que el curso gratis no está aprobado o que el estado no publica su tarifa.</p>
 ${h.table(['Estado', 'Tarifa del estado', 'Curso gratis', 'Total más barato', 'Duplicado'], rows, 'Estados verificados con requisito de educación, según las páginas oficiales consultadas.', ['l', 'r', 'r', 'r', 'r'])}
 <h2>La tarifa del estado, de cerca</h2>
 <p>Lo que cobra el estado, y por qué, cambia: algunos cobran por emitir la tarjeta tras el curso, otros en el curso, y otros la emiten gratis. La miniherramienta muestra la tarifa, el precio del duplicado y cuánto dura la tarjeta en un estado.</p>

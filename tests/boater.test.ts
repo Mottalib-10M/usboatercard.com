@@ -94,8 +94,19 @@ describe('totalCost', () => {
     expect(c.freeCourseAccepted).toBe(false);
     expect(c.total).toBe(50);
   });
-  it('unknown state fee gives no total', () => {
-    expect(totalCost(S('TX'), 20).total).toBeNull();
+  it('unknown state fee and no BoatUS payment gives no total', () => {
+    expect(S('MI').card.stateFee).toBeNull();
+    expect(totalCost(S('MI'), 20).total).toBeNull();
+  });
+  it('a payment BoatUS states at enrollment is the minimum of the free route (TX $11, PA $17, WA $10.50)', () => {
+    expect(totalCost(S('TX'), 0).total).toBe(11);
+    expect(totalCost(S('PA'), 0).total).toBe(17);
+    expect(totalCost(S('WA'), 0).total).toBe(10.5);
+  });
+  it('a card BoatUS says must be bought counts (NY $15, OR $20); an optional card does not (OH)', () => {
+    expect(totalCost(S('NY'), 0).total).toBe(15);
+    expect(totalCost(S('OR'), 0).total).toBe(20);
+    expect(S('OH').boatus!.payment!.kind).toBe('optional-card');
   });
 });
 
@@ -149,8 +160,16 @@ describe('needsCard, states collected in phase 2', () => {
     const u = { ...S('TX'), required: null } as StateRec;
     expect(needsCard(u, { ...base, birthDate: '2000-01-01' }).need).toBe('unknown');
   });
-  it('51 records, every one verified in this edition', () => {
+  it('51 records; Arizona alone is not verified (no official sentence on the requirement)', () => {
     expect(data.states.length).toBe(51);
-    expect((data.states as any[]).filter((s) => s.required == null).length).toBe(0);
+    expect((data.states as any[]).filter((s) => s.required == null).map((s) => s.code)).toEqual(['AZ']);
+  });
+  it('archived reads carry the copy date and the official address, never a relay site', () => {
+    const arch = (data.states as any[]).filter((s) => s.sources.some((x: any) => x.archived)).map((s) => s.code).sort();
+    expect(arch).toEqual(['AZ', 'FL', 'ID', 'NE', 'RI', 'TN']);
+    for (const s of data.states as any[]) for (const x of s.sources) {
+      expect(x.url).not.toMatch(/findlaw|justia|law\.cornell|onecle|public\.law/);
+      if (x.archived) { expect(x.url).toMatch(/^https:\/\/web\.archive\.org\/web\//); expect(x.official).toMatch(/^https:\/\//); }
+    }
   });
 });

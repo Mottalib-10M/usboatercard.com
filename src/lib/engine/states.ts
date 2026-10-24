@@ -9,7 +9,8 @@ import DATA from '../../data/states.json';
 import ES from '../../../data/raw/es-notes.json';
 import type { StateRec as EngineRec } from './boater';
 
-export interface Source { url: string; publisher: string; quote: string; supports: string[] }
+/** A quoted official source. `archived` = date of the web.archive.org copy read (the live page refused scripts); `official` = the live address. */
+export interface Source { url: string; publisher: string; quote: string; supports: string[]; archived?: string; official?: string }
 export interface StateRec extends EngineRec {
   rule: EngineRec['rule'] & { hpNote: string | null; phaseIn: string | null };
   minAge: { motorboat: number | null; pwc: number | null; note: string | null };
@@ -36,6 +37,8 @@ export const verified = (s: StateRec) => s.required !== null && s.required !== u
 export const VERIFIED = STATES.filter(verified);
 export const UNVERIFIED = STATES.filter((s) => !verified(s));
 export const freeCourse = (s: StateRec) => s.boatus?.status ?? null;
+/** Dates of the archived copies read for a state (sorted, distinct): empty when every source was read live. */
+export const archivedDates = (s: StateRec): string[] => [...new Set(s.sources.map((x) => x.archived).filter((d): d is string => !!d))].sort();
 
 /** Our own notes in the page language (English records, Spanish overlay). */
 export function note(s: StateRec, k: 'feeNote' | 'minAgeNote' | 'nonResident' | 'rental' | 'pwcExtra' | 'penalty' | 'hpNote' | 'phaseIn', lang: 'en' | 'es'): string | null {

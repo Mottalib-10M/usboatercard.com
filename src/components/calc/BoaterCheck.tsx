@@ -7,8 +7,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import SelectField from '../ui/SelectField';
 import NumberField from '../ui/NumberField';
-import { STATES, stateByCode, stateName, cardName, ruleText, freeCourse, verified } from '../../lib/engine/states';
-import { needsCard, totalCost, type Vessel } from '../../lib/engine/boater';
+import { STATES, stateByCode, stateName, cardName, ruleText, freeCourse, verified, archivedDates } from '../../lib/engine/states';
+import { needsCard, totalCost, freeRoutePayment, type Vessel } from '../../lib/engine/boater';
 import { dateL, money } from '../../lib/format-l';
 import { readParams, str, num, updateURL } from '../../lib/url-state';
 
@@ -91,7 +91,9 @@ export default function BoaterCheck({ lang = 'en', state = 'FL', idPrefix = 'c',
   const inputCls = 'h-12 w-full rounded-lg border border-navy-300 bg-white px-3 text-navy-900 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20';
   const sName = stateName(st, lang);
   const feeL = st.card.stateFee == null ? L.none : st.card.stateFee === 0 ? money(0, lang) : money(st.card.stateFee, lang);
-  const route = fc === 'approved' && st.card.stateFee != null ? L.freeRoute(money(st.card.stateFee, lang)) : fc === 'approved' ? (lang === 'es' ? 'curso gratis' : 'free course') : L.paid;
+  const mp = freeRoutePayment(st);
+  const arch = archivedDates(st);
+  const route = mp != null ? (lang === 'es' ? `pago que indica BoatUS (${st.boatus?.payment?.kind === 'enrollment' ? 'al inscribirse' : 'tarjeta del estado'})` : `payment stated by BoatUS (${st.boatus?.payment?.kind === 'enrollment' ? 'at enrollment' : 'state card'})`) : fc === 'approved' && st.card.stateFee != null ? L.freeRoute(money(st.card.stateFee, lang)) : fc === 'approved' ? (lang === 'es' ? 'curso gratis' : 'free course') : L.paid;
   return (
     <div className="not-prose grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
       <form className="grid content-start gap-x-4 gap-y-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
@@ -128,7 +130,7 @@ export default function BoaterCheck({ lang = 'en', state = 'FL', idPrefix = 'c',
             : <>–<span className="block text-xs text-navy-600">{route}</span></>}</td></tr>
         </tbody></table>
         {ver && ruleText(st, lang) && <p className="mt-3 text-xs text-navy-700">{ruleText(st, lang)}</p>}
-        <p className="mt-2 text-xs text-navy-600">{L.src}: <a href={st.agencyUrl} target="_blank" rel="nofollow noopener noreferrer" className="underline">{st.agency}</a> · {L.checked} {dateL(st.checked, lang)}</p>
+        <p className="mt-2 text-xs text-navy-600">{L.src}: <a href={st.agencyUrl} target="_blank" rel="nofollow noopener noreferrer" className="underline">{st.agency}</a> · {arch.length ? (lang === 'es' ? `Copia archivada (web.archive.org) del ${arch.map((d) => dateL(d, lang)).join(', ')}` : `Archived copy (web.archive.org) of ${arch.map((d) => dateL(d, lang)).join(', ')}`) : `${L.checked} ${dateL(st.checked, lang)}`}</p>
       </div>
     </div>
   );

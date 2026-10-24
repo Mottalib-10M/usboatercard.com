@@ -46,44 +46,54 @@
  "statute": null,
  "sources": [
   {
-   "url": "https://www.tn.gov/twra/boating/boating-education.html",
-   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency",
    "quote": "If you are a Tennessee resident born after January 1, 1989, and operating a vessel with more than 8.5 horsepower, then you need the certification.",
    "supports": [
     "rule"
-   ]
+   ],
+   "official": "https://www.tn.gov/twra/boating/boating-education.html",
+   "archived": "2026-09-14"
   },
   {
-   "url": "https://www.tn.gov/twra/boating/boating-education.html",
-   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency",
    "quote": "The Boating Safety Certification of Completion is not required if there is an adult (18 years old or older, born before January 1, 1989) on board to take immediate control of the vessel.",
    "supports": [
     "exemptions"
-   ]
+   ],
+   "official": "https://www.tn.gov/twra/boating/boating-education.html",
+   "archived": "2026-09-14"
   },
   {
-   "url": "https://www.tn.gov/twra/boating/boating-education.html",
-   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency",
    "quote": "If you were born after January 1, 1989, TWRA will accept any National Association of State Boating Law Administrators (NASBLA) approved boating safety certificate",
    "supports": [
     "nonResident"
-   ]
+   ],
+   "official": "https://www.tn.gov/twra/boating/boating-education.html",
+   "archived": "2026-09-14"
   },
   {
-   "url": "https://www.tn.gov/twra/boating/boating-education.html",
-   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency",
    "quote": "Get your boating education certificate online!",
    "supports": [
     "card.onlineAllowed"
-   ]
+   ],
+   "official": "https://www.tn.gov/twra/boating/boating-education.html",
+   "archived": "2026-09-14"
   },
   {
-   "url": "https://www.tn.gov/twra/boating/boating-education.html",
-   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "url": "https://web.archive.org/web/20260914/https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency",
    "quote": "students will receive a TWRA-issued Boating Safety Certification of Completion wallet card",
    "supports": [
     "card.nameEn"
-   ]
+   ],
+   "official": "https://www.tn.gov/twra/boating/boating-education.html",
+   "archived": "2026-09-14"
   }
  ],
  "checked": "2026-10-24",
@@ -96,7 +106,6 @@
   "card.inPersonExamRequired",
   "rental",
   "penalty",
-  "statute",
-  "source read from a Wayback copy dated 2026-09-14: tn.gov returns 403 to scripts"
+  "statute"
  ]
 }

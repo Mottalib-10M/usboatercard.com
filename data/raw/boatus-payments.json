@@ -1,0 +1,144 @@
+{
+ "read": "2026-10-24",
+ "note": "Payments stated on each BoatUS Foundation state course page (boatus.org/free-courses/free-boating-safety-course/<state>/). enrollment = paid when enrolling in the free course; card-required = the state card must be bought after the course; optional-card = an optional plastic card is offered.",
+ "states": {
+  "AK": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering an Alaska Office of Boating Safety approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/alaska/"
+  },
+  "AZ": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/arizona/"
+  },
+  "DE": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/delaware/"
+  },
+  "IN": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Indiana Department of Natural Resources approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/indiana/"
+  },
+  "IA": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/iowa/"
+  },
+  "KS": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Kansas Department of Wildlife, Parks and Tourism approved waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/kansas/"
+  },
+  "KY": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/kentucky/"
+  },
+  "ME": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Maine Department of Inland Fisheries & Wildlife approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/maine/"
+  },
+  "MD": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/maryland/"
+  },
+  "MS": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Mississippi Department of Wildlife, Fisheries, & Parks approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/mississippi/"
+  },
+  "NV": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/nevada/"
+  },
+  "NM": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a New Mexico Energy, Minerals & Natural Resources Department approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-mexico/"
+  },
+  "NY": {
+   "kind": "card-required",
+   "amount": 15,
+   "quote": "you will also need to purchase a permanent boating education card for $15 or apply for the the New York Adventure License as described below.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-york/"
+  },
+  "NC": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a North Carolina Wildlife Resources Commission approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/north-carolina/"
+  },
+  "OH": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/ohio/"
+  },
+  "OR": {
+   "kind": "card-required",
+   "amount": 20,
+   "quote": "requires that you purchase a Boating Safety Education Card. The card can be purchased in two ways: 1. To purchase your Boating Safety Education Card ($20)",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/oregon/"
+  },
+  "PA": {
+   "kind": "enrollment",
+   "amount": 17,
+   "quote": "Enrollment requires a $17 payment which is comprised of $15 for the state of PA to issue your permanent card and $2 to BoatUS Foundation for administration fees.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/"
+  },
+  "SC": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a state approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/south-carolina/"
+  },
+  "SD": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a South Dakota Department of Game, Fish and Parks approved waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/south-dakota/"
+  },
+  "TX": {
+   "kind": "enrollment",
+   "amount": 11,
+   "quote": "BoatUS will collect $11 upon enrollment. Once course is completed, we will send payment and information to the state.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/texas/"
+  },
+  "UT": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Utah waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/utah/"
+  },
+  "VA": {
+   "kind": "optional-card",
+   "amount": 15,
+   "quote": "option of ordering a Virginia Division of Natural Resources approved, waterproof plastic card for $15.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/virginia/"
+  },
+  "WA": {
+   "kind": "enrollment",
+   "amount": 10.5,
+   "quote": "We collect a $10.50 fee at enrollment and upon successful completion BoatUS will forward your information and payment to the state.",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/washington/"
+  }
+ }
+}

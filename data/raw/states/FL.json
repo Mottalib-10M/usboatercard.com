@@ -48,30 +48,36 @@
  "statute": null,
  "sources": [
   {
-   "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
-   "publisher": "Florida FWC (archived copy of 2026-06-06; live page blocked by Cloudflare for scripts)",
+   "url": "https://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+   "publisher": "Florida FWC",
    "quote": "To operate a motorboat of ten (10) horsepower or greater requires anyone who was born on or after Jan. 1, 1988 , to successfully complete an approved boating safety course and obtain a Boating Safety Education Identification Card issued by the FWC.",
    "supports": [
     "rule"
-   ]
+   ],
+   "official": "https://myfwc.com/boating/safety-education/faqs/",
+   "archived": "2026-06-06"
   },
   {
-   "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+   "url": "https://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
    "publisher": "Florida FWC",
    "quote": "A nonresident who has in his or her possession proof that he or she has completed a NASBLA-approved boater safety course or equivalency examination from another state AND a photographic I.D.",
    "supports": [
     "nonResident",
     "exemptions"
-   ]
+   ],
+   "official": "https://myfwc.com/boating/safety-education/faqs/",
+   "archived": "2026-06-06"
   },
   {
-   "url": "http://web.archive.org/web/2026/https://myfwc.com/boating/safety-education/temporary-certificate/",
+   "url": "https://web.archive.org/web/20260208081947/https://myfwc.com/boating/safety-education/temporary-certificate/",
    "publisher": "Florida FWC",
    "quote": "The temporary certificate cannot be submitted for issuance of a Boating Safety Education ID card that is valid for life.",
    "supports": [
     "card.validity",
     "rental"
-   ]
+   ],
+   "official": "https://myfwc.com/boating/safety-education/temporary-certificate/",
+   "archived": "2026-02-08"
   }
  ],
  "checked": "2026-10-24",

@@ -4,7 +4,7 @@
  */
 import type { MiniSpec } from './mini-types';
 import { STATES, stateName, cardName, freeCourse, verified, note } from './engine/states';
-import { needsCard, ruleOn } from './engine/boater';
+import { needsCard, ruleOn, freeRoutePayment } from './engine/boater';
 import { money, dateL } from './format-l';
 
 type L = 'en' | 'es';
@@ -95,7 +95,8 @@ const SPECS: Record<string, (lang: L) => MiniSpec> = {
     inputs: [{ id: 'state', label: W(lang).state, def: DEF, options: opts(lang) }],
     run: (v) => {
       const s = at(v), w = W(lang), f = freeCourse(s);
-      const tot = f === 'approved' ? (s.card.stateFee != null ? money(s.card.stateFee, lang) : (lang === 'es' ? 'curso gratis; tarifa no publicada' : 'free course; fee not published')) : (lang === 'es' ? 'curso de pago aprobado por el estado' : 'paid state-approved course');
+      const mp = freeRoutePayment(s);
+      const tot = f === 'approved' ? (mp != null ? `${money(mp, lang)} (${lang === 'es' ? 'según BoatUS' : 'as stated by BoatUS'})` : s.card.stateFee != null ? money(s.card.stateFee, lang) : (lang === 'es' ? 'curso gratis; tarifa no publicada' : 'free course; fee not published')) : (lang === 'es' ? 'curso de pago aprobado por el estado' : 'paid state-approved course');
       return {
         head: [lang === 'es' ? `Costo legal más bajo, ${stateName(s, lang)}` : `Cheapest legal cost, ${stateName(s, lang)}`, tot],
         rows: [[w.free, fcL(s, lang)], [lang === 'es' ? 'Tarifa del estado' : 'State fee', fee(s.card.stateFee, lang)], [lang === 'es' ? 'Obligatorio para' : 'Required for', whoShort(s, lang)]],
@@ -135,9 +136,9 @@ const SPECS: Record<string, (lang: L) => MiniSpec> = {
     title: lang === 'es' ? 'Costo total: curso + tarifa del estado' : 'Total cost: course + state fee', cta: lang === 'es' ? 'Ver si necesito la tarjeta' : 'See if I need the card', ctaPage: 'home',
     inputs: [{ id: 'state', label: W(lang).state, def: DEF, options: opts(lang) }, { id: 'price', label: lang === 'es' ? 'Precio del curso de pago elegido' : 'Price of a paid course you found', def: 40, unit: '$', max: 1000 }],
     run: (v) => {
-      const s = at(v), w = W(lang), f = freeCourse(s), p = Math.max(0, v.price ?? 0), sf = s.card.stateFee;
+      const s = at(v), w = W(lang), f = freeCourse(s), p = Math.max(0, v.price ?? 0), sf = s.card.stateFee, mp = freeRoutePayment(s);
       return {
-        head: [lang === 'es' ? `Lo mínimo legal, ${stateName(s, lang)}` : `Legal minimum, ${stateName(s, lang)}`, f === 'approved' ? (sf != null ? money(sf, lang) : (lang === 'es' ? 'curso gratis' : 'free course')) : sf != null ? money(p + sf, lang) : money(p, lang)],
+        head: [lang === 'es' ? `Lo mínimo legal, ${stateName(s, lang)}` : `Legal minimum, ${stateName(s, lang)}`, f === 'approved' ? (mp != null ? `${money(mp, lang)} (${lang === 'es' ? 'según BoatUS' : 'as stated by BoatUS'})` : sf != null ? money(sf, lang) : (lang === 'es' ? 'curso gratis' : 'free course')) : sf != null ? money(p + sf, lang) : money(p, lang)],
         rows: [[lang === 'es' ? 'Con el curso de pago' : 'With the paid course', sf != null ? money(p + sf, lang) : `${money(p, lang)} + ${w.nc}`], [lang === 'es' ? 'Tarifa del estado' : 'State fee', fee(sf, lang)], [w.free, fcL(s, lang)]],
         note: f === 'approved' ? (lang === 'es' ? 'Aquí se acepta un curso gratuito: pagar un curso es una elección, no una obligación.' : 'A free course is accepted here: paying for a course is a choice, not a requirement.') : undefined,
       };

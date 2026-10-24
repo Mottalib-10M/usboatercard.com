@@ -46,7 +46,7 @@ export default definePage({
 <p>The age rule follows the same three boats: alone from ${s.motorAgeL} with the course, otherwise with a legal operator of 18 or more on board. The mini-tool answers for any age in a state.</p>
 <!--tool:mini:age|{"state":"TX","age":12}-->
 <h2>The course and what it costs</h2>
-<p>TPWD approves classroom, online and other formats. The BoatUS Foundation course is ${s.freeL} in Texas (${h.ext(s.freeUrl, 'its Texas page')}), so the cheapest route costs nothing for the course. Paid options start at $10 according to TPWD and vary by provider. TPWD does not publish a separate card fee on the pages read, so the tool shows the state fee as ${s.feeL}.</p>
+<p>TPWD approves classroom, online and other formats. The BoatUS Foundation course is ${s.freeL} in Texas (${h.ext(s.freeUrl, 'its Texas page')}). ${s.payL} Paid options start at $10 according to TPWD and vary by provider. TPWD does not publish a separate card fee on the pages read, so the tool shows the state fee as ${s.feeL}.</p>
 <h2>Texas beside its neighbors</h2>
 ${h.table(['', 'Texas', 'Oklahoma', 'Louisiana', 'New Mexico'], [
   ['Who needs it', s.whoL, ok.whoL, la.whoL, nm.whoL],
@@ -94,7 +94,7 @@ ${h.table(['', 'Texas', 'Oklahoma', 'Louisiana', 'New Mexico'], [
 <p>La regla de edad sigue las mismas tres embarcaciones: sin compañía desde los ${s.motorAgeL} con el curso, y si no, con un operador legal de 18 años o más a bordo. La miniherramienta responde para cualquier edad en un estado.</p>
 <!--tool:mini:age|{"state":"TX","age":12}-->
 <h2>El curso y su costo</h2>
-<p>TPWD aprueba cursos presenciales, en línea y otros formatos. El curso de la BoatUS Foundation está ${s.freeL} en Texas (${h.ext(s.freeUrl, 'su página de Texas')}), así que la vía más barata no cuesta nada en curso. Las opciones de pago empiezan en 10 dólares según TPWD y varían según el proveedor. TPWD no publica una tarifa aparte por la tarjeta en las páginas consultadas, así que la herramienta muestra la tarifa del estado como ${s.feeL}.</p>
+<p>TPWD aprueba cursos presenciales, en línea y otros formatos. El curso de la BoatUS Foundation está ${s.freeL} en Texas (${h.ext(s.freeUrl, 'su página de Texas')}). ${s.payL} Las opciones de pago empiezan en 10 dólares según TPWD y varían según el proveedor. TPWD no publica una tarifa aparte por la tarjeta en las páginas consultadas, así que la herramienta muestra la tarifa del estado como ${s.feeL}.</p>
 <h2>Texas frente a sus vecinos</h2>
 ${h.table(['', 'Texas', 'Oklahoma', 'Luisiana', 'Nuevo México'], [
   ['Quién la necesita', s.whoL, ok.whoL, la.whoL, nm.whoL],
