@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://us-boater-license.example/sitemap-index.xml
+Sitemap: https://usboatercard.com/sitemap-index.xml

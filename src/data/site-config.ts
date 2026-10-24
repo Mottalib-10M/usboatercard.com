@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-boater-license.example";
+export const SITE_URL = "https://usboatercard.com";
 export const SITE_NAMES: Record<string, string> = {"en": "US Boater Card", "es": "Tarjeta Náutica por Estado"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US", "es": "es-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US", "es": "es_US"};
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners reads 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["State boater education requirements", "Boater education cards and certificates", "Personal watercraft operator age rules", "NASBLA-approved boating safety courses", "Phase-in schedules of state boating laws", "Boating rental exemptions and temporary certificates"], "es": ["Requisitos estatales de educación náutica", "Tarjetas y certificados de educación náutica", "Edades mínimas para motos acuáticas", "Cursos de seguridad náutica aprobados por NASBLA", "Calendarios de entrada en vigor de las leyes náuticas", "Exenciones para alquiler y certificados temporales"]};
-export const CONTACT_EMAIL = "contact@us-boater-license.example";
+export const CONTACT_EMAIL = "contact@usboatercard.com";
 export const THEME_COLOR = '#0B5563';
 export const LOGO_SYMBOL = 'BC';
 export const BING_VERIFY_CODE = '';
