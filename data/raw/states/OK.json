@@ -1,0 +1,102 @@
+{
+ "code": "OK",
+ "name": "Oklahoma",
+ "es": "Oklahoma",
+ "agency": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+ "agencyUrl": "https://oklahoma.gov/dps/programs-services/boated.html",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 15,
+  "ageMin": 12,
+  "hpMin": 10,
+  "hpNote": "motor of more than 10 hp; also any PWC and sailboats 16 ft or longer",
+  "pwc": true,
+  "sailFtMin": 16,
+  "phaseIn": null,
+  "textEn": "Only operators aged 12 to 15 need it: a NASBLA-approved course for any boat with a motor over 10 hp, a sailboat 16 ft or longer, or a PWC, plus adult supervision.",
+  "textEs": "Solo lo necesitan quienes tienen de 12 a 15 años: un curso aprobado por NASBLA para cualquier embarcación con motor de más de 10 hp, un velero de 16 pies o más o una moto acuática, además de supervisión de un adulto.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "Ages 12-15 with the card still need an adult 18+ on board (motorboat or sailboat) or watching within 500 yards (PWC)."
+ },
+ "exemptions": [
+  "Operators 16 and older.",
+  "Boats with a motor of 10 hp or less (sailboats under 16 ft)."
+ ],
+ "card": {
+  "nameEn": "Boating safety education card",
+  "stateFee": 0,
+  "feeNote": "The Highway Patrol 6-hour classroom course is free; private online and home-study providers usually charge.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": "Youths 12-15 on a PWC must be watched by an adult 18+ within 500 yards.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://oklahoma.gov/dps/programs-services/boated.html",
+   "publisher": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+   "quote": "Any person who is 12, 13, 14 or 15 years of age that operates any boat powered by a motor more than 10 horsepower, a sailboat 16 feet or greater in length or a personal watercraft (PWC) is required to successfully complete a boating safety education class.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://oklahoma.gov/dps/programs-services/boated.html",
+   "publisher": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+   "quote": "You must successfully complete a National Association of State Boating Law Administrators (NASBLA) approved boating safety course. If you pass the course, a card will be issued to you.",
+   "supports": [
+    "card"
+   ]
+  },
+  {
+   "url": "https://oklahoma.gov/dps/programs-services/boated.html",
+   "publisher": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+   "quote": "If you are operating a motor boat or sailboat, you must have an adult 18 years of age or older on board the boat with you in a position to take control of the boat if necessary. If you are on a PWC, you must be visually supervised by an adult 18 years of age or older within 500 yards of where you are operating your PWC.",
+   "supports": [
+    "minAge.note",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://oklahoma.gov/dps/programs-services/boated.html",
+   "publisher": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+   "quote": "The Oklahoma Highway Patrol offers a free 6-hour classroom course.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://oklahoma.gov/dps/programs-services/boated.html",
+   "publisher": "Oklahoma Department of Public Safety, Oklahoma Highway Patrol Marine Enforcement Section",
+   "quote": "There are private course providers that offer Internet and video home-study courses. Private course providers usually charge a fee to take their course.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "minAge.pwc",
+  "card.validity",
+  "card.replacementFee",
+  "nonResident",
+  "statute",
+  "penalty",
+  "rental"
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "code": "SD",
+ "name": "South Dakota",
+ "es": "Dakota del Sur",
+ "agency": "South Dakota Game, Fish and Parks",
+ "agencyUrl": "https://gfp.sd.gov/safety/",
+ "required": false,
+ "rule": {
+  "kind": "none",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": false,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "South Dakota has no mandatory boater education. Age limits apply instead: 12 to run a motor over 6 hp alone and 14 for a PWC, unless an adult 18+ is aboard.",
+  "textEs": "Dakota del Sur no exige educación náutica obligatoria. En su lugar hay límites de edad: 12 años para manejar solo un motor de más de 6 hp y 14 para una moto acuática, salvo que vaya a bordo un adulto de 18 años o más.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 14,
+  "note": "Under 12: no motor over 6 hp unless someone 18+ is aboard. Under 14: no PWC of any horsepower unless someone 18+ is aboard. Owners may not let underage people operate."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": null,
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": "Minimum age 14 to operate a PWC alone; younger only with someone 18+ aboard.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://gfp.sd.gov/safety/",
+   "publisher": "South Dakota Game, Fish and Parks",
+   "quote": "Although a boating safety course is not required to operate a boat in South Dakota, it is highly recommend that you complete a NASBLA/USCG approved course.",
+   "supports": [
+    "required",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://gfp.sd.gov/UserDocs/nav/BoatingHdbk2023.pdf",
+   "publisher": "South Dakota Game, Fish and Parks, 2023 Boating Handbook",
+   "quote": "Although boating education is not mandatory in South Dakota we continue to urge boaters to take an online boater education course.",
+   "supports": [
+    "required",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://gfp.sd.gov/UserDocs/nav/BoatingHdbk2023.pdf",
+   "publisher": "South Dakota Game, Fish and Parks, 2023 Boating Handbook",
+   "quote": "Operator under the age of 12 May not operate a motorboat propelled by a motor of more than 6 horsepower, unless a person 18 years or older is on board.",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://gfp.sd.gov/UserDocs/nav/BoatingHdbk2023.pdf",
+   "publisher": "South Dakota Game, Fish and Parks, 2023 Boating Handbook",
+   "quote": "Operator under the age of 14 May not operate a personal watercraft (PWC), of any of horsepower, unless there is a person 18 years or older is on board.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://gfp.sd.gov/UserDocs/nav/BoatingHdbk2023.pdf",
+   "publisher": "South Dakota Game, Fish and Parks, 2023 Boating Handbook",
+   "quote": "South Dakota offers three certified online courses.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.nameEn",
+  "card.stateFee",
+  "card.validity",
+  "statute",
+  "penalty",
+  "nonResident",
+  "rental"
+ ]
+}

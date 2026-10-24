@@ -1,0 +1,136 @@
+{
+ "code": "MI",
+ "name": "Michigan",
+ "es": "Míchigan",
+ "agency": "Michigan Department of Natural Resources",
+ "agencyUrl": "https://www.michigan.gov/dnr/things-to-do/boating/safety-certificate",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": "1996-07-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 6,
+  "hpNote": "motor more than 6 hp (PWC: anyone born after Dec. 31, 1978)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after July 1, 1996 needs a boating safety certificate to run a motorboat over 6 hp; for a PWC the certificate is needed by anyone born after Dec. 31, 1978.",
+  "textEs": "Quien nació el 1 de julio de 1996 o después necesita un certificado de seguridad náutica para manejar una lancha de más de 6 hp; para una moto acuática lo necesita toda persona nacida después del 31 de diciembre de 1978.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false,
+  "pwcBornOnOrAfter": "1979-01-01"
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 14,
+  "note": "Under 12: up to 6 hp freely; over 6 and up to 35 hp only with a certificate and a supervisor 16+ on board; never over 35 hp. PWC: none under 14; 14-15 with a certificate and an adult 21+ on board or within 100 ft; alone from 16 with a certificate."
+ },
+ "exemptions": [
+  "Motorboats with 6 hp or less.",
+  "People born before July 1, 1996 (motorboats) or on/before Dec. 31, 1978 (PWC)."
+ ],
+ "card": {
+  "nameEn": "Boating safety certificate (boater education card)",
+  "stateFee": null,
+  "feeNote": "Copies are reprinted through the DNR eLicense system; course providers may charge fees.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": "PWC: no one under 14; ages 14-15 need a certificate plus a parent, guardian or designated adult 21+ on board or operating a PWC within 100 ft; independent operation from 16 with a certificate.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/safety-certificate",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "a boating safety certificate (or boater education card) is required for anyone born on or after July 1, 1996, who operates a vessel.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "May operate a boat with a motor more than 6 horsepower only if they possess boating safety certificate.",
+   "supports": [
+    "rule.hpMin",
+    "rule.hpInclusive"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "No certificate required: Only if born on or before Dec. 31, 1978",
+   "supports": [
+    "rule.pwc",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "More than 35 horsepower: May not operate under any circumstances.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "Are directly supervised on board by someone at least 16 years old.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "Not allowed to operate a personal watercraft under any circumstances.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/rules-and-regs/age-restrictions",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "Minimum age to operate independently: 16 (with certificate)",
+   "supports": [
+    "minAge.pwc",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/things-to-do/boating/safety-certificate",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "Approved online courses allow you to study at your own pace from home using electronic materials and videos.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.michigan.gov/dnr/education/hunter-rec-edu-safety/replace-lost-certificate",
+   "publisher": "Michigan Department of Natural Resources",
+   "quote": "Recreational safety certificate requests are only processed online through eLicense.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity",
+  "nonResident",
+  "rental",
+  "penalty",
+  "statute"
+ ]
+}

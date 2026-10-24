@@ -1,0 +1,1318 @@
+[
+{
+"id": "r01",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "Two powerboats are approaching each other head-on. What should each operator do?",
+"es": "Dos lanchas se acercan de frente. ¿Qué debe hacer cada operador?"
+},
+"o": {
+"en": [
+"Turn to starboard (right) and pass port side to port side",
+"Turn to port (left) and pass starboard to starboard",
+"The larger boat holds course, the smaller one turns",
+"Both stop and wait"
+],
+"es": [
+"Virar a estribor (derecha) y pasar babor con babor",
+"Virar a babor (izquierda) y pasar estribor con estribor",
+"La embarcación más grande sigue igual y la pequeña vira",
+"Ambas se detienen y esperan"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 14 of the Inland Navigation Rules: when two power-driven vessels meet on nearly reciprocal courses, each alters course to starboard so that each passes on the port side of the other.",
+"es": "Regla 14 de las Reglas de Navegación Interiores: cuando dos embarcaciones de motor se encuentran de frente, cada una cambia el rumbo a estribor para que ambas se crucen por babor."
+}
+},
+{
+"id": "r02",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "Two powerboats are crossing. You see the other boat on your starboard (right) side. You are:",
+"es": "Dos lanchas se cruzan. Usted ve la otra embarcación a su estribor (derecha). Usted es:"
+},
+"o": {
+"en": [
+"The give-way vessel: keep out of its way",
+"The stand-on vessel: hold course and speed",
+"Free to choose, since both have equal rights",
+"The stand-on vessel only if you are faster"
+],
+"es": [
+"La embarcación que cede el paso: debe apartarse",
+"La embarcación con preferencia: mantiene rumbo y velocidad",
+"Libre de elegir, porque ambas tienen los mismos derechos",
+"La embarcación con preferencia solo si es más rápida"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 15: the vessel that has the other on her own starboard side keeps out of the way and, if possible, avoids crossing ahead of it.",
+"es": "Regla 15: la embarcación que tiene a la otra por su propio estribor debe apartarse y, si puede, evitar cruzarle por la proa."
+}
+},
+{
+"id": "r03",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "You are overtaking a slower boat. Who must keep clear?",
+"es": "Usted alcanza a una embarcación más lenta para pasarla. ¿Quién debe apartarse?"
+},
+"o": {
+"en": [
+"You, the overtaking boat, until you are past and clear",
+"The slower boat, which must move aside",
+"Whichever boat is smaller",
+"Nobody, if both sound one blast"
+],
+"es": [
+"Usted, que alcanza, hasta haberla pasado y estar despejado",
+"La embarcación lenta, que debe hacerse a un lado",
+"La embarcación más pequeña",
+"Nadie, si ambas dan un pitido"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 13: any vessel overtaking another keeps out of the way of the vessel being overtaken, whatever else the rules say, until it is finally past and clear.",
+"es": "Regla 13: toda embarcación que alcanza a otra debe mantenerse apartada de ella, digan lo que digan las demás reglas, hasta haberla pasado por completo."
+}
+},
+{
+"id": "r04",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "A powerboat underway meets a boat under sail alone. In general, which one gives way?",
+"es": "Una lancha en marcha se encuentra con un velero que navega solo a vela. En general, ¿quién cede el paso?"
+},
+"o": {
+"en": [
+"The powerboat",
+"The sailboat",
+"The one on the left",
+"The one going upstream"
+],
+"es": [
+"La lancha",
+"El velero",
+"La que está a la izquierda",
+"La que va río arriba"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 18: a power-driven vessel underway keeps out of the way of a sailing vessel, as well as of a vessel not under command, one restricted in her ability to maneuver and one engaged in fishing. The exceptions are overtaking and narrow channels.",
+"es": "Regla 18: una embarcación de motor en marcha se aparta de un velero, y también de una embarcación sin gobierno, de una con capacidad de maniobra restringida y de una que está pescando. Las excepciones son el adelantamiento y los canales angostos."
+}
+},
+{
+"id": "r05",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "What do the Navigation Rules require of every boat at all times?",
+"es": "¿Qué exigen las Reglas de Navegación a toda embarcación en todo momento?"
+},
+"o": {
+"en": [
+"A proper lookout by sight and hearing",
+"A radio watch on channel 16",
+"A second adult on board",
+"A depth sounder in use"
+],
+"es": [
+"Una vigilancia adecuada con la vista y el oído",
+"Escucha de radio en el canal 16",
+"Un segundo adulto a bordo",
+"Una sonda de profundidad encendida"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 5: every vessel keeps a proper lookout by sight and hearing and by every available means, so the operator can judge the situation and the risk of collision.",
+"es": "Regla 5: toda embarcación mantiene una vigilancia adecuada con la vista, el oído y todos los medios disponibles, para evaluar la situación y el riesgo de abordaje."
+}
+},
+{
+"id": "r06",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "How can you tell that a risk of collision exists with an approaching boat?",
+"es": "¿Cómo sabe que existe riesgo de abordaje con una embarcación que se acerca?"
+},
+"o": {
+"en": [
+"Its compass bearing does not change appreciably",
+"It is flying a flag",
+"It is larger than your boat",
+"Its engine is louder"
+],
+"es": [
+"Su demora (dirección) no cambia de forma apreciable",
+"Lleva una bandera",
+"Es más grande que su embarcación",
+"Su motor suena más fuerte"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 7: risk of collision is deemed to exist if the compass bearing of an approaching vessel does not appreciably change. It can exist even with some bearing change when the other vessel is very large or close.",
+"es": "Regla 7: se considera que hay riesgo de abordaje si la demora de la embarcación que se acerca no cambia de forma apreciable. Puede existir incluso con algún cambio si la otra es muy grande o está cerca."
+}
+},
+{
+"id": "r07",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "In a narrow channel, where should a small boat keep?",
+"es": "En un canal angosto, ¿por dónde debe navegar una embarcación pequeña?"
+},
+"o": {
+"en": [
+"As near as safe to the outer limit on its starboard (right) side",
+"In the middle of the channel",
+"On its port (left) side",
+"Wherever the water is deepest"
+],
+"es": [
+"Lo más cerca posible, con seguridad, del borde de su estribor (derecha)",
+"Por el centro del canal",
+"Por su lado de babor (izquierda)",
+"Donde el agua sea más profunda"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 9: a vessel in a narrow channel keeps as near to the outer limit on her starboard side as is safe. A boat under 20 meters or a sailboat must not impede a vessel that can navigate only inside the channel.",
+"es": "Regla 9: en un canal angosto se navega lo más cerca posible del borde de estribor. Una embarcación de menos de 20 metros o un velero no deben estorbar a un buque que solo puede navegar dentro del canal."
+}
+},
+{
+"id": "r08",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "What speed do the Navigation Rules require?",
+"es": "¿Qué velocidad exigen las Reglas de Navegación?"
+},
+"o": {
+"en": [
+"A safe speed that lets you stop or avoid a collision in time",
+"No more than 5 mph everywhere",
+"The posted speed of the nearest road",
+"Any speed in open water"
+],
+"es": [
+"Una velocidad segura que permita detenerse o evitar un abordaje a tiempo",
+"No más de 5 mph en todas partes",
+"La velocidad de la carretera más cercana",
+"Cualquier velocidad en aguas abiertas"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 6: every vessel proceeds at a safe speed so it can take effective action to avoid a collision and stop within a distance suited to the conditions: visibility, traffic, wind, current and nearby hazards.",
+"es": "Regla 6: toda embarcación navega a una velocidad segura para poder evitar un abordaje y detenerse a una distancia adecuada a las condiciones: visibilidad, tráfico, viento, corriente y peligros cercanos."
+}
+},
+{
+"id": "r09",
+"t": "rules",
+"src": "navrules",
+"q": {
+"en": "A stand-on vessel is the one that:",
+"es": "La embarcación con preferencia (stand-on) es la que:"
+},
+"o": {
+"en": [
+"Keeps its course and speed while the other gives way",
+"Must stop first",
+"Sounds five blasts",
+"Always passes on the left"
+],
+"es": [
+"Mantiene rumbo y velocidad mientras la otra se aparta",
+"Debe detenerse primero",
+"Da cinco pitidos",
+"Siempre pasa por la izquierda"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 17: when one vessel must keep out of the way, the other keeps her course and speed. She may act, and must act, if the give-way vessel is clearly not doing what the rules require.",
+"es": "Regla 17: cuando una embarcación debe apartarse, la otra mantiene rumbo y velocidad. Puede maniobrar, y debe hacerlo, si la que debe ceder claramente no cumple las reglas."
+}
+},
+{
+"id": "s01",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "On inland waters, one short blast from a boat in sight of you means:",
+"es": "En aguas interiores, un pitido corto de una embarcación a la vista significa:"
+},
+"o": {
+"en": [
+"\"I intend to leave you on my port side\"",
+"\"I intend to leave you on my starboard side\"",
+"\"I am operating astern propulsion\"",
+"\"Danger, I do not understand your intentions\""
+],
+"es": [
+"«Tengo intención de dejarle por mi babor»",
+"«Tengo intención de dejarle por mi estribor»",
+"«Estoy dando marcha atrás»",
+"«Peligro, no entiendo sus intenciones»"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 34(a) of the Inland Rules: one short blast means \"I intend to leave you on my port side\", two short blasts \"on my starboard side\", three short blasts \"I am operating astern propulsion\".",
+"es": "Regla 34(a) de las Reglas Interiores: un pitido corto significa «le dejaré por mi babor», dos pitidos cortos «por mi estribor» y tres pitidos cortos «estoy dando marcha atrás»."
+}
+},
+{
+"id": "s02",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "Five or more short, rapid blasts mean:",
+"es": "Cinco o más pitidos cortos y rápidos significan:"
+},
+"o": {
+"en": [
+"Doubt or danger: the other vessel's intentions are not understood",
+"I am turning to starboard",
+"I am anchored",
+"All is clear, go ahead"
+],
+"es": [
+"Duda o peligro: no se entienden las intenciones de la otra embarcación",
+"Viro a estribor",
+"Estoy fondeado",
+"Todo despejado, adelante"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 34(d): a vessel that does not understand the other's intentions, or doubts it is acting enough to avoid a collision, sounds at least five short and rapid blasts.",
+"es": "Regla 34(d): la embarcación que no entiende las intenciones de la otra, o duda de que esté maniobrando lo suficiente, da al menos cinco pitidos cortos y rápidos."
+}
+},
+{
+"id": "s03",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "How long is a \"prolonged blast\"?",
+"es": "¿Cuánto dura un «pitido largo»?"
+},
+"o": {
+"en": [
+"4 to 6 seconds",
+"About 1 second",
+"10 seconds",
+"Half a second"
+],
+"es": [
+"De 4 a 6 segundos",
+"Alrededor de 1 segundo",
+"10 segundos",
+"Medio segundo"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 32: a short blast lasts about 1 second and a prolonged blast from 4 to 6 seconds.",
+"es": "Regla 32: un pitido corto dura alrededor de 1 segundo y un pitido largo de 4 a 6 segundos."
+}
+},
+{
+"id": "s04",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "You are nearing a blind bend in a channel. What signal do you sound?",
+"es": "Se acerca a una curva sin visibilidad en un canal. ¿Qué señal da?"
+},
+"o": {
+"en": [
+"One prolonged blast",
+"Three short blasts",
+"Two short blasts",
+"No signal is required"
+],
+"es": [
+"Un pitido largo",
+"Tres pitidos cortos",
+"Dos pitidos cortos",
+"No hace falta ninguna señal"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 34(e): a vessel nearing a bend or an area where other vessels may be hidden by an obstruction sounds one prolonged blast, and any vessel around the bend that hears it answers with a prolonged blast.",
+"es": "Regla 34(e): una embarcación que se acerca a una curva o a una zona donde otras pueden quedar ocultas da un pitido largo, y quien lo oye al otro lado responde con otro pitido largo."
+}
+},
+{
+"id": "s05",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "In fog, a powerboat making way through the water sounds:",
+"es": "Con niebla, una lancha que avanza por el agua debe dar:"
+},
+"o": {
+"en": [
+"One prolonged blast at intervals of no more than 2 minutes",
+"Two short blasts every minute",
+"Nothing if it has radar",
+"A bell every 10 minutes"
+],
+"es": [
+"Un pitido largo a intervalos de no más de 2 minutos",
+"Dos pitidos cortos cada minuto",
+"Nada si tiene radar",
+"Una campana cada 10 minutos"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 35(a): in or near restricted visibility, a power-driven vessel making way sounds one prolonged blast at intervals of not more than 2 minutes; underway but stopped, two prolonged blasts.",
+"es": "Regla 35(a): con visibilidad reducida, una embarcación de motor que avanza da un pitido largo a intervalos de no más de 2 minutos; si está en marcha pero detenida, dos pitidos largos."
+}
+},
+{
+"id": "s06",
+"t": "sound",
+"src": "navrules",
+"q": {
+"en": "What sound-signal equipment must a boat under 12 meters (39.4 ft) carry?",
+"es": "¿Qué equipo de señales sonoras debe llevar una embarcación de menos de 12 metros (39,4 pies)?"
+},
+"o": {
+"en": [
+"Some means of making an efficient sound signal, such as a horn or whistle",
+"A bell and a gong",
+"Nothing at all",
+"A siren approved by the state"
+],
+"es": [
+"Algún medio eficaz de hacer señales sonoras, como una bocina o un silbato",
+"Una campana y un gong",
+"Nada en absoluto",
+"Una sirena aprobada por el estado"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 33: a vessel of 12 meters or more carries a whistle, 20 meters or more a bell too. A vessel under 12 meters need not carry those, but must have some other means of making an efficient sound signal.",
+"es": "Regla 33: una embarcación de 12 metros o más lleva un silbato, y de 20 metros o más también una campana. Una de menos de 12 metros no está obligada a llevarlos, pero debe tener otro medio eficaz de hacer señales sonoras."
+}
+},
+{
+"id": "l01",
+"t": "lights",
+"src": "navrules",
+"q": {
+"en": "At night you see a single red light on another boat. You are looking at its:",
+"es": "De noche ve una sola luz roja en otra embarcación. Está viendo su:"
+},
+"o": {
+"en": [
+"Port (left) side",
+"Starboard (right) side",
+"Stern",
+"Masthead"
+],
+"es": [
+"Costado de babor (izquierdo)",
+"Costado de estribor (derecho)",
+"Popa",
+"Tope del mástil"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 21: sidelights are green on the starboard side and red on the port side, each shown from right ahead to 22.5 degrees abaft the beam. A lone red light means you see the other boat's port side.",
+"es": "Regla 21: las luces de costado son verde a estribor y roja a babor, visibles desde la proa hasta 22,5 grados detrás del través. Una luz roja sola significa que ve el costado de babor de la otra embarcación."
+}
+},
+{
+"id": "l02",
+"t": "lights",
+"src": "navrules",
+"q": {
+"en": "Between which hours must navigation lights be shown?",
+"es": "¿Entre qué horas deben encenderse las luces de navegación?"
+},
+"o": {
+"en": [
+"From sunset to sunrise, and in restricted visibility",
+"Only after 10 p.m.",
+"Only on the ocean",
+"Only when another boat is near"
+],
+"es": [
+"De la puesta al salida del sol, y con visibilidad reducida",
+"Solo después de las 10 p. m.",
+"Solo en el océano",
+"Solo cuando otra embarcación está cerca"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 20: the lights rules apply from sunset to sunrise, and the lights are also shown in restricted visibility during the day.",
+"es": "Regla 20: las reglas de luces se aplican de la puesta a la salida del sol, y las luces también se encienden con visibilidad reducida durante el día."
+}
+},
+{
+"id": "l03",
+"t": "lights",
+"src": "navrules",
+"q": {
+"en": "Instead of a masthead light and sternlight, a powerboat under 12 meters may show:",
+"es": "En lugar de luz de tope y luz de popa, una lancha de menos de 12 metros puede mostrar:"
+},
+"o": {
+"en": [
+"An all-round white light and sidelights",
+"Only a red light",
+"A flashing yellow light",
+"No lights near shore"
+],
+"es": [
+"Una luz blanca visible en todo el horizonte y luces de costado",
+"Solo una luz roja",
+"Una luz amarilla intermitente",
+"Ninguna luz cerca de la orilla"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 23(d): a power-driven vessel of less than 12 meters may, in place of the masthead light and sternlight, exhibit an all-round white light and sidelights.",
+"es": "Regla 23(d): una embarcación de motor de menos de 12 metros puede llevar, en lugar de luz de tope y de popa, una luz blanca visible en todo el horizonte y luces de costado."
+}
+},
+{
+"id": "l04",
+"t": "lights",
+"src": "navrules",
+"q": {
+"en": "The sternlight of a boat is:",
+"es": "La luz de popa de una embarcación es:"
+},
+"o": {
+"en": [
+"White, shown over 135 degrees astern",
+"Red, shown all round",
+"Green, shown ahead",
+"Yellow, flashing"
+],
+"es": [
+"Blanca, visible en 135 grados hacia atrás",
+"Roja, visible en todo el horizonte",
+"Verde, visible hacia proa",
+"Amarilla, intermitente"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 21(c): the sternlight is a white light at the stern showing an unbroken light over an arc of 135 degrees, 67.5 degrees from right aft on each side.",
+"es": "Regla 21(c): la luz de popa es blanca, está en la popa y alumbra sin interrupción un arco de 135 grados, 67,5 grados a cada lado desde atrás."
+}
+},
+{
+"id": "l05",
+"t": "lights",
+"src": "navrules",
+"q": {
+"en": "At night you see a green light with a white light above it on another boat. That boat is showing you:",
+"es": "De noche ve en otra embarcación una luz verde y una luz blanca encima. Esa embarcación le muestra:"
+},
+"o": {
+"en": [
+"Its starboard side: it is a power-driven boat",
+"Its port side: it is a sailboat",
+"Its stern: it is anchored",
+"Nothing useful"
+],
+"es": [
+"Su costado de estribor: es una embarcación de motor",
+"Su costado de babor: es un velero",
+"Su popa: está fondeada",
+"Nada útil"
+]
+},
+"a": 0,
+"x": {
+"en": "Green is the starboard sidelight (Rule 21). A white masthead light above a sidelight is the mark of a power-driven vessel underway (Rule 23); a boat under sail alone shows no masthead light.",
+"es": "El verde es la luz de costado de estribor (Regla 21). Una luz blanca de tope sobre una luz de costado identifica a una embarcación de motor en marcha (Regla 23); un velero que navega solo a vela no lleva luz de tope."
+}
+},
+{
+"id": "a01",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "Returning from sea and heading upstream, red buoys and markers should be on your:",
+"es": "Al regresar del mar y navegar río arriba, las boyas y marcas rojas deben quedar a su:"
+},
+"o": {
+"en": [
+"Right (starboard) side",
+"Left (port) side",
+"Either side",
+"Directly ahead"
+],
+"es": [
+"Derecha (estribor)",
+"Izquierda (babor)",
+"Cualquier lado",
+"Justo delante"
+]
+},
+"a": 0,
+"x": {
+"en": "US waters follow IALA Region B (33 CFR 62.25): starboard hand marks are red, with triangular daymarks or nun buoys, and mark the right side of the channel when proceeding in the direction of buoyage, which means returning from sea. Hence \"red, right, returning\".",
+"es": "Las aguas de EE. UU. siguen la Región B de IALA (33 CFR 62.25): las marcas de estribor son rojas, con marcas triangulares o boyas cónicas, y señalan el lado derecho del canal al navegar en el sentido del balizamiento, es decir, al volver del mar. De ahí la frase «red, right, returning»."
+}
+},
+{
+"id": "a02",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A green can buoy marks:",
+"es": "Una boya verde cilíndrica (can) señala:"
+},
+"o": {
+"en": [
+"The left (port) side of the channel when returning from sea",
+"The right side of the channel when returning from sea",
+"A swimming area",
+"Safe water all around"
+],
+"es": [
+"El lado izquierdo (babor) del canal al volver del mar",
+"El lado derecho del canal al volver del mar",
+"Una zona de baño",
+"Aguas seguras en todo su alrededor"
+]
+},
+"a": 0,
+"x": {
+"en": "Port hand marks are green, with square daymarks or can buoys, and mark the left side of the channel when proceeding in the conventional direction of buoyage (33 CFR 62.25).",
+"es": "Las marcas de babor son verdes, con marcas cuadradas o boyas cilíndricas, y señalan el lado izquierdo del canal al navegar en el sentido convencional del balizamiento (33 CFR 62.25)."
+}
+},
+{
+"id": "a03",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "Numbers on red and green channel markers are:",
+"es": "Los números de las marcas rojas y verdes de un canal son:"
+},
+"o": {
+"en": [
+"Even on red aids, odd on green aids",
+"Odd on red aids, even on green aids",
+"The distance to shore in miles",
+"The water depth in feet"
+],
+"es": [
+"Pares en las rojas e impares en las verdes",
+"Impares en las rojas y pares en las verdes",
+"La distancia a la costa en millas",
+"La profundidad en pies"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.43: solid red aids carry even numbers and solid green aids odd numbers, increasing in the conventional direction of buoyage.",
+"es": "33 CFR 62.43: las marcas rojas llevan números pares y las verdes impares, que aumentan en el sentido convencional del balizamiento."
+}
+},
+{
+"id": "a04",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A buoy with red and white vertical stripes is a:",
+"es": "Una boya con franjas verticales rojas y blancas es una:"
+},
+"o": {
+"en": [
+"Safe water mark: navigable water all around",
+"Danger mark: keep away",
+"Diver-down marker",
+"Swimming area marker"
+],
+"es": [
+"Marca de aguas seguras: hay agua navegable alrededor",
+"Marca de peligro: aléjese",
+"Marca de buzos",
+"Marca de zona de baño"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.27: safe water marks have red and white vertical stripes and show navigable water all around; they often mark fairways, mid-channels or the seaward end of a channel.",
+"es": "33 CFR 62.27: las marcas de aguas seguras tienen franjas verticales rojas y blancas e indican agua navegable alrededor; suelen marcar el centro o la entrada de un canal."
+}
+},
+{
+"id": "a05",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A black buoy with one or more broad red horizontal bands means:",
+"es": "Una boya negra con una o más franjas horizontales rojas anchas significa:"
+},
+"o": {
+"en": [
+"An isolated danger that can be passed on all sides, with caution",
+"A preferred channel to the left",
+"A no-wake zone",
+"A mooring buoy"
+],
+"es": [
+"Un peligro aislado que se puede pasar por cualquier lado, con precaución",
+"Un canal preferente a la izquierda",
+"Una zona sin estela",
+"Una boya de amarre"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.29: isolated danger marks are black with one or more broad horizontal red bands, are placed on or near a danger and should not be approached closely.",
+"es": "33 CFR 62.29: las marcas de peligro aislado son negras con una o más franjas rojas horizontales, están sobre o cerca del peligro y no deben acercarse demasiado."
+}
+},
+{
+"id": "a06",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A white marker with an orange diamond containing a cross means:",
+"es": "Una marca blanca con un rombo naranja que lleva una cruz dentro significa:"
+},
+"o": {
+"en": [
+"Boats keep out: exclusion area",
+"Danger, such as rocks or a dam",
+"Speed limit or no-wake area",
+"Information, such as directions"
+],
+"es": [
+"Prohibido el paso de embarcaciones: zona de exclusión",
+"Peligro, como rocas o una presa",
+"Límite de velocidad o zona sin estela",
+"Información, como direcciones"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.33: on white information and regulatory marks, an open orange diamond means danger, a diamond with a cross means vessels are excluded, a circle means operating restrictions and a square gives information.",
+"es": "33 CFR 62.33: en las marcas informativas y reglamentarias blancas, un rombo naranja abierto indica peligro, un rombo con cruz indica zona prohibida, un círculo indica restricciones y un cuadrado da información."
+}
+},
+{
+"id": "a07",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A white marker with an orange circle tells you:",
+"es": "Una marca blanca con un círculo naranja le indica:"
+},
+"o": {
+"en": [
+"Operating restrictions apply, such as a speed limit or no wake",
+"Boats are excluded",
+"There is a submerged rock",
+"Fuel is available"
+],
+"es": [
+"Que hay restricciones, como límite de velocidad o sin estela",
+"Que está prohibido el paso",
+"Que hay una roca sumergida",
+"Que hay combustible"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.33(a)(3): a circular orange shape means certain operating restrictions are in effect in the marked area, such as a speed limit or no-wake rule; the restriction is written inside the circle.",
+"es": "33 CFR 62.33(a)(3): un círculo naranja indica que rigen restricciones en la zona marcada, como un límite de velocidad o la prohibición de hacer estela; la restricción va escrita dentro del círculo."
+}
+},
+{
+"id": "a08",
+"t": "aids",
+"src": "cfr62",
+"q": {
+"en": "A white marker with an open orange diamond warns of:",
+"es": "Una marca blanca con un rombo naranja abierto advierte de:"
+},
+"o": {
+"en": [
+"A danger, such as rocks, shoals or a dam",
+"An exclusion zone",
+"A speed limit",
+"A marina ahead"
+],
+"es": [
+"Un peligro, como rocas, bajos o una presa",
+"Una zona prohibida",
+"Un límite de velocidad",
+"Una marina más adelante"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 62.33(a)(1): a vertical open-faced orange diamond on a white mark signifies danger; the nature of the danger is often written next to it.",
+"es": "33 CFR 62.33(a)(1): un rombo naranja abierto sobre una marca blanca significa peligro; a menudo el tipo de peligro va escrito al lado."
+}
+},
+{
+"id": "e01",
+"t": "equipment",
+"src": "cfr175",
+"q": {
+"en": "How many wearable life jackets must a recreational boat carry?",
+"es": "¿Cuántos chalecos salvavidas ponibles debe llevar una embarcación de recreo?"
+},
+"o": {
+"en": [
+"At least one Coast Guard-approved wearable for each person on board",
+"One for every two people",
+"One per boat",
+"Only for children"
+],
+"es": [
+"Al menos uno aprobado por la Guardia Costera para cada persona a bordo",
+"Uno por cada dos personas",
+"Uno por embarcación",
+"Solo para los niños"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 175.15(a): no person may use a recreational vessel unless at least one wearable PFD is on board for each person, used as its approval label says, and readily accessible.",
+"es": "33 CFR 175.15(a): nadie puede usar una embarcación de recreo sin al menos un chaleco salvavidas ponible para cada persona, usado según su etiqueta y de fácil acceso."
+}
+},
+{
+"id": "e02",
+"t": "equipment",
+"src": "cfr175",
+"q": {
+"en": "Besides wearable life jackets, which boats must also carry a throwable device?",
+"es": "Además de los chalecos ponibles, ¿qué embarcaciones deben llevar también un dispositivo arrojadizo?"
+},
+"o": {
+"en": [
+"Boats 16 feet or longer, except canoes and kayaks",
+"Every boat, whatever its length",
+"Only sailboats",
+"Only boats on the ocean"
+],
+"es": [
+"Las de 16 pies o más, salvo canoas y kayaks",
+"Todas, sea cual sea su eslora",
+"Solo los veleros",
+"Solo las que navegan en el océano"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 175.15(b) and 175.17(a): a recreational vessel 16 feet or more carries one throwable PFD in addition to the wearables; canoes and kayaks of that length are exempt from the throwable.",
+"es": "33 CFR 175.15(b) y 175.17(a): una embarcación de recreo de 16 pies o más lleva un dispositivo arrojadizo además de los chalecos; las canoas y kayaks de esa eslora están exentos del arrojadizo."
+}
+},
+{
+"id": "e03",
+"t": "equipment",
+"src": "cfr175",
+"q": {
+"en": "Under the federal rule, when must a child under 13 wear a life jacket?",
+"es": "Según la regla federal, ¿cuándo debe llevar puesto un chaleco un niño menor de 13 años?"
+},
+"o": {
+"en": [
+"Whenever the boat is underway, unless below deck or in an enclosed cabin",
+"Only when swimming",
+"Only on boats under 16 feet",
+"Never, if a parent is on board"
+],
+"es": [
+"Siempre que la embarcación esté en marcha, salvo bajo cubierta o en una cabina cerrada",
+"Solo al nadar",
+"Solo en embarcaciones de menos de 16 pies",
+"Nunca, si va un padre a bordo"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 175.15(c): no one may operate a recreational vessel underway with a child under 13 aboard unless the child wears an approved PFD or is below decks or in an enclosed cabin. A state may set its own age, which then applies on its waters.",
+"es": "33 CFR 175.15(c): nadie puede manejar una embarcación de recreo en marcha con un niño menor de 13 años a bordo salvo que lleve un chaleco aprobado o esté bajo cubierta o en una cabina cerrada. Un estado puede fijar su propia edad, que se aplica en sus aguas."
+}
+},
+{
+"id": "e04",
+"t": "equipment",
+"src": "cfr175",
+"q": {
+"en": "On coastal waters, which boats must carry visual distress signals for day and night use?",
+"es": "En aguas costeras, ¿qué embarcaciones deben llevar señales visuales de socorro de día y de noche?"
+},
+"o": {
+"en": [
+"Boats 16 feet or longer",
+"Only boats over 40 feet",
+"Only commercial boats",
+"No recreational boat"
+],
+"es": [
+"Las de 16 pies o más",
+"Solo las de más de 40 pies",
+"Solo las comerciales",
+"Ninguna de recreo"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 175.110: a boat 16 feet or more must carry approved visual distress signals for day and night use on coastal waters, the Great Lakes and the territorial seas; a smaller boat needs night signals when out between sunset and sunrise.",
+"es": "33 CFR 175.110: una embarcación de 16 pies o más debe llevar señales visuales de socorro aprobadas, de día y de noche, en aguas costeras, los Grandes Lagos y el mar territorial; una más pequeña necesita señales nocturnas si sale entre la puesta y la salida del sol."
+}
+},
+{
+"id": "e05",
+"t": "equipment",
+"src": "cfr175",
+"q": {
+"en": "A boat under 16 feet on coastal waters after sunset must carry:",
+"es": "Una embarcación de menos de 16 pies en aguas costeras después de la puesta del sol debe llevar:"
+},
+"o": {
+"en": [
+"Visual distress signals suitable for night use",
+"No signals at all",
+"Only a mirror",
+"A second anchor"
+],
+"es": [
+"Señales visuales de socorro aptas para la noche",
+"Ninguna señal",
+"Solo un espejo",
+"Un segundo ancla"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 175.110(b): between sunset and sunrise, no one may use a boat under 16 feet on those waters unless night visual distress signals are on board.",
+"es": "33 CFR 175.110(b): entre la puesta y la salida del sol, nadie puede usar una embarcación de menos de 16 pies en esas aguas sin señales de socorro nocturnas a bordo."
+}
+},
+{
+"id": "e06",
+"t": "equipment",
+"src": "cfr25",
+"q": {
+"en": "Which small boats may go without a portable fire extinguisher under federal rules?",
+"es": "¿Qué embarcaciones pequeñas pueden no llevar extintor portátil según la regla federal?"
+},
+"o": {
+"en": [
+"Outboard motorboats under 26 feet whose build cannot trap fuel vapors, not carrying passengers for hire",
+"Every boat under 40 feet",
+"Boats with an inboard gasoline engine",
+"Any boat used only on lakes"
+],
+"es": [
+"Las de motor fuera de borda de menos de 26 pies cuya construcción no atrapa vapores, sin pasajeros de pago",
+"Todas las de menos de 40 pies",
+"Las que tienen motor de gasolina interior",
+"Cualquiera que solo navegue en lagos"
+]
+},
+"a": 0,
+"x": {
+"en": "46 CFR 25.30-20: all motorboats carry the required portable extinguishers, except outboard motorboats under 26 feet not carrying passengers for hire whose construction does not permit explosive or flammable vapors to be trapped.",
+"es": "46 CFR 25.30-20: todas las embarcaciones de motor llevan los extintores exigidos, salvo las de motor fuera de borda de menos de 26 pies sin pasajeros de pago cuya construcción no permite que se acumulen vapores inflamables."
+}
+},
+{
+"id": "e07",
+"t": "equipment",
+"src": "cfr183",
+"q": {
+"en": "Before starting an inboard gasoline engine in a closed compartment, you should:",
+"es": "Antes de arrancar un motor interior de gasolina en un compartimento cerrado, debe:"
+},
+"o": {
+"en": [
+"Run the exhaust blower, check for fuel smell, then start",
+"Start at full throttle to clear the vapors",
+"Open the fuel cap",
+"Pour water into the bilge"
+],
+"es": [
+"Encender el extractor, comprobar que no huele a combustible y luego arrancar",
+"Arrancar a toda potencia para expulsar los vapores",
+"Abrir la tapa del combustible",
+"Echar agua en la sentina"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 183.610 requires an exhaust blower in each compartment holding a permanently installed gasoline engine with a cranking motor, unless it is open to the air. Running it before starting clears gasoline vapors that can explode.",
+"es": "33 CFR 183.610 exige un extractor en cada compartimento con motor de gasolina fijo y arranque eléctrico, salvo que esté abierto al aire. Encenderlo antes de arrancar elimina los vapores de gasolina, que pueden explotar."
+}
+},
+{
+"id": "e08",
+"t": "equipment",
+"src": "cfr183",
+"q": {
+"en": "A capacity plate on a small monohull boat tells you:",
+"es": "La placa de capacidad de una embarcación monocasco pequeña indica:"
+},
+"o": {
+"en": [
+"The maximum persons, weight and horsepower the boat is rated for",
+"The boat's registration number",
+"The fuel tank size",
+"The year the hull was built"
+],
+"es": [
+"El máximo de personas, peso y potencia para los que está clasificada",
+"Su número de registro",
+"El tamaño del tanque de combustible",
+"El año de construcción del casco"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 183.23: monohull boats under 20 feet, except sailboats, canoes, kayaks and inflatables, are marked with the maximum persons capacity, the maximum weight capacity and the maximum horsepower.",
+"es": "33 CFR 183.23: las embarcaciones monocasco de menos de 20 pies, salvo veleros, canoas, kayaks e inflables, llevan marcado el máximo de personas, el peso máximo y la potencia máxima."
+}
+},
+{
+"id": "e09",
+"t": "equipment",
+"src": "ecos",
+"q": {
+"en": "On a boat under 26 feet with an engine cut-off switch, when must the operator wear the cut-off link?",
+"es": "En una embarcación de menos de 26 pies con interruptor de corte del motor, ¿cuándo debe el operador llevar puesto el cordón de corte?"
+},
+"o": {
+"en": [
+"When running on plane or above displacement speed",
+"Only at night",
+"Only with children aboard",
+"Never, it is optional"
+],
+"es": [
+"Al navegar planeando o por encima de la velocidad de desplazamiento",
+"Solo de noche",
+"Solo con niños a bordo",
+"Nunca, es opcional"
+]
+},
+"a": 0,
+"x": {
+"en": "46 U.S.C. 4312: an individual operating a covered recreational vessel (under 26 feet, able to develop 115 pounds or more of static thrust) uses the engine cut-off switch link while on plane or above displacement speed, unless the helm is in an enclosed cabin.",
+"es": "46 U.S.C. 4312: quien maneja una embarcación de recreo cubierta (menos de 26 pies y capaz de 115 libras o más de empuje estático) usa el cordón de corte al planear o superar la velocidad de desplazamiento, salvo que el timón esté en una cabina cerrada."
+}
+},
+{
+"id": "b01",
+"t": "law",
+"src": "cfr95",
+"q": {
+"en": "Under federal law, a recreational boat operator is under the influence at a blood alcohol concentration of:",
+"es": "Según la ley federal, el operador de una embarcación de recreo está bajo los efectos del alcohol con una concentración en sangre de:"
+},
+"o": {
+"en": [
+"0.08 percent or more",
+"0.15 percent or more",
+"0.20 percent or more",
+"Any amount for everyone"
+],
+"es": [
+"0,08 % o más",
+"0,15 % o más",
+"0,20 % o más",
+"Cualquier cantidad para todos"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 95.020: an individual operating a recreational vessel is under the influence with a BAC of .08 percent or more, or whenever the intoxicant visibly impairs their manner, speech or coordination. States set their own limits too, often lower for young operators.",
+"es": "33 CFR 95.020: quien maneja una embarcación de recreo está bajo los efectos del alcohol con un 0,08 % o más en sangre, o cuando el alcohol afecta visiblemente su conducta, habla o coordinación. Los estados fijan además sus propios límites, a menudo más bajos para los jóvenes."
+}
+},
+{
+"id": "b02",
+"t": "law",
+"src": "cfr173",
+"q": {
+"en": "A boating accident must be reported when:",
+"es": "Un accidente náutico debe notificarse cuando:"
+},
+"o": {
+"en": [
+"Someone dies, disappears, needs treatment beyond first aid, or damage reaches $2,000",
+"Only when someone dies",
+"Only when the boat sinks",
+"Only on federal waters"
+],
+"es": [
+"Alguien muere, desaparece, necesita atención más allá de primeros auxilios o los daños llegan a $2,000",
+"Solo cuando alguien muere",
+"Solo cuando la embarcación se hunde",
+"Solo en aguas federales"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 173.55: the operator reports an accident in which a person dies, is injured and needs medical treatment beyond first aid, or disappears, or in which damage totals $2,000 or more or a vessel is lost.",
+"es": "33 CFR 173.55: el operador notifica el accidente en que una persona muere, se lesiona y necesita tratamiento médico más allá de primeros auxilios, o desaparece, o en que los daños suman $2,000 o más o se pierde una embarcación."
+}
+},
+{
+"id": "b03",
+"t": "law",
+"src": "cfr173",
+"q": {
+"en": "If someone on board is injured and needs medical treatment beyond first aid, the accident report is due within:",
+"es": "Si alguien a bordo se lesiona y necesita tratamiento médico más allá de primeros auxilios, el informe debe presentarse en:"
+},
+"o": {
+"en": [
+"48 hours",
+"10 days",
+"30 days",
+"1 year"
+],
+"es": [
+"48 horas",
+"10 días",
+"30 días",
+"1 año"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 173.55(b): within 48 hours when a person dies within 24 hours, is injured beyond first aid or disappears; within 10 days in the other cases, such as damage only.",
+"es": "33 CFR 173.55(b): en 48 horas cuando una persona muere en las primeras 24 horas, se lesiona más allá de primeros auxilios o desaparece; en 10 días en los demás casos, como los daños materiales."
+}
+},
+{
+"id": "b04",
+"t": "law",
+"src": "cfr173",
+"q": {
+"en": "How must registration numbers be displayed on the hull?",
+"es": "¿Cómo deben mostrarse los números de registro en el casco?"
+},
+"o": {
+"en": [
+"On each side of the forward half, in plain block letters at least 3 inches high",
+"On the stern only, any size",
+"On the windshield",
+"Inside the boat"
+],
+"es": [
+"A cada lado de la mitad delantera, en letras de molde de al menos 3 pulgadas",
+"Solo en la popa, de cualquier tamaño",
+"En el parabrisas",
+"Dentro de la embarcación"
+]
+},
+"a": 0,
+"x": {
+"en": "33 CFR 173.27: the number is painted on or attached to each side of the forward half of the vessel, in plain vertical block characters at least 3 inches high, in a contrasting color, with a space or hyphen between the letter and number groups.",
+"es": "33 CFR 173.27: el número va pintado o fijado a cada lado de la mitad delantera, en caracteres de molde verticales de al menos 3 pulgadas, de color que contraste, con un espacio o guion entre los grupos de letras y números."
+}
+},
+{
+"id": "b05",
+"t": "law",
+"src": "usc2303",
+"q": {
+"en": "If you are involved in a boating accident, your first duty is to:",
+"es": "Si se ve envuelto en un accidente náutico, su primer deber es:"
+},
+"o": {
+"en": [
+"Give help to people in danger, as far as you can without serious risk",
+"Leave the area to call your insurer",
+"Take photos before anything else",
+"Wait for the police on shore"
+],
+"es": [
+"Ayudar a las personas en peligro, en la medida en que pueda sin riesgo grave",
+"Irse para llamar a su aseguradora",
+"Tomar fotos antes que nada",
+"Esperar a la policía en tierra"
+]
+},
+"a": 0,
+"x": {
+"en": "Federal law (46 U.S.C. 2303) and the Coast Guard rules on casualties require the operator of a vessel in an accident to render assistance to those affected, as far as possible without serious danger, and to give their name and address and the boat's identification.",
+"es": "La ley federal (46 U.S.C. 2303) y las reglas de la Guardia Costera exigen que el operador de una embarcación accidentada preste ayuda a los afectados, en lo posible sin peligro grave, y dé su nombre, dirección e identificación de la embarcación."
+}
+},
+{
+"id": "o01",
+"t": "safety",
+"src": "cfr175",
+"q": {
+"en": "Where is a life jacket most useful?",
+"es": "¿Dónde es más útil un chaleco salvavidas?"
+},
+"o": {
+"en": [
+"Worn, properly fastened",
+"Stowed in its original plastic bag",
+"Under a seat cushion locked away",
+"In the car"
+],
+"es": [
+"Puesto y bien abrochado",
+"Guardado en su bolsa de plástico original",
+"Bajo un asiento, bajo llave",
+"En el auto"
+]
+},
+"a": 0,
+"x": {
+"en": "The federal rule requires life jackets to be readily accessible (33 CFR 175.15), but a falling-overboard accident leaves no time to reach one: a fastened, well-fitted jacket is the one that works.",
+"es": "La regla federal exige que los chalecos sean de fácil acceso (33 CFR 175.15), pero una caída al agua no deja tiempo para buscarlo: el que funciona es el que va puesto, bien ajustado y abrochado."
+}
+},
+{
+"id": "o02",
+"t": "safety",
+"src": "cfr183",
+"q": {
+"en": "When fueling a boat with a gasoline engine, you should:",
+"es": "Al cargar combustible en una embarcación con motor de gasolina, debe:"
+},
+"o": {
+"en": [
+"Close hatches, keep passengers ashore, avoid spills, then ventilate before starting",
+"Keep the engine running to save time",
+"Fill the tank to overflowing",
+"Smoke only away from the pump"
+],
+"es": [
+"Cerrar escotillas, dejar a los pasajeros en tierra, evitar derrames y ventilar antes de arrancar",
+"Dejar el motor encendido para ganar tiempo",
+"Llenar el tanque hasta que rebose",
+"Fumar solo lejos del surtidor"
+]
+},
+"a": 0,
+"x": {
+"en": "Gasoline vapors are heavier than air and collect in the bilge, which is why 33 CFR 183.610 requires powered ventilation for inboard gasoline engines. Closing hatches while fueling and ventilating afterwards keeps the vapors out.",
+"es": "Los vapores de gasolina pesan más que el aire y se acumulan en la sentina; por eso 33 CFR 183.610 exige ventilación forzada en los motores interiores de gasolina. Cerrar escotillas al cargar y ventilar después impide que entren."
+}
+},
+{
+"id": "o03",
+"t": "safety",
+"src": "navrules",
+"q": {
+"en": "Who is responsible for the damage caused by your boat's wake?",
+"es": "¿Quién es responsable de los daños que causa la estela de su embarcación?"
+},
+"o": {
+"en": [
+"You, the operator",
+"The other boat",
+"The marina",
+"No one"
+],
+"es": [
+"Usted, el operador",
+"La otra embarcación",
+"La marina",
+"Nadie"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 2 of the Navigation Rules makes the operator answerable for any neglect of ordinary seamanship, and safe speed (Rule 6) includes the effect of your wake on other boats, docks and swimmers.",
+"es": "La Regla 2 de las Reglas de Navegación hace responsable al operador de toda negligencia en la buena práctica marinera, y la velocidad segura (Regla 6) incluye el efecto de su estela sobre otras embarcaciones, muelles y bañistas."
+}
+},
+{
+"id": "o04",
+"t": "safety",
+"src": "navrules",
+"q": {
+"en": "A boat engaged in fishing with nets or trawls, under the Navigation Rules:",
+"es": "Una embarcación que pesca con redes o arrastre, según las Reglas de Navegación:"
+},
+"o": {
+"en": [
+"Has priority over a powerboat underway, which must keep clear",
+"Must give way to every powerboat",
+"Must anchor before fishing",
+"Has no special status"
+],
+"es": [
+"Tiene preferencia sobre una lancha en marcha, que debe apartarse",
+"Debe ceder el paso a toda lancha",
+"Debe fondear antes de pescar",
+"No tiene ningún estatus especial"
+]
+},
+"a": 0,
+"x": {
+"en": "Rules 3 and 18: a vessel engaged in fishing uses nets, lines or trawls that restrict its maneuverability, and a power-driven vessel underway keeps out of its way. A boat trolling with lines that do not restrict it is not \"engaged in fishing\".",
+"es": "Reglas 3 y 18: una embarcación dedicada a la pesca usa redes, líneas o artes de arrastre que limitan su maniobra, y una embarcación de motor en marcha debe apartarse. Quien pesca al curricán sin esa limitación no cuenta como «dedicada a la pesca»."
+}
+},
+{
+"id": "o05",
+"t": "safety",
+"src": "navrules",
+"q": {
+"en": "A vessel at anchor at night, under 50 meters, shows:",
+"es": "Una embarcación fondeada de noche, de menos de 50 metros, muestra:"
+},
+"o": {
+"en": [
+"An all-round white light where it can best be seen",
+"Red and green sidelights",
+"A flashing blue light",
+"No light"
+],
+"es": [
+"Una luz blanca visible en todo el horizonte, donde mejor se vea",
+"Luces de costado roja y verde",
+"Una luz azul intermitente",
+"Ninguna luz"
+]
+},
+"a": 0,
+"x": {
+"en": "Rule 30: a vessel at anchor of less than 50 meters may exhibit an all-round white light where it can best be seen. A boat under 20 meters anchored in a special anchorage area designated by the Coast Guard need not show it.",
+"es": "Regla 30: una embarcación fondeada de menos de 50 metros puede mostrar una luz blanca visible en todo el horizonte donde mejor se vea. Una de menos de 20 metros fondeada en una zona especial designada por la Guardia Costera no está obligada a mostrarla."
+}
+}
+]

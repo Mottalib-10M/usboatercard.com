@@ -1,0 +1,87 @@
+{
+ "code": "GA",
+ "name": "Georgia",
+ "es": "Georgia",
+ "agency": "Georgia Department of Natural Resources, Law Enforcement Division",
+ "agencyUrl": "https://gadnrle.org/boat-operation",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1998-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1998 must have passed a DNR-approved boater education course to run any motorized vessel.",
+  "textEs": "Quien nació el 1 de enero de 1998 o después debe haber aprobado un curso de educación náutica aprobado por el DNR para manejar cualquier embarcación con motor.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 16,
+  "pwc": 16,
+  "note": "Under 12: only boats under 16 ft, non-motorized or 30 hp or less, with a competent adult. 12-15: boats under 16 ft incl. PWC with the course or a competent adult; nothing over 16 ft."
+ },
+ "exemptions": [
+  "US Coast Guard master license.",
+  "Operating on a private lake or pond.",
+  "Nonresident with proof of a NASBLA-approved course or equivalency exam from another state."
+ ],
+ "card": {
+  "nameEn": "Boater education card",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors with proof of a NASBLA-approved course from another state are exempt.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://georgiawildlife.com/mandatory-boater-education",
+   "publisher": "Georgia DNR Wildlife Resources Division",
+   "quote": "As of July 1, 2014, all persons born on or after January 1, 1998 that operate any motorized vessel on the waters of the state must have completed a boat education course approved by the department prior to such operation.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://georgiawildlife.com/mandatory-boater-education",
+   "publisher": "Georgia DNR",
+   "quote": "a non-resident who has in his or her possession proof that he or she has completed a NASBLA approved boater education course or equivalency examination from another state.",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://gadnrle.org/boat-operation",
+   "publisher": "Georgia DNR Law Enforcement Division",
+   "quote": "May legally operate a vessel under 16 feet in length which is either non-motorized or powered by a motor of 30 horsepower or less only if they are accompanied by a competent adult.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://georgiawildlife.com/mandatory-boater-education",
+   "publisher": "Georgia Department of Natural Resources",
+   "quote": "A person is exempt if he or she is: a person licensed by the U.S. Coast Guard as a master of a vessel; a person operating on a private lake or pond;",
+   "supports": [
+    "exemptions"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity"
+ ]
+}

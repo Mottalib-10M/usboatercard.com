@@ -1,0 +1,77 @@
+{
+ "code": "DE",
+ "name": "Delaware",
+ "es": "Delaware",
+ "agency": "Delaware DNREC, Division of Fish and Wildlife",
+ "agencyUrl": "https://dnrec.delaware.gov/fish-wildlife/boating/safety/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1978-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1978 must pass a boating safety course before running any motorized boat, PWC included.",
+  "textEs": "Quien nació el 1 de enero de 1978 o después debe aprobar un curso de seguridad náutica antes de manejar cualquier embarcación con motor, incluidas las motos acuáticas.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 16,
+  "note": "PWC from 14 with the course and an adult on board at 14-15; alone from 16 with the certificate."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Delaware Boating Safety Certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://dnrec.delaware.gov/fish-wildlife/boating/safety/",
+   "publisher": "Delaware DNREC",
+   "quote": "Persons born on or after January 1, 1978 must successfully complete a boating safety course before operating a motorized boat, including personal watercraft, on Delaware waters.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dnrec.delaware.gov/fish-wildlife/boating/safety/",
+   "publisher": "Delaware DNREC",
+   "quote": "Personal watercraft operators who are 14 and 15 years old are required to have an adult on board. Those who are 16 years of age, who hold a boating safety education certificate, can operate without adult supervision.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dnrec.delaware.gov/fish-wildlife/boating/safety/",
+   "publisher": "Delaware DNREC",
+   "quote": "Several online courses also meet the requirement.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "nonResident",
+  "minAge.motorboat"
+ ]
+}

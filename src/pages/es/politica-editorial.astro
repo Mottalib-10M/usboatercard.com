@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'es';
+---
+<PageLayout title={`Política editorial de ${SITE_NAMES[lang]}: fuentes`} description="Qué páginas estatales oficiales y reglas federales usa Tarjeta Náutica por Estado, qué fuentes rechaza, cómo se escriben las preguntas, cada cuánto se releen las reglas y cómo se corrige." lang={lang} noindex={true} breadcrumbs={[{ label: 'Política editorial' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Política editorial y de correcciones</h1>
+    <p>Estas páginas sirven para decidir si uno puede salir legalmente con una embarcación. Una fecha de corte desactualizada puede acabar en una multa en el agua, así que cada regla estatal remite a la página oficial donde se leyó.</p>
+    <h2>Responsable</h2><p>{AUTHOR_NAME}, en <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Lo que leemos</h2>
+    <ul>
+      <li>la página de educación náutica de cada agencia estatal y del Distrito de Columbia;</li>
+      <li>el manual náutico, la ley o la regla administrativa del estado cuando la página de la agencia está incompleta;</li>
+      <li>las Reglas de Navegación federales y las partes náuticas del 33 CFR y del 46 CFR, para las preguntas de práctica;</li>
+      <li>la lista de la BoatUS Foundation de los estados que aprueban su curso gratuito, para ese único dato.</li>
+    </ul>
+    <h2>Fuentes que rechazamos</h2><p>Proveedores de cursos, aseguradoras, bufetes, concesionarios, artículos de prensa y otras guías nunca aportan una cifra aquí. Una regla que no encontramos en una página oficial aparece como «no confirmada» o «aún no verificada», nunca completada de memoria ni con otro sitio.</p>
+    <h2>Cómo se escriben las preguntas</h2><p>Escribimos cada pregunta a partir de un texto federal o de un dato estatal verificado. Nunca copiamos una pregunta de un examen de curso, del examen de un proveedor, de una aplicación o de un libro, y no las presentamos como oficiales.</p>
+    <h2>Ciclo de revisión</h2><p>Un programa vuelve a leer cada página oficial y señala las citas que cambiaron; las sesiones legislativas y las etapas del 1 de julio se revisan cada año. Cada página muestra la fecha de la última revisión.</p>
+    <h2>Correcciones</h2>
+    <ol><li>Volvemos a abrir la página oficial.</li><li>Corregimos el registro y añadimos una prueba para el caso.</li><li>Las páginas se regeneran con la nueva fecha.</li></ol>
+    <h2>Independencia</h2><p>Ningún proveedor de cursos, aseguradora ni agencia paga o revisa lo que se publica aquí, y el sitio no tiene enlaces de afiliación. Véase también la <a href={route('method', lang)}>página de método</a>. Versión: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

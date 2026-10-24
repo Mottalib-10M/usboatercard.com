@@ -1,0 +1,28 @@
+---
+/** Renders one tool with its page defaults: the card check (`check`), the practice test (`quiz`) or a mini-spec (`mini:<spec>`). */
+import BoaterCheck from './calc/BoaterCheck';
+import BoatQuiz from './calc/BoatQuiz';
+import MiniSim from './calc/MiniSim';
+import { route, hasRoute, type Locale } from '../i18n/routes';
+import { getSpec, stateIdx } from '../lib/mini-specs';
+import { STATES } from '../lib/engine/states';
+import { statePageId } from '../lib/guides';
+import type { ToolDef } from '../lib/guide-types';
+interface Props { tool: ToolDef; lang: Locale; primary?: boolean; idPrefix?: string; state?: string }
+const { tool, lang, primary = false, idPrefix, state } = Astro.props;
+const props = { ...(state ? { state } : {}), ...(tool.props ?? {}) } as Record<string, any>;
+const kind = tool.kind;
+const mini = kind.startsWith('mini:') ? kind.slice(5) : null;
+const spec = mini ? getSpec(mini, lang) : null;
+const href = spec?.ctaPage && hasRoute(spec.ctaPage, lang) ? route(spec.ctaPage, lang) : undefined;
+const numDefaults: Record<string, number> = {};
+for (const [k, v] of Object.entries(props)) {
+  if (typeof v === 'number') numDefaults[k] = v;
+  else if ((k === 'state' || k === 'b') && typeof v === 'string') numDefaults[k] = stateIdx(v);
+}
+const statePages: Record<string, string> = {};
+for (const s of STATES) if (hasRoute(statePageId(s.code), lang)) statePages[s.code] = route(statePageId(s.code), lang);
+---
+{kind === 'check' && <BoaterCheck client:load lang={lang} state={props.state ?? 'FL'} vessel={props.vessel ?? 'motorboat'} idPrefix={idPrefix ?? 'c'} />}
+{kind === 'quiz' && <BoatQuiz client:load lang={lang} state={props.state ?? 'FL'} type={props.type ?? 'full'} statePages={statePages} idPrefix={idPrefix ?? 'q'} />}
+{mini && <MiniSim client:load kind={mini} lang={lang} href={href} defaults={numDefaults} primary={primary} idPrefix={idPrefix ?? (primary ? 'p' : 'm')} />}

@@ -1,0 +1,21 @@
+{
+ "_lisezmoi": "Federal and general sources of the site. State figures and their official URLs live in src/data/states.json (built by scripts/update-data.mjs from data/raw/states/*.json). Federal facts behind the practice questions were read on the eCFR and GovInfo on retrieved_at.",
+ "year": 2026,
+ "retrieved_at": "2026-10-24",
+ "valid_from": "2026-01-01",
+ "valid_to": "2026-12-31",
+ "practiceTarget": 0.8,
+ "sources": {
+  "navrules": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-E/part-83", "label": { "en": "eCFR, 33 CFR part 83: Inland Navigation Rules", "es": "eCFR, 33 CFR parte 83: Reglas de Navegación Interiores" } },
+  "navcen": { "url": "https://www.navcen.uscg.gov/navigation-rules-amalgamated", "label": { "en": "US Coast Guard Navigation Center: International and Inland Navigation Rules", "es": "Centro de Navegación de la Guardia Costera: Reglas de Navegación Internacionales e Interiores" } },
+  "cfr62": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-C/part-62", "label": { "en": "eCFR, 33 CFR part 62: United States Aids to Navigation System", "es": "eCFR, 33 CFR parte 62: sistema de ayudas a la navegación de EE. UU." } },
+  "cfr175": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-S/part-175", "label": { "en": "eCFR, 33 CFR part 175: equipment requirements (life jackets, visual distress signals)", "es": "eCFR, 33 CFR parte 175: equipo obligatorio (chalecos, señales de socorro)" } },
+  "cfr173": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-S/part-173", "label": { "en": "eCFR, 33 CFR part 173: vessel numbering and casualty reporting", "es": "eCFR, 33 CFR parte 173: numeración y notificación de accidentes" } },
+  "cfr183": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-S/part-183", "label": { "en": "eCFR, 33 CFR part 183: boats and associated equipment (capacity, ventilation)", "es": "eCFR, 33 CFR parte 183: embarcaciones y equipo (capacidad, ventilación)" } },
+  "cfr95": { "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-C/part-95", "label": { "en": "eCFR, 33 CFR part 95: operating a vessel while intoxicated", "es": "eCFR, 33 CFR parte 95: manejar una embarcación bajo los efectos del alcohol" } },
+  "cfr25": { "url": "https://www.ecfr.gov/current/title-46/chapter-I/subchapter-C/part-25", "label": { "en": "eCFR, 46 CFR part 25: fire extinguishers on motorboats", "es": "eCFR, 46 CFR parte 25: extintores en embarcaciones de motor" } },
+  "ecos": { "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title46/html/USCODE-2023-title46-subtitleII-partB-chap43-sec4312.htm", "label": { "en": "46 U.S.C. 4312: engine cut-off switches (GovInfo)", "es": "46 U.S.C. 4312: interruptores de corte del motor (GovInfo)" } },
+  "usc2303": { "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title46/html/USCODE-2023-title46-subtitleII-partA-chap23-sec2303.htm", "label": { "en": "46 U.S.C. 2303: duties after a marine casualty (GovInfo)", "es": "46 U.S.C. 2303: deberes tras un accidente náutico (GovInfo)" } },
+  "boatus": { "url": "https://boatus.org/free-courses/free-boating-safety-course/", "label": { "en": "BoatUS Foundation: free boating safety course, approval status by state", "es": "BoatUS Foundation: curso gratuito de seguridad náutica, aprobación por estado" } }
+ }
+}

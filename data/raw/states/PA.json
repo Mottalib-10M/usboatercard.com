@@ -1,0 +1,157 @@
+{
+ "code": "PA",
+ "name": "Pennsylvania",
+ "es": "Pensilvania",
+ "agency": "Pennsylvania Fish and Boat Commission",
+ "agencyUrl": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": "1982-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 25,
+  "hpNote": "motor greater than 25 hp (PWC: every operator, any age)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1982 needs a Boating Safety Education Certificate to run a boat with a motor over 25 hp, and every PWC operator needs one whatever their age.",
+  "textEs": "Quien nació el 1 de enero de 1982 o después necesita el certificado de educación en seguridad náutica para manejar una embarcación con motor de más de 25 hp, y todo operador de moto acuática lo necesita sin importar su edad.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false,
+  "pwcBornOnOrAfter": "1800-01-01"
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "No one 11 or younger may run a boat over 25 hp or a PWC. PWC operators 12-15 may not carry passengers 15 or younger or rent a PWC; rented PWCs need an operator 16+."
+ },
+ "exemptions": [
+  "Boats with motors of 25 hp or less (not PWC).",
+  "People born before Jan. 1, 1982 (motorboats only; PWC operators always need the certificate)."
+ ],
+ "card": {
+  "nameEn": "Boating Safety Education Certificate",
+  "stateFee": 10,
+  "feeNote": "Permanent certificate fee $10 (included in online course fees); course fees may be extra. Temporary certificate valid 60 days. Duplicates via HuntFish.PA.gov.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors need a certificate from a NASBLA-approved course; Pennsylvania residents need a PFBC-issued certificate.",
+ "rental": "PWCs may not be rented to anyone 15 or younger; rental businesses must give customers a safety orientation.",
+ "pwcExtra": "No PWC operation at 11 or younger; ages 12-15 cannot carry passengers 15 or younger; no PWC between sunset and sunrise.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "For persons born on or after January 1, 1982, to operate boats powered by motors greater than 25 horsepower.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "To operate a personal watercraft, like a jet ski.",
+   "supports": [
+    "rule",
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/fishandboat/documents/boating/regulations/boatinghandbook.pdf",
+   "publisher": "Pennsylvania Fish and Boat Commission, 2026 Pennsylvania Boating Handbook (PDF)",
+   "quote": "All PWC (personal watercraft) operators, regardless of age, must have a Boating Safety Education Certificate.",
+   "supports": [
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/fishandboat/documents/boating/regulations/boatinghandbook.pdf",
+   "publisher": "Pennsylvania Fish and Boat Commission, 2026 Pennsylvania Boating Handbook (PDF)",
+   "quote": "Persons 11 years of age or younger may NOT operate.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/fishandboat/documents/boating/regulations/boatinghandbook.pdf",
+   "publisher": "Pennsylvania Fish and Boat Commission, 2026 Pennsylvania Boating Handbook (PDF)",
+   "quote": "For anyone 12 through 15 years of age to operate a PWC with any passengers on board 15 years of age or younger.",
+   "supports": [
+    "minAge.pwc",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/fishandboat/documents/boating/regulations/boatinghandbook.pdf",
+   "publisher": "Pennsylvania Fish and Boat Commission, 2026 Pennsylvania Boating Handbook (PDF)",
+   "quote": "To rent a PWC to anyone 15 years of age or younger. No one less than 16 years of age may operate a rented PWC.",
+   "supports": [
+    "rental",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/fishandboat/documents/boating/regulations/boatinghandbook.pdf",
+   "publisher": "Pennsylvania Fish and Boat Commission, 2026 Pennsylvania Boating Handbook (PDF)",
+   "quote": "To operate a PWC from sunset to sunrise.",
+   "supports": [
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "In some cases, there are fees for these courses in addition to the permanent Boating Safety Education Certificate fee of $10.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "Online course fees include a Boating Safety Education Certificate.",
+   "supports": [
+    "card.feeNote",
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "are issued a Boating Safety Education Certificate good for a lifetime.",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "Temporary Pennsylvania Fish and Boat Commission (PFBC) Boating Safety Education Certificates are valid for only 60 days from the date of issue.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.pa.gov/services/fishandboat/apply-for-bsec-and-safety-courses",
+   "publisher": "Pennsylvania Fish and Boat Commission",
+   "quote": "Out of state boaters must have a certificate issued for a course approved by the National Association of State Boating Law Administrators",
+   "supports": [
+    "nonResident"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.replacementFee",
+  "penalty",
+  "statute"
+ ]
+}

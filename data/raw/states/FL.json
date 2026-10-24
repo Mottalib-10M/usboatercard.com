@@ -1,0 +1,82 @@
+{
+ "code": "FL",
+ "name": "Florida",
+ "es": "Florida",
+ "agency": "Florida Fish and Wildlife Conservation Commission (FWC)",
+ "agencyUrl": "https://myfwc.com/boating/safety-education/faqs/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1988-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "10 hp or more",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1988 needs an approved course and an FWC Boating Safety Education ID Card to run a motorboat of 10 hp or more.",
+  "textEs": "Quien nació el 1 de enero de 1988 o después necesita un curso aprobado y la tarjeta Boating Safety Education ID de la FWC para manejar una lancha de 10 hp o más.",
+  "hpInclusive": true,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Accompanied on board by a card holder 18+ (or an exempt person) responsible for the boat.",
+  "Nonresident with proof of a NASBLA-approved course and a photo ID.",
+  "A course completion certificate plus photo ID works for 90 days.",
+  "A 90-day temporary certificate exam is sold by FWC-authorized vendors (Florida only)."
+ ],
+ "card": {
+  "nameEn": "Boating Safety Education Identification Card",
+  "stateFee": null,
+  "feeNote": "Approved course prices are set by providers; FWC lists free and paid options.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors born on or after Jan. 1, 1988 need proof of a NASBLA-approved course (or a temporary certificate) and photo ID.",
+ "rental": "Visitors can rent with a 90-day temporary certificate after an exam at an FWC-authorized vendor.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+   "publisher": "Florida FWC (archived copy of 2026-06-06; live page blocked by Cloudflare for scripts)",
+   "quote": "To operate a motorboat of ten (10) horsepower or greater requires anyone who was born on or after Jan. 1, 1988 , to successfully complete an approved boating safety course and obtain a Boating Safety Education Identification Card issued by the FWC.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "http://web.archive.org/web/20260606224515/https://myfwc.com/boating/safety-education/faqs/",
+   "publisher": "Florida FWC",
+   "quote": "A nonresident who has in his or her possession proof that he or she has completed a NASBLA-approved boater safety course or equivalency examination from another state AND a photographic I.D.",
+   "supports": [
+    "nonResident",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "http://web.archive.org/web/2026/https://myfwc.com/boating/safety-education/temporary-certificate/",
+   "publisher": "Florida FWC",
+   "quote": "The temporary certificate cannot be submitted for issuance of a Boating Safety Education ID card that is valid for life.",
+   "supports": [
+    "card.validity",
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "minAge"
+ ]
+}

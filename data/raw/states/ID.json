@@ -1,0 +1,113 @@
+{
+ "code": "ID",
+ "name": "Idaho",
+ "es": "Idaho",
+ "agency": "Idaho Department of Parks and Recreation",
+ "agencyUrl": "https://parksandrecreation.idaho.gov/park-activity/boating/",
+ "required": false,
+ "rule": {
+  "kind": "none",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": false,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Idaho has no general boater education requirement. Education is only mandatory for PWC renters (given by the rental business) and for operators convicted of BUI or repeat boating violations.",
+  "textEs": "Idaho no tiene un requisito general de educación náutica. Solo es obligatoria para quien alquila una moto acuática (la imparte el negocio de alquiler) y para quienes son condenados por manejar bajo los efectos del alcohol o por infracciones náuticas repetidas.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "No statewide minimum operating age; some counties (e.g. Benewah, Bonner, Kootenai) set local age rules."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boater education certificate (voluntary)",
+  "stateFee": 0,
+  "feeNote": "IDPR offers free in-person classes and a free home-study guide and test; approved online vendors may charge.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": "PWC rental businesses must educate every renter who will operate the PWC; the operator carries a verification wallet card.",
+ "pwcExtra": null,
+ "penalty": "A course is ordered after a BUI conviction or repeat boating-law violations.",
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+   "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+   "quote": "Although there is no statewide law specifying a minimum age to operate a vessel, all operators must be competent and are held responsible for knowing the navigation rules.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+   "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+   "quote": "Idaho law requires boater education under these conditions.",
+   "supports": [
+    "required",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+   "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+   "quote": "PWC rental businesses must provide education to each person who will ride and operate the PWC. The operator of the PWC must carry a verification wallet card.",
+   "supports": [
+    "rental",
+    "required"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+   "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+   "quote": "boat operators are required to pass a boating course if they are convicted of operating under the influence of drugs or alcohol.",
+   "supports": [
+    "rule",
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/idaho-handbook-entire.pdf",
+   "publisher": "Idaho Department of Parks and Recreation, Handbook of Idaho Boating Laws and Responsibilities (2021 ed., Wayback Machine copy of 2026-01-25)",
+   "quote": "Boat operators who are repeat offenders of any boating law or rule also are required to pass a boating course.",
+   "supports": [
+    "rule",
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/park-activity/boating/",
+   "publisher": "Idaho Department of Parks and Recreation, Boating page (Wayback Machine copy of 2026-10-17)",
+   "quote": "Home Study Guide . Review materials (in the guide) and take a test (in the same guide), all in the comfort of your own home at your own pace (no cost).",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://parksandrecreation.idaho.gov/park-activity/boating/",
+   "publisher": "Idaho Department of Parks and Recreation, Boating page (Wayback Machine copy of 2026-10-17)",
+   "quote": "Online Education . The following vendors are   approved for the state of Idaho (fees may apply).",
+   "supports": [
+    "card.onlineAllowed",
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "statute",
+  "nonResident"
+ ]
+}

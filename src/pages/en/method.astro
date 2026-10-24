@@ -1,0 +1,44 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { helpers } from '../../lib/helpers';
+const lang = 'en';
+const h = helpers(lang);
+const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
+const unv = h.names(h.UNVERIFIED);
+---
+<PageLayout title="Boater Card Method: How Each State Rule Is Checked" description="How US Boater Card reads each state's boater education rule on its official page, applies it to a birth date, a boat and a day, and dates every fact it shows." lang={lang} jsonLd={[articleSchema({ title: 'How each state rule is checked', description: 'Method of US Boater Card', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">How each state rule is checked</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Every page and every tool reads one state file, built from one record per jurisdiction. No cut-off date, horsepower or fee is typed into a page. The file was last built on {displayDate(h.META.built, 'en-US')}; it holds {h.counts.verified} verified jurisdictions out of {h.counts.states}, backed by {h.num(h.META.sources)} quoted passages from official pages.</p>
+    <h2>1. What we read</h2>
+    <p>For each state and DC: the boating education page of the state agency (fish and wildlife, natural resources, parks or the state police, depending on the state), its boating handbook when it publishes one, and the statute or administrative rule when the agency page is unclear. Each value is stored with the address of the page and the exact sentence it was read in, so anyone can check it. Course vendors, insurers, law firms, news articles and other guide sites are never a source, however well they rank.</p>
+    <h2>2. What is recorded</h2>
+    <ul>
+      <li>whether a general education requirement exists, and whom it covers: everyone, people born on or after a date, or an age band;</li>
+      <li>the power threshold (and whether "10 hp" means more than 10 or 10 and more), personal watercraft and sailboats;</li>
+      <li>phase-in schedules, with the date each stage starts;</li>
+      <li>the minimum age to operate alone, the exemptions, the rules for visitors and rentals;</li>
+      <li>the name of the credential, the fee the state itself charges, its validity, and whether an online course or a proctored exam is allowed or required.</li>
+    </ul>
+    <p>A value the official pages do not state stays empty and the site says "not confirmed". {unv.length ? `${unv.length} jurisdictions are not verified yet (${h.list(unv)}): the check answers "not verified yet" for them and points to the agency.` : 'All 51 jurisdictions are verified.'}</p>
+    <h2>3. The free course</h2>
+    <p>Whether the free online course of the BoatUS Foundation is approved in a state is read on the Foundation's <Fragment set:html={s('boatus', 'state list')} />, which marks each state approved, not approved or not available. We take no commission and the course page is linked as the free route only where it is approved.</p>
+    <h2>4. How the check answers</h2>
+    <p>The tool takes a state, a date of birth, a boat type, an engine power and the day of the outing. It first finds the rule in force that day: for a phase-in, the last stage that has started. Then it tests, in this order: whether the boat is covered (power above the threshold, PWC, sail length), whether the birth date is on or after the cut-off, whether an age band applies. The answer comes with its reason. Age is counted in whole years on the day of the outing, the birthday counting as the day itself. The cheapest route is the free course where it is approved plus the state fee; where it is not, the price of a paid course is left to the provider and not guessed.</p>
+    <h2>5. The practice test</h2>
+    <p>The {h.counts.questions} general questions were written by us, each from a federal text in the public domain: the <Fragment set:html={s('navrules', 'Inland Navigation Rules')} />, the <Fragment set:html={s('cfr62', 'aids to navigation system')} />, <Fragment set:html={s('cfr175', '33 CFR part 175')} /> on life jackets and distress signals, <Fragment set:html={s('cfr173', '33 CFR part 173')} /> on numbers and accident reports, <Fragment set:html={s('cfr183', '33 CFR part 183')} /> on capacity and ventilation, <Fragment set:html={s('cfr95', '33 CFR part 95')} /> on alcohol, <Fragment set:html={s('cfr25', '46 CFR part 25')} /> on extinguishers and <Fragment set:html={s('ecos', '46 U.S.C. 4312')} /> on cut-off switches. {h.counts.stateQ} more are generated from the verified state records: cut-off date, power threshold, minimum age, free course, state fee. A test has 20 questions and marks a pass at 80 %, a practice target: each approved course sets its own exam and pass mark.</p>
+    <h2>6. Checks on every build</h2>
+    <p>Every record must cite at least one official page and carry its reading date; the cut-off of a set of known cases (Texas, Florida, California, Minnesota) is tested against the rule; every question has four distinct options and an explanation in both languages. A script re-reads each official page and flags any quote that is no longer found, so a rule change is read again by a person.</p>
+    <h2>7. What the site does not do</h2>
+    <ul>
+      <li>It does not issue, replace or look up a card, and it is not a course.</li>
+      <li>It does not cover commercial licenses (Coast Guard captain's credentials), registration fees or titling.</li>
+      <li>It gives general information, not legal advice; the state agency has the last word.</li>
+    </ul>
+    <p>Method version: {LAST_UPDATED}. A rule that looks wrong: <a href={route('contact', lang)}>contact</a>.</p>
+  </div>
+</PageLayout>

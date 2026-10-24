@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PAGES } from '../../lib/guides';
+import { helpers } from '../../lib/helpers';
+const lang = 'es';
+const h = helpers(lang);
+const n = PAGES.filter((p) => p.es).length + 1;
+---
+<PageLayout title="Quiénes somos: el editor de Tarjeta Náutica por Estado" description="Quién publica Tarjeta Náutica por Estado, por qué la regla de cada estado se lee en su página oficial y cómo se escriben las preguntas y las herramientas." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Quiénes somos', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Quiénes somos' }]}>
+  <header class="mb-6"><p class="kicker">Quiénes somos</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Quién lee las reglas estatales de Tarjeta Náutica por Estado</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Tarjeta Náutica por Estado es una publicación de Radif Partners, una empresa que crea herramientas gratuitas a partir de datos públicos. Esta es para quien va a salir con una lancha, una moto acuática o una embarcación alquilada a un lago o a la costa: nuevos propietarios, padres de adolescentes que quieren manejar la lancha familiar, visitantes de otro estado y personas que aprendieron a navegar hace décadas y se preguntan si la ley ya las alcanzó.</p>
+    <h2>Por qué existe este sitio</h2>
+    <p>La respuesta a «¿necesito licencia de navegación?» depende de cuatro datos a la vez: el estado, el año de nacimiento, el motor y, cada vez más, la fecha. California extendió su tarjeta a todas las edades en 2025, Minnesota adelanta su fecha de corte cada julio hasta 2028, y varios estados le dan otro nombre al documento. Las páginas que lo explican suelen tener años, y muchas venden un curso sin decir que en su estado existe uno gratuito y aprobado.</p>
+    <p>Por eso este sitio hace una sola cosa: aplica la regla de su estado a su fecha de nacimiento, su embarcación y el día de su salida, y le da la forma legal más barata de cumplirla, con la página oficial y la fecha en que la leímos junto a cada respuesta.</p>
+    <h2>De dónde salen las reglas</h2>
+    <p>Para cada uno de los 50 estados y el Distrito de Columbia leímos la página de educación náutica de la agencia, su manual o la ley, y guardamos la frase exacta de la que sale cada dato. Hasta ahora hay {h.counts.verified} jurisdicciones confirmadas; un estado que no pudimos confirmar en una página oficial aparece como «aún no verificado», nunca completado con otro sitio. Si se acepta el curso gratuito de la BoatUS Foundation sale de la lista de estados de la propia fundación. La <a href={route('method', lang)}>página de método</a> da los detalles.</p>
+    <h2>Las preguntas de práctica</h2>
+    <p>Escribimos nosotros mismos las {h.counts.questions} preguntas generales a partir de textos federales de dominio público: las Reglas de Navegación Interiores (33 CFR parte 83), el sistema de ayudas a la navegación (33 CFR parte 62), las reglas de equipo, numeración y accidentes (33 CFR partes 173, 175 y 183), la regla de extintores (46 CFR parte 25) y la ley del interruptor de corte del motor. Las {h.counts.stateQ} preguntas estatales se generan a partir de los registros verificados. Ninguna sale de un examen de curso, de un proveedor o de un libro.</p>
+    <h2>Lo que no somos</h2>
+    <p>No somos una agencia estatal, ni la Guardia Costera, ni NASBLA, ni un proveedor de cursos. No podemos emitir una tarjeta, reponer una perdida ni consultar un registro, y no usamos ningún sello ni logotipo oficial.</p>
+    <h2>Cómo se financia el sitio</h2>
+    <p>Es gratuito y no pide cuenta ni correo. No vendemos cursos, seguros ni embarcaciones, no cobramos comisiones y no enlazamos a ningún proveedor que nos pague. Si algún día hay publicidad, nunca irá por encima de la comprobación, y no podrá usar lo que usted escribe porque nunca sale de su navegador.</p>
+    <h2>Avísenos si algo está mal</h2>
+    <p>Escriba a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> con el estado y la regla. La <a href={route('editorial', lang)}>política editorial</a> explica cómo se hace una corrección. El sitio tiene {n} páginas en español.</p>
+    <p class="text-sm text-navy-600">Reglas estatales revisadas por última vez el <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'es-US')}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,22 @@
+name: Re-check official state pages
+on:
+  schedule:
+    - cron: '0 6 5 * *'   # 5th of each month, 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Look for each stored quote on its official page and refresh the BoatUS status
+        id: run
+        run: node scripts/update-data.mjs > drift.txt 2>&1 || echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Open an issue when a state rule may have changed
+        if: steps.run.outputs.changed == '1'
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh issue create --title "Règle d'État à relire ($(date +%Y-%m))" --body-file drift.txt

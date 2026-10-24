@@ -1,0 +1,101 @@
+{
+ "code": "CT",
+ "name": "Connecticut",
+ "es": "Connecticut",
+ "agency": "Connecticut Department of Energy and Environmental Protection (DEEP)",
+ "agencyUrl": "https://portal.ct.gov/DEEP/Boating/FAQs/FAQs-Certification",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Connecticut residents (and owners of property or boats kept in the state, or anyone boating more than 60 days a year) need a Safe Boating Certificate for any registered boat, and a Certificate of Personal Watercraft Operation for a PWC.",
+  "textEs": "Los residentes de Connecticut (y quienes tienen propiedad o barco en el estado, o navegan más de 60 días al año) necesitan el Safe Boating Certificate para cualquier barco registrado, y el Certificate of Personal Watercraft Operation para una moto acuática.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 16,
+  "note": "Under 16 may run a boat other than a PWC uncertified only under direct supervision of a person 18+ certified for at least two years; PWC under 16 only with such a person on board."
+ },
+ "exemptions": [
+  "US Coast Guard master, mate or pilot license (not valid for PWC or towed sports)."
+ ],
+ "card": {
+  "nameEn": "Safe Boating Certificate (SBC) / Certificate of Personal Watercraft Operation (CPWO)",
+  "stateFee": 50,
+  "feeNote": "One-time $50 certificate fee; the DEEP equivalency exam costs $75; a 3-month temporary certificate costs $50; duplicates can be printed free.",
+  "replacementFee": 0,
+  "validity": "lifetime",
+  "inPersonExamRequired": true,
+  "onlineAllowed": false
+ },
+ "nonResident": "Visitors need the certificate if their boat must display a Connecticut decal or they boat more than 60 days a year in the state.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/Certification/How-to-get-a-certificate-to-operate",
+   "publisher": "Connecticut DEEP",
+   "quote": "Currently there is a onetime fee of $50 for a boating certificate.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/Certification/How-to-get-a-certificate-to-operate",
+   "publisher": "Connecticut DEEP",
+   "quote": "The examination fee is $75.00. Testing is by appointment only.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/FAQs/FAQs-Certification",
+   "publisher": "Connecticut DEEP",
+   "quote": "No, asynchronous courses are not approved.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/FAQs/FAQs-Certification",
+   "publisher": "Connecticut DEEP",
+   "quote": "If you are a Connecticut resident operating a registered boat of any kind you must possess a Safe Boating Certificate or Certificate of Personal Watercraft Operation.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/FAQs/FAQs-Certification",
+   "publisher": "Connecticut DEEP",
+   "quote": "By law, any person under the age of 16 may operate a vessel (other than a personal watercraft) without being certified if under the direct supervision of a person 18 or older, who has had their Safe Boating Certificate (SBC) or Certificate of Personal Watercraft Operation (CPWO) for at least two years.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://portal.ct.gov/DEEP/Boating/FAQs/FAQs-Certification",
+   "publisher": "Connecticut DEEP",
+   "quote": "You operate your vessel on CT waters for more than 60 days in a calendar year",
+   "supports": [
+    "nonResident"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity (lifetime implied by \"onetime fee\")",
+  "card.replacementFee (duplicates printed free online, per DEEP search result, not re-read)"
+ ]
+}

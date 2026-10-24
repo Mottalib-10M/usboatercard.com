@@ -1,0 +1,121 @@
+{
+ "code": "CA",
+ "name": "California",
+ "es": "California",
+ "agency": "California State Parks, Division of Boating and Waterways",
+ "agencyUrl": "https://californiaboatercard.com/faqs-2/",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Phased in by age from 2018; since Jan. 1, 2025 it covers all ages.",
+  "textEn": "Since Jan. 1, 2025 every operator of a motorized recreational vessel, whatever the age, must carry a California Boater Card.",
+  "textEs": "Desde el 1 de enero de 2025 todo operador de una embarcación recreativa con motor, de cualquier edad, debe llevar la California Boater Card.",
+  "hpInclusive": false,
+  "phases": [
+   {
+    "from": "2018-01-01",
+    "ageMax": 20
+   },
+   {
+    "from": "2019-01-01",
+    "ageMax": 25
+   },
+   {
+    "from": "2020-01-01",
+    "ageMax": 35
+   },
+   {
+    "from": "2021-01-01",
+    "ageMax": 40
+   },
+   {
+    "from": "2022-01-01",
+    "ageMax": 45
+   },
+   {
+    "from": "2023-01-01",
+    "ageMax": 50
+   },
+   {
+    "from": "2024-01-01",
+    "ageMax": 60
+   },
+   {
+    "from": "2025-01-01",
+    "ageMax": null
+   }
+  ],
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 16,
+  "pwc": null,
+  "note": "Under 16 may not run a motor over 15 hp (sailboats up to 30 ft excepted); ages 12-15 may with an adult 18+ on board."
+ },
+ "exemptions": [
+  "Operating a rental vessel.",
+  "Under the direct supervision of an adult 18+ who holds a card.",
+  "Out-of-state visitor boating fewer than 60 days who meets home-state rules (90 days for a foreign visitor).",
+  "Holders of a current commercial fishing license or a US Coast Guard marine operator license."
+ ],
+ "card": {
+  "nameEn": "California Boater Card",
+  "stateFee": 10,
+  "feeNote": "Lifetime card issued by the Division of Boating and Waterways; courses are separate (free and paid courses exist).",
+  "replacementFee": 5,
+  "validity": "lifetime",
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "A visitor boating in California for fewer than 60 days who meets the home-state requirement does not need the card (90 days for foreign visitors).",
+ "rental": "Renters are exempt from the card.",
+ "pwcExtra": null,
+ "penalty": "Infraction: up to $100 (first), $250 (second), $500 (third or more).",
+ "statute": "Cal. Harb. & Nav. Code §678.11",
+ "sources": [
+  {
+   "url": "https://californiaboatercard.com/faqs-2/",
+   "publisher": "California State Parks, Division of Boating and Waterways",
+   "quote": "The lifetime card fee will be $10. The lost card replacement fee will be $5.",
+   "supports": [
+    "card.stateFee",
+    "card.replacementFee",
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://dbw.parks.ca.gov/pages/28702/files/CBC%20FAQs%20Seamless%20FINAL.pdf",
+   "publisher": "California State Parks, Division of Boating and Waterways",
+   "quote": "January 1, 2025 All persons regardless of age",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dbw.parks.ca.gov/pages/28702/files/CBC%20FAQs%20Seamless%20FINAL.pdf",
+   "publisher": "California State Parks, Division of Boating and Waterways",
+   "quote": "NO person under 16 years of age may operate a boat with a motor of more than 15 horsepower",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dbw.parks.ca.gov/pages/28702/files/CBC%20FAQs%20Seamless%20FINAL.pdf",
+   "publisher": "California State Parks, Division of Boating and Waterways",
+   "quote": "A person operating a rental vessel.",
+   "supports": [
+    "exemptions",
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": []
+}

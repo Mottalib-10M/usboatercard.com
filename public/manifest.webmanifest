@@ -1,0 +1,21 @@
+{
+ "name": "US Boater Card",
+ "short_name": "Boater Card",
+ "description": "Do you need a boater card in your state? Birth-date cut-off, horsepower, minimum age, state fee and the free course each state accepts, with sources.",
+ "start_url": "/en/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#0B5563",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

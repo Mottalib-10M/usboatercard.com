@@ -1,0 +1,190 @@
+{
+ "code": "MD",
+ "name": "Maryland",
+ "es": "Maryland",
+ "agency": "Maryland Department of Natural Resources, Natural Resources Police",
+ "agencyUrl": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1972-07-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any vessel for pleasure that must be numbered (registered), no hp threshold",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after July 1, 1972 needs a certificate of boating safety education to run a registered (numbered) recreational boat in Maryland, including a PWC.",
+  "textEs": "Quien nació el 1 de julio de 1972 o después necesita el certificado de educación en seguridad náutica para manejar una embarcación recreativa registrada en Maryland, incluidas las motos acuáticas.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "Under 16: must hold a certificate and be supervised aboard by a certified person (18+ if the boat is 11 ft or longer), or by someone born before July 1, 1972."
+ },
+ "exemptions": [
+  "Commercial operation.",
+  "Out-of-state residents visiting 60 days or less in a boat numbered elsewhere, if 16+ or holding a NASBLA certificate.",
+  "Foreign visitors for 90 days or less in a foreign boat.",
+  "Waters on private property.",
+  "A U.S. Coast Guard license, or a USCG Auxiliary, Power Squadron or school certificate, counts as the certificate."
+ ],
+ "card": {
+  "nameEn": "Certificate of boating safety education",
+  "stateFee": null,
+  "feeNote": "The state replaces lost certificates it issued free of charge; a 30-day temporary certificate (renewable once) can be issued on affidavit.",
+  "replacementFee": 0,
+  "validity": "lifetime",
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": "NASBLA-approved certificates from other states are accepted; visitors 16+ in a boat numbered in another state are exempt for up to 60 days.",
+ "rental": "Liveries renting boats under 16 ft must themselves hold a boating safety certificate; no renter exemption is stated in the statute.",
+ "pwcExtra": null,
+ "penalty": "Misdemeanor: up to $25 first offense, up to $500 for a repeat within 2 years; enforced only as a secondary action.",
+ "statute": "Md. Code, Nat. Res. §8-712.2",
+ "sources": [
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "a person born on or after July 1, 1972, may not operate on the waters of the State a vessel for pleasure that is required to be numbered",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "A person who is under the age of 16 and who operates a vessel numbered in accordance with this subtitle",
+   "supports": [
+    "minAge.note"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "be under the supervision of a person who is 18 years or older and has obtained a certificate of boating safety education and is aboard the vessel",
+   "supports": [
+    "minAge.note"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "A person who is operating a vessel in connection with commercial purposes;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "A person who is a resident of another state and who is visiting the State for 60 days or less in a vessel that is numbered in another state if:",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "A person who is visiting the State for 90 days or less in a vessel from a country other than the United States;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "A person operating a vessel on a body of water located on private property;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "a boating safety certificate issued in another state in accordance with criteria of the National Association of State Boating Law Administrators is sufficient",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "a license issued by the U.S. Coast Guard, or a boating safety certificate issued by a unit of the U.S. Coast Guard Auxiliary",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "Is valid for the lifetime of the person to whom the certificate was issued",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "The Department shall replace, without charge, a lost or destroyed certificate if the Department issued the certificate",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "may issue a 30–day temporary certificate of boating safety education to a person who signs an affidavit",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "For a first offense, a fine not exceeding $25",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "For any subsequent offense that occurs within 2 years of a prior conviction under this section, a fine not exceeding $500.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.2&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.2",
+   "quote": "may enforce the provisions of this section only as a secondary action",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=8-712.3&enactments=false",
+   "publisher": "Maryland General Assembly, Natural Resources Article §8-712.3",
+   "quote": "possesses a boating safety certificate approved by the Department.",
+   "supports": [
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "minAge.pwc",
+  "pwcExtra",
+  "card.stateFee",
+  "card.onlineAllowed",
+  "card.inPersonExamRequired"
+ ]
+}

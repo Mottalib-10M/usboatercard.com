@@ -1,0 +1,76 @@
+{
+ "code": "ME",
+ "name": "Maine",
+ "es": "Maine",
+ "agency": "Maine Department of Inland Fisheries and Wildlife",
+ "agencyUrl": "https://www.maine.gov/ifw/programs-resources/educational-programs/safety-courses/boating-safety.html",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1999-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 25,
+  "hpNote": "more than 25 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1999 needs a boater safety course to run a motorboat over 25 hp (from age 12) or a PWC (from age 16).",
+  "textEs": "Quien nació el 1 de enero de 1999 o después necesita un curso de seguridad náutica para manejar una lancha de más de 25 hp (desde los 12 años) o una moto acuática (desde los 16).",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 16,
+  "note": "Under 12: alone under 10 hp; 10-25 hp only with supervision. No PWC under 16."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating Safety Education Card",
+  "stateFee": null,
+  "feeNote": "IFW lists the BoatUS course as free (donation requested) and paid online courses.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "12 MRSA §13071-A",
+ "sources": [
+  {
+   "url": "https://www.maine.gov/ifw/programs-resources/educational-programs/safety-courses/boating-safety.html",
+   "publisher": "Maine IFW",
+   "quote": "A person born on or after January 1, 1999, may not operate a motorboat greater than twenty-five (25) horsepower for recreational boating purposes on inland waters of this State or territorial waters, unless that person is 12 years of age or older and has completed a boater safety and education course.",
+   "supports": [
+    "rule",
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.maine.gov/ifw/programs-resources/educational-programs/safety-courses/boating-safety.html",
+   "publisher": "Maine IFW",
+   "quote": "The Boating Safety Education Card is proof of successful completion of the educational requirements and is valid for life.",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://legislature.maine.gov/statutes/12/title12sec13071-A.html",
+   "publisher": "Maine Legislature (12 MRSA §13071-A)",
+   "quote": "A person under 16 years of age may not operate a personal watercraft.",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "nonResident"
+ ]
+}

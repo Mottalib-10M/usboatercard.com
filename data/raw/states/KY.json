@@ -1,0 +1,70 @@
+{
+ "code": "KY",
+ "name": "Kentucky",
+ "es": "Kentucky",
+ "agency": "Kentucky Department of Fish and Wildlife Resources",
+ "agencyUrl": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43435",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 17,
+  "ageMin": 12,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Ages 12 through 17 need a safe boating certificate to run a PWC or a motorboat over 10 hp, unless a person 18+ is on board.",
+  "textEs": "De 12 a 17 años hace falta un certificado de navegación segura para manejar una moto acuática o una lancha de más de 10 hp, salvo que vaya a bordo una persona de 18 años o más.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "Under 12 may not run a PWC or a motorboat over 10 hp."
+ },
+ "exemptions": [
+  "A person 18 or older on board."
+ ],
+ "card": {
+  "nameEn": "Kentucky Safe Boating Certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": "Nonresidents aged 12-17 need a Kentucky certificate or an equivalent one from their state or country.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "KRS 235.285",
+ "sources": [
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43435",
+   "publisher": "Kentucky Legislative Research Commission (KRS 235.285)",
+   "quote": "a person twelve (12) years of age through seventeen (17) years of age shall not operate a personal watercraft or motorboat over ten (10) horsepower on the public waters of the Commonwealth unless the person is in possession of a safe boating certificate or is accompanied, on board, by a person eighteen (18) years of age or older",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43435",
+   "publisher": "Kentucky Legislative Research Commission (KRS 235.285)",
+   "quote": "A person under twelve (12) years of age shall not operate a personal watercraft or motorboat over ten (10) horsepower",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity"
+ ]
+}

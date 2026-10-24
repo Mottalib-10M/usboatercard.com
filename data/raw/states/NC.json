@@ -1,0 +1,134 @@
+{
+ "code": "NC",
+ "name": "North Carolina",
+ "es": "Carolina del Norte",
+ "agency": "North Carolina Wildlife Resources Commission",
+ "agencyUrl": "https://www.ncwildlife.gov/boating/laws-safety/boating-regulations",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1988-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "motor of 10 hp or greater (PWC included)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1988 must pass a NASBLA-approved boating course before running any boat with a motor of 10 hp or more, PWC included.",
+  "textEs": "Quien nació el 1 de enero de 1988 o después debe aprobar un curso náutico aprobado por NASBLA antes de manejar cualquier embarcación con motor de 10 hp o más, incluidas las motos acuáticas.",
+  "hpInclusive": true,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 16,
+  "note": "PWC: alone from 16; ages 14-15 only with an adult 18+ on board who meets the education law, or carrying proof of age and a boating safety card."
+ },
+ "exemptions": [
+  "Boats with motors under 10 hp."
+ ],
+ "card": {
+  "nameEn": "Boating safety certification card",
+  "stateFee": null,
+  "feeNote": "The commission keeps records only for its own courses; online providers issue their own proof of completion.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": "PWCs may not be rented to anyone under 16 unless they meet the 14-15 conditions; rented PWCs must carry at least $300,000 insurance.",
+ "pwcExtra": "Ages 14-15 may ride only with an adult 18+ aboard who complies with the education law, or while carrying ID and a boating safety card. No PWC between sunset and sunrise.",
+ "penalty": null,
+ "statute": "N.C. Gen. Stat. §75A-16.2",
+ "sources": [
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/boating-regulations",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "Any person born on or after January 1, 1988 must successfully complete a NASBLA approved boating education course before operating any vessel propelled by a motor of 10 HP or greater. G.S. 75A-16.2",
+   "supports": [
+    "rule",
+    "rule.hpInclusive",
+    "statute"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "Completed approved Boater Safety Education certification if you were born on or after January 1, 1988. (Required)",
+   "supports": [
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "No person under 16 years of age shall operate a personal watercraft on the waters of this State",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "A person of at least 14 years of age, but under 16 years of age may operate a personal watercraft if:",
+   "supports": [
+    "minAge.pwc",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "No one can operate a PWC on state waters between sunset and sunrise.",
+   "supports": [
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "No one shall rent a PWC to someone under 16 unless that person meets the conditions",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/boating/laws-safety/personal-watercraft",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "A minimum of $300,000 insurance must be carried on each PWC that is rented to the public.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/outdoor-skills/take-boater-education-course",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "The courses listed below meet all education certification requirements for North Carolina:",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.ncwildlife.gov/outdoor-skills/take-boater-education-course",
+   "publisher": "North Carolina Wildlife Resources Commission",
+   "quote": "the commission only maintains records for courses offered through our agency.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity",
+  "nonResident",
+  "penalty",
+  "exemptions"
+ ]
+}

@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: sources, fixes`} description="Which official state pages and federal rules US Boater Card uses, which sources it refuses, how the practice questions are written, how often rules are re-read and how errors are fixed." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial and corrections policy</h1>
+    <p>People use these pages to decide whether they may legally take a boat out. A stale cut-off date can lead to a citation on the water, so every state rule points back to the official page it was read on.</p>
+    <h2>Who is responsible</h2><p>{AUTHOR_NAME}, reachable at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>What we read</h2>
+    <ul>
+      <li>the boater education page of each state agency and of the District of Columbia;</li>
+      <li>the state's boating handbook, statute or administrative rule when the agency page is incomplete;</li>
+      <li>the federal Navigation Rules and the boating parts of 33 CFR and 46 CFR, for the practice questions;</li>
+      <li>the BoatUS Foundation's list of states that approve its free course, for that one fact.</li>
+    </ul>
+    <h2>Sources we refuse</h2><p>Course vendors, insurers, law firms, boat dealers, news articles and other guide sites never provide a figure here. A rule we cannot find on an official page is shown as "not confirmed" or "not verified yet", never filled in from memory or another site.</p>
+    <h2>How the questions are written</h2><p>We write every question ourselves from a federal text or a verified state fact. We never copy a question from a course exam, a vendor's test, an app or a book, and we do not present them as official.</p>
+    <h2>Review cycle</h2><p>A script re-reads every official page and flags quotes that changed; legislative sessions and July 1 phase-in dates are checked each year. Every page shows the date the rules were last checked.</p>
+    <h2>Corrections</h2>
+    <ol><li>We open the official page again.</li><li>We correct the record and add a test for the case.</li><li>The pages rebuild and show the new date.</li></ol>
+    <h2>Independence</h2><p>No course provider, insurer or agency pays for or reviews what is published here, and the site has no affiliate link. See also the <a href={route('method', lang)}>method page</a>. Version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

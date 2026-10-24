@@ -1,0 +1,78 @@
+{
+ "code": "IL",
+ "name": "Illinois",
+ "es": "Illinois",
+ "agency": "Illinois Department of Natural Resources",
+ "agencyUrl": "https://dnr.illinois.gov/safety/boatingsafety.html",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1998-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1998 needs a boating safety certificate to run a motorboat over 10 hp, PWC included.",
+  "textEs": "Quien nació el 1 de enero de 1998 o después necesita un certificado de seguridad náutica para manejar una lancha de más de 10 hp, incluidas las motos acuáticas.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "Under 10: no motorboat. 10-11: over 10 hp only with a parent or designated adult 18+ on board. 12-17: with the certificate or that supervision."
+ },
+ "exemptions": [
+  "Born before Jan. 1, 1998."
+ ],
+ "card": {
+  "nameEn": "Illinois Boating Safety Certificate",
+  "stateFee": null,
+  "feeNote": "Classroom courses by volunteer instructors are free; online courses cost $34.95 to $59.95 (IDNR figures).",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "625 ILCS 45/5-18",
+ "sources": [
+  {
+   "url": "https://dnr.illinois.gov/safety/boatingsafety.html",
+   "publisher": "Illinois DNR",
+   "quote": "Persons born on or after January 1, 1998, may operate a motorboat with more than 10 horsepower, including personal watercraft, only if they have a valid boating safety certificate accepted by the Illinois Department of Natural Resources ( 625 ILCS 45/5-18 ).",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dnr.illinois.gov/safety/boatingsafety.html",
+   "publisher": "Illinois DNR",
+   "quote": "No person under 10 years of age may operate a motorboat, including personal watercraft ( 625 ILCS 45/5-18 ).",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dnr.illinois.gov/safety/boatingsafety.html",
+   "publisher": "Illinois DNR",
+   "quote": "The online course fee varies by course ($34.95-$59.95).",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "nonResident"
+ ]
+}

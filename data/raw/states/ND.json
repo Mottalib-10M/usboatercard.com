@@ -1,0 +1,124 @@
+{
+ "code": "ND",
+ "name": "North Dakota",
+ "es": "Dakota del Norte",
+ "agency": "North Dakota Game and Fish Department",
+ "agencyUrl": "https://gf.nd.gov/education/boating",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 15,
+  "ageMin": 12,
+  "hpMin": 10,
+  "hpNote": "motor over 10 hp (statute); Game and Fish page says at least 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Only youths aged 12 to 15 need it: to run a boat or PWC with a motor over 10 hp alone they must pass the Boat North Dakota course, unless someone 18 or older is aboard.",
+  "textEs": "Solo lo necesitan los jóvenes de 12 a 15 años: para manejar solos una embarcación o moto acuática con motor de más de 10 hp deben aprobar el curso Boat North Dakota, salvo que vaya a bordo alguien de 18 años o más.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "Under 12: no motorboat over 10 hp unless someone 18+ is aboard. Ages 12-15 alone need the course. No education rule from age 16."
+ },
+ "exemptions": [
+  "Accompanied by someone 18 or older.",
+  "Motor of 10 hp or less.",
+  "Operators 16 and older."
+ ],
+ "card": {
+  "nameEn": "Boat North Dakota boater education card",
+  "stateFee": 0,
+  "feeNote": "The home-study manual and mail-in exam are free from Game and Fish; the online versions are sold by private providers.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": "Class 2 noncriminal offense for an underage operator without the course or an adult aboard.",
+ "statute": "N.D. Cent. Code §20.1-13-07(4)",
+ "sources": [
+  {
+   "url": "https://gf.nd.gov/education/boating",
+   "publisher": "North Dakota Game and Fish Department",
+   "quote": "This course is required for youth ages 12-15 who want to operate by themselves a boat or personal watercraft with at least a 10 horsepower motor .",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.ndlegis.gov/cencode/t20-1c13.pdf",
+   "publisher": "North Dakota Legislative Assembly, N.D. Century Code ch. 20.1-13",
+   "quote": "An individual  of twelve through fifteen years of age may  not  operate a motorboat  propelled by  over a ten horsepower motor unless the operator is accompanied by an individual eighteen years of age or older or the operator has taken and passed a  boating course approved by the department.",
+   "supports": [
+    "rule",
+    "exemptions",
+    "statute"
+   ]
+  },
+  {
+   "url": "https://www.ndlegis.gov/cencode/t20-1c13.pdf",
+   "publisher": "North Dakota Legislative Assembly, N.D. Century Code ch. 20.1-13",
+   "quote": "An individual  under twelve years of age may  not  operate a motorboat propelled by  over a ten horsepower motor unless the operator is accompanied by  an individual  eighteen years of age or older.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.ndlegis.gov/cencode/t20-1c13.pdf",
+   "publisher": "North Dakota Legislative Assembly, N.D. Century Code ch. 20.1-13",
+   "quote": "An individual who violates this subsection is guilty of a  class 2 noncriminal offense.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://gf.nd.gov/education/boating",
+   "publisher": "North Dakota Game and Fish Department",
+   "quote": "There is no charge for the home-study course",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://gf.nd.gov/education/boating",
+   "publisher": "North Dakota Game and Fish Department",
+   "quote": "A Boat North Dakota course manual and a mail-in exam are available for free and may be ordered online .",
+   "supports": [
+    "card.stateFee",
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://gf.nd.gov/education/boating",
+   "publisher": "North Dakota Game and Fish Department",
+   "quote": "Upon completion of the online course and test students can print a temporary certification card.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://gf.nd.gov/education/boating",
+   "publisher": "North Dakota Game and Fish Department",
+   "quote": "North Dakota law does not allow a youngster to operate a watercraft until age 12, therefore, a certification card will not be issued until the graduate is 12 years of age",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "card.replacementFee",
+  "nonResident",
+  "rental"
+ ]
+}

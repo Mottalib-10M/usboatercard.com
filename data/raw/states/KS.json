@@ -1,0 +1,74 @@
+{
+ "code": "KS",
+ "name": "Kansas",
+ "es": "Kansas",
+ "agency": "Kansas Department of Wildlife and Parks",
+ "agencyUrl": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_011_0039.html",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": "1989-01-01",
+  "ageMax": 20,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1989 who is under 21 needs a boater safety education certificate to run a motorboat or sailboat, unless supervised by a qualified person over 17.",
+  "textEs": "Quien nació el 1 de enero de 1989 o después y tiene menos de 21 años necesita un certificado de educación náutica para manejar una lancha o un velero, salvo que lo supervise una persona habilitada mayor de 17 años.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Age 21 or older.",
+  "Under the direct and audible supervision of a person over 17 who holds a certificate or is exempt.",
+  "Non-motorized sailboat 16 ft 7 in or shorter during an instructor-led class."
+ ],
+ "card": {
+  "nameEn": "Boater safety education certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "K.S.A. 32-1139",
+ "sources": [
+  {
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_011_0039.html",
+   "publisher": "Kansas Office of Revisor of Statutes (K.S.A. 32-1139)",
+   "quote": "No person born on or after January 1, 1989, shall operate on public waters of this state any motorboat or sailboat unless the person possesses a certificate of completion of an approved boater safety education course",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_011_0039.html",
+   "publisher": "Kansas Office of Revisor of Statutes (K.S.A. 32-1139)",
+   "quote": "The requirement in subsection (a)(1), shall not apply to a person 21 years of age or older.",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "minAge",
+  "nonResident (agency page answers 403 to scripts)"
+ ]
+}

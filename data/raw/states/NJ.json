@@ -1,0 +1,150 @@
+{
+ "code": "NJ",
+ "name": "New Jersey",
+ "es": "Nueva Jersey",
+ "agency": "New Jersey State Police, Marine Services Bureau",
+ "agencyUrl": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any power vessel (including electric) or PWC",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Everyone who operates a power vessel or a PWC in New Jersey needs a Boating Safety Certificate from an approved course; on non-tidal lakes and rivers an MVC boat license is also needed.",
+  "textEs": "Toda persona que maneje una embarcación con motor o una moto acuática en Nueva Jersey necesita el certificado de seguridad náutica de un curso aprobado; en lagos y ríos sin marea también hace falta la licencia de bote de la MVC.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 13,
+  "pwc": 16,
+  "note": "Ages 13-15 with a certificate may run only an electric-motor boat or a boat 12 ft or longer under 10 hp; PWC from 16 only, visitors included."
+ },
+ "exemptions": [
+  "Non-motorized vessels such as sailboats and canoes without motors.",
+  "Visitors (up to 90 days) with a home-state certificate, a USCG captain's license or proof of a NASBLA-approved course."
+ ],
+ "card": {
+  "nameEn": "New Jersey Boating Safety Certificate",
+  "stateFee": null,
+  "feeNote": "No state fee stated for the certificate; replacements are requested from the Marine Services Bureau by email or mail. The separate MVC boat license for non-tidal waters costs $18.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": true,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors may use a home-state certificate, a USCG captain's license or proof of a NASBLA-approved course; after 90 days in NJ waters a New Jersey certificate is required. New residents need a NJ course.",
+ "rental": null,
+ "pwcExtra": "No PWC operation under 16. On non-tidal waters a separate MVC boat license (age 16+, $18) is also needed for power boats and PWCs.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "a Boating Safety Certificate is required for anyone operating a power vessel or personal watercraft (PWC) on the waters of this State.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "a young boater who is 13, 14 or 15 years of age and has obtained a Boating Safety Certificate can operate a power vessel",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "They may operate a vessel powered solely by an electric motor or a vessel 12 ft. long or longer with less than 10 H.P",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "A person must be at least 16 years of age to operate a PWC in New Jersey",
+   "supports": [
+    "minAge.pwc",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "after successful completion of the internet portion of the course, the student will have to complete an in-person, proctored exam.",
+   "supports": [
+    "card.inPersonExamRequired",
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "If operating a vessel in New Jersey for a period of greater than 90 days, an approved New Jersey Boater Safety Certificate is required.",
+   "supports": [
+    "nonResident",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "United States Coast Guard Captain’s License, or written proof of completion of a safety course approved by N.A.S.B.L.A.",
+   "supports": [
+    "nonResident",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://njsp.njoag.gov/msb-boating-safety-cert-license/",
+   "publisher": "New Jersey State Police, Marine Services Bureau",
+   "quote": "All requests for replacement must be E-mailed or sent through the United States Postal Service.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.nj.gov/mvc/vehicles/boating.htm",
+   "publisher": "New Jersey Motor Vehicle Commission",
+   "quote": "A boat license and New Jersey Boat Safety Certificate are required to operate a power vessel or personal watercraft",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.nj.gov/mvc/vehicles/boating.htm",
+   "publisher": "New Jersey Motor Vehicle Commission",
+   "quote": "Pay the $18 license fee",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.nj.gov/mvc/vehicles/boating.htm",
+   "publisher": "New Jersey Motor Vehicle Commission",
+   "quote": "You must be at least 16 years old. If you are under the age of 17, you need to present a letter with parental or guardian consent.",
+   "supports": [
+    "pwcExtra"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity",
+  "rental",
+  "penalty",
+  "statute"
+ ]
+}

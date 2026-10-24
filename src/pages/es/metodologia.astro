@@ -1,0 +1,44 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { helpers } from '../../lib/helpers';
+const lang = 'es';
+const h = helpers(lang);
+const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
+const unv = h.names(h.UNVERIFIED);
+---
+<PageLayout title="Método de la tarjeta náutica: cómo se verifica cada estado" description="Cómo Tarjeta Náutica por Estado lee la regla de educación náutica de cada estado en su página oficial, la aplica a su caso y fecha cada dato que muestra." lang={lang} jsonLd={[articleSchema({ title: 'Cómo se verifica cada regla estatal', description: 'Método de Tarjeta Náutica por Estado', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Método', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Método' }]}>
+  <header class="mb-6"><p class="kicker">Método</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Cómo se verifica cada regla estatal</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Cada página y cada herramienta leen un solo archivo de estados, hecho con un registro por jurisdicción. Ninguna fecha de corte, potencia o tarifa se escribe a mano en una página. El archivo se generó por última vez el {displayDate(h.META.built, 'es-US')}; contiene {h.counts.verified} jurisdicciones verificadas de {h.counts.states}, respaldadas por {h.num(h.META.sources)} pasajes citados de páginas oficiales.</p>
+    <h2>1. Lo que leemos</h2>
+    <p>Para cada estado y DC: la página de educación náutica de la agencia estatal (pesca y vida silvestre, recursos naturales, parques o la policía estatal, según el estado), su manual náutico cuando lo publica, y la ley o la regla administrativa cuando la página de la agencia no es clara. Cada dato se guarda con la dirección de la página y la frase exacta donde se leyó, para que cualquiera pueda comprobarlo. Los proveedores de cursos, aseguradoras, bufetes, artículos de prensa y otras guías nunca son fuente, por bien posicionados que estén.</p>
+    <h2>2. Lo que se registra</h2>
+    <ul>
+      <li>si existe un requisito general de educación, y a quién cubre: a todos, a quienes nacieron a partir de una fecha o a una franja de edad;</li>
+      <li>el umbral de potencia (y si «10 hp» significa más de 10 o 10 o más), las motos acuáticas y los veleros;</li>
+      <li>los calendarios por etapas, con la fecha de inicio de cada etapa;</li>
+      <li>la edad mínima para manejar sin compañía, las exenciones, las reglas para visitantes y alquileres;</li>
+      <li>el nombre del documento, la tarifa que cobra el propio estado, su validez, y si se permite o se exige un curso en línea o un examen supervisado.</li>
+    </ul>
+    <p>Un dato que las páginas oficiales no indican queda vacío y el sitio dice «no confirmado». {unv.length ? `${unv.length} jurisdicciones aún no están verificadas (${h.list(unv)}): la comprobación responde «aún no verificado» y remite a la agencia.` : 'Las 51 jurisdicciones están verificadas.'}</p>
+    <h2>3. El curso gratuito</h2>
+    <p>Si el curso gratuito en línea de la BoatUS Foundation está aprobado en un estado se lee en la <Fragment set:html={s('boatus', 'lista de estados')} /> de la fundación, que marca cada estado como aprobado, no aprobado o no disponible. No cobramos comisiones y la página del curso se enlaza como vía gratuita solo donde está aprobado.</p>
+    <h2>4. Cómo responde la comprobación</h2>
+    <p>La herramienta toma un estado, una fecha de nacimiento, un tipo de embarcación, una potencia y el día de la salida. Primero busca la regla en vigor ese día: en un calendario por etapas, la última etapa iniciada. Luego comprueba, en este orden: si la embarcación está cubierta (potencia por encima del umbral, moto acuática, eslora del velero), si la fecha de nacimiento es igual o posterior al corte, si se aplica una franja de edad. La respuesta llega con su motivo. La edad se cuenta en años cumplidos el día de la salida, y el día del cumpleaños cuenta. La vía más barata es el curso gratuito donde está aprobado más la tarifa del estado; donde no lo está, el precio de un curso de pago lo fija el proveedor y no lo suponemos.</p>
+    <h2>5. El examen de práctica</h2>
+    <p>Escribimos nosotros las {h.counts.questions} preguntas generales, cada una a partir de un texto federal de dominio público: las <Fragment set:html={s('navrules', 'Reglas de Navegación Interiores')} />, el <Fragment set:html={s('cfr62', 'sistema de ayudas a la navegación')} />, el <Fragment set:html={s('cfr175', '33 CFR parte 175')} /> sobre chalecos y señales de socorro, el <Fragment set:html={s('cfr173', '33 CFR parte 173')} /> sobre números y notificación de accidentes, el <Fragment set:html={s('cfr183', '33 CFR parte 183')} /> sobre capacidad y ventilación, el <Fragment set:html={s('cfr95', '33 CFR parte 95')} /> sobre alcohol, el <Fragment set:html={s('cfr25', '46 CFR parte 25')} /> sobre extintores y el <Fragment set:html={s('ecos', '46 U.S.C. 4312')} /> sobre interruptores de corte. Otras {h.counts.stateQ} se generan a partir de los registros estatales verificados: fecha de corte, umbral de potencia, edad mínima, curso gratuito y tarifa. Un examen tiene 20 preguntas y se aprueba con el 80 %, una meta de práctica: cada curso aprobado fija su propio examen y su nota.</p>
+    <h2>6. Controles en cada compilación</h2>
+    <p>Cada registro debe citar al menos una página oficial y llevar su fecha de lectura; la fecha de corte de varios casos conocidos (Texas, Florida, California, Minnesota) se prueba contra la regla; cada pregunta tiene cuatro opciones distintas y una explicación en los dos idiomas. Un programa vuelve a leer cada página oficial y señala toda cita que ya no aparece, para que una persona relea la regla si cambió.</p>
+    <h2>7. Lo que el sitio no hace</h2>
+    <ul>
+      <li>No emite, repone ni consulta tarjetas, y no es un curso.</li>
+      <li>No cubre las licencias comerciales (credenciales de capitán de la Guardia Costera), las tarifas de registro ni los títulos de propiedad.</li>
+      <li>Da información general, no asesoría legal; la agencia del estado tiene la última palabra.</li>
+    </ul>
+    <p>Versión del método: {LAST_UPDATED}. Si una regla parece errónea: <a href={route('contact', lang)}>contacto</a>.</p>
+  </div>
+</PageLayout>

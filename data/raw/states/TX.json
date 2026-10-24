@@ -1,0 +1,94 @@
+{
+ "code": "TX",
+ "name": "Texas",
+ "es": "Texas",
+ "agency": "Texas Parks and Wildlife Department",
+ "agencyUrl": "https://tpwd.texas.gov/learning/boater-education/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1993-09-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 15,
+  "hpNote": "more than 15 hp",
+  "pwc": true,
+  "sailFtMin": 14,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Sept. 1, 1993 needs a boater education certificate to run a PWC, a motorboat over 15 hp or a sailboat over 14 ft.",
+  "textEs": "Quien nació el 1 de septiembre de 1993 o después necesita el certificado de educación náutica para manejar una moto acuática, una lancha de más de 15 hp o un velero de más de 14 pies.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 13,
+  "pwc": 13,
+  "note": "Alone from 13 (motor over 15 hp, PWC, sailboat over 14 ft) with the course; under 13 needs a legal operator 18+ on board."
+ },
+ "exemptions": [
+  "Accompanied by a legal operator 18+ on board.",
+  "A one-time 15-day deferral can be bought where hunting and fishing licenses are sold."
+ ],
+ "card": {
+  "nameEn": "Boater Education Certificate",
+  "stateFee": null,
+  "feeNote": "TPWD says course fees start at $10 and vary by provider and format.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors follow Texas rules; NASBLA-approved certificates from any state or US territory are accepted.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://tpwd.texas.gov/learning/boater-education/",
+   "publisher": "Texas Parks and Wildlife Department",
+   "quote": "You must complete a Texas Boater Education Certification Course if you were born on or after September 1, 1993 , and will be operating: A personal watercraft (PWC) A motorboat with more than 15 horsepower A sailboat over 14 feet",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://tpwd.texas.gov/learning/boater-education/faq",
+   "publisher": "Texas Parks and Wildlife Department",
+   "quote": "To operate a vessel alone in Texas, a boater must be 13 years of age to operate a vessel of more than 15 horsepower; a PWC, or windblown vessel over 14 feet in length",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://tpwd.texas.gov/learning/boater-education/faq",
+   "publisher": "Texas Parks and Wildlife Department",
+   "quote": "Fees start at $10 for a basic course and varies depending on in-person or online courses.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://tpwd.texas.gov/learning/boater-education/faq",
+   "publisher": "Texas Parks and Wildlife Department",
+   "quote": "A person may purchase a one-time 15 day boater education deferral at any place hunting and fishing licenses are sold.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://tpwd.texas.gov/learning/boater-education/faq",
+   "publisher": "Texas Parks and Wildlife Department",
+   "quote": "Texas does recognize and accept NASBLA approved state courses from all 50 states and the US territories.",
+   "supports": [
+    "nonResident"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity"
+ ]
+}

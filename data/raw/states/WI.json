@@ -1,0 +1,165 @@
+{
+ "code": "WI",
+ "name": "Wisconsin",
+ "es": "Wisconsin",
+ "agency": "Wisconsin Department of Natural Resources",
+ "agencyUrl": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1989-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any motorboat (no hp threshold), PWC included",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1989 needs a Wisconsin (or accepted out-of-state) boating safety certificate to run a motorboat or PWC, unless a qualifying adult is aboard (motorboats only).",
+  "textEs": "Quien nació el 1 de enero de 1989 o después necesita un certificado de seguridad náutica de Wisconsin (o de otro estado aceptado) para manejar una lancha o moto acuática, salvo que vaya a bordo un adulto que cumpla los requisitos (solo lanchas).",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "Motorboats: none under 10; ages 10-11 only with a qualifying parent/guardian/designated adult; ages 12-15 with such an adult or a certificate. PWC: none under 12; from 12 with a certificate, adult supervision does not replace it."
+ },
+ "exemptions": [
+  "Born before Jan. 1, 1989.",
+  "Motorboat operators 16+ accompanied by someone 18+ who holds a certificate or was born before 1989 (not for PWC).",
+  "Boats without a motor."
+ ],
+ "card": {
+  "nameEn": "Boating safety certificate",
+  "stateFee": null,
+  "feeNote": "DNR classroom course $10; internet courses about $50.95-$60.95. Duplicates can be printed free from a Go Wild account.",
+  "replacementFee": 0,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Out-of-state equivalent certificates are accepted.",
+ "rental": "Renters 16+ from a licensed rental agent can use a boat rental education certificate valid until the end of that calendar year; no PWC rental under 16.",
+ "pwcExtra": "PWC from 12 only with a certificate; an adult on board does not replace it. No PWC rental under 16.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "Wisconsin boating safety certification or out-of-state equivalent certification is required for operators born on or after Jan. 1, 1989.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "A person younger than 10 years may not operate a motorboat",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "A person 12-15 years old may operate a motorboat only if:",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "They are accompanied by another person in the motorboat who is at least 18 years of age AND that person holds a valid boating safety certificate or was born before Jan. 1, 1989.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "There are no age requirements for operating a boat that is not equipped with a motor.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "No one under the age of 12 may operate, lease or rent a personal watercraft.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "No one under the age of 16 may rent or lease a personal watercraft.",
+   "supports": [
+    "rental",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "Adult supervision is not a substitute for a certificate.",
+   "supports": [
+    "rule.pwc",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "The certificate is valid until the end of the calendar year in which it is issued.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "$10 for a traditional classroom. $50.95 - $60.95 for internet courses.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "Boat operators now have convenient online methods to receive boat safety certification through internet courses.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "click the \"Print Awarded Certificates\" icon to print for free",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://dnr.wisconsin.gov/permits/registrations/boat/BeforeYouOperate.html",
+   "publisher": "Wisconsin Department of Natural Resources",
+   "quote": "Wisconsin boating safety certification or out of state equivalent certification is required for operators born on or after January 1, 1989.",
+   "supports": [
+    "rule",
+    "nonResident"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "penalty",
+  "statute"
+ ]
+}

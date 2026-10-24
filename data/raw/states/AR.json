@@ -1,0 +1,68 @@
+{
+ "code": "AR",
+ "name": "Arkansas",
+ "es": "Arkansas",
+ "agency": "Arkansas Game and Fish Commission",
+ "agencyUrl": "https://agfc.com/en/education/first-steps-outdoors/boatered/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1986-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1986 needs an approved boating education course to run a motorboat or a sailboat.",
+  "textEs": "Quien nació el 1 de enero de 1986 o después necesita un curso de navegación aprobado para manejar una lancha con motor o un velero.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 16,
+  "note": "Motorboat of 10 hp or more: 12+, or younger with a supervisor 18+. PWC: 16+, ages 12-15 with a supervisor 18+, under 12 with a supervisor 21+."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating education certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://agfc.com/en/education/first-steps-outdoors/boatered/",
+   "publisher": "Arkansas Game and Fish Commission",
+   "quote": "Anyone born on or after Jan. 1, 1986, and of legal age to operate a motorboat or sailboat, must have successfully completed an approved AGFC Boating Education Course to operate a motorboat or sailboat on Arkansas water.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://agfc.com/en/education/first-steps-outdoors/boatered/",
+   "publisher": "Arkansas Game and Fish Commission",
+   "quote": "To operate a personal watercraft, a person must be 16 or older, be 12 to 15 years old and be under the direct supervision of a person at least 18 years old, or be under 12 and be under the direct supervision of a person at least 21 years old.",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "nonResident"
+ ]
+}

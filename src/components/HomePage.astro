@@ -1,0 +1,132 @@
+---
+/**
+ * Home of one language: the "do I need a boater card?" check on the first screen, then the rule of
+ * every state in one table, then what decides the answer (RECETTE §5, §21). Every state figure is
+ * read from the data; nothing is typed in.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './Tool.astro';
+import Clamp from './Clamp.astro';
+import { route, hasRoute, type Locale } from '../i18n/routes';
+import { PAGES } from '../lib/guides';
+import { groupLabel, GROUPS_ORDER } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { LAST_UPDATED, AUTHOR_NAME } from '../data/site-config';
+import { displayDate } from '../lib/format';
+import { faqSchema, webApplicationSchema, websiteSchema, organizationSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const h = helpers(lang, true);
+const { S, VERIFIED, STATES } = h;
+const req = h.where((s) => s.required === true);
+const none = h.where((s) => s.required === false);
+const all = h.where((s) => s.required === true && (s.rule.kind === 'all' || !!(s.rule.phases && s.rule.phases.some((p) => p.ageMax === null || p.bornAfter === '1800-01-01'))));
+const free = h.where((s) => s.required === true && s.boatus?.status === 'approved');
+const feeStates = h.where((s) => s.required === true && (s.card.stateFee ?? 0) > 0);
+const maxFee = h.rank((s) => (s.required && s.card.stateFee ? s.card.stateFee : null), -1)[0];
+const phasing = h.where((s) => !!(s.rule.phases && s.rule.phases.some((p) => p.from > h.TODAY)));
+const fl = S('FL'), ca = S('CA'), mn = S('MN');
+const rows = STATES.map((s) => { const x = S(s.code); return [h.sl(s.code), x.whoL, x.verified && x.required ? (x.hpL ?? (es ? 'todo motor' : 'any motor')) : '–', x.verified && x.required ? (x.card.stateFee != null ? h.m(x.card.stateFee) : '–') : '–', x.verified && x.required ? x.freeL : '–']; });
+const L = es ? {
+  title: 'Licencia de navegación por estado 2026: ¿la necesita?',
+  description: 'Licencia de navegación por estado: indique su estado, fecha de nacimiento y embarcación para saber si necesita la tarjeta, el curso gratis y lo que cuesta.',
+  h1: '¿Necesita licencia de navegación? Compruébelo en su estado',
+  intro: 'Elija el estado, su fecha de nacimiento, la embarcación y la potencia del motor: la respuesta sale con su motivo, la edad mínima para manejar solo, la tarifa del estado y la vía legal más barata.',
+} : {
+  title: 'Boating License by State 2026: Do You Need One? Check Now',
+  description: 'Boating license by state: enter your birth date, boat and horsepower to see if you need a boater card, the minimum age, the state fee and the free course.',
+  h1: 'Do you need a boating license? Check your state',
+  intro: 'Pick the state, your date of birth, the boat and its engine power: the answer comes with its reason, the minimum age to operate alone, the state fee and the cheapest legal route.',
+};
+const resume = es
+  ? `En Estados Unidos no existe una licencia de navegación federal para las embarcaciones de recreo: cada estado decide quién debe tener una tarjeta de educación náutica, y casi siempre se trata de un certificado de curso para toda la vida, no de una licencia que se renueva. De los ${h.counts.verified} estados (con DC) cuya regla confirmamos en una página oficial, ${req.length} exigen la tarjeta a una parte de los operadores y ${none.length} no tienen un requisito general. La regla depende de tres datos: la fecha de nacimiento (en ${h.sl('FL')} la necesita quien nació a partir del ${fl.cutoffL ?? h.nc}), la potencia del motor (${fl.hpL ?? h.nc} en Florida) y el día de la salida, porque varios estados amplían la regla por etapas; ${h.sl('CA')} la exige a todas las edades desde 2025 y ${h.sl('MN')} adelanta su fecha de corte cada 1 de julio hasta 2028. En ${free.length} de esos estados el curso gratuito en línea de la BoatUS Foundation es aceptado, así que la vía legal más barata es la tarifa del estado, cuando la hay. La herramienta aplica la regla de su estado al día de su salida y cita la página oficial y la fecha en que la leímos.`
+  : `There is no federal boating license for recreational boats in the United States: each state decides who must carry a boater education card, and in most states it is a course certificate that lasts for life, not a license you renew. Of the ${h.counts.verified} states (DC included) whose rule we confirmed on an official page, ${req.length} require the card from some operators and ${none.length} have no general requirement. Three facts decide the answer: your date of birth (in ${h.sl('FL')} the card is needed by anyone born on or after ${fl.cutoffL ?? h.nc}), the engine power (${fl.hpL ?? h.nc} in Florida) and the day of the outing, because several states widen their rule in stages; ${h.sl('CA')} has required it at every age since 2025 and ${h.sl('MN')} moves its cut-off each July 1 until 2028. In ${free.length} of those states the free online BoatUS Foundation course is accepted, so the cheapest legal route costs only the state fee, where there is one. The tool applies your state's rule to the day you go out and cites the official page and the date we read it.`;
+const faqs = es ? [
+  { q: '¿Existe una licencia de navegación nacional en Estados Unidos?', a: 'No para la navegación de recreo. La Guardia Costera expide licencias de capitán para quienes llevan pasajeros de pago, pero la educación náutica de los aficionados la regula cada estado. Lo que se llama «boating license» suele ser una tarjeta o certificado de curso, y la mayoría de los estados aceptan la de otro estado si el curso está aprobado por NASBLA.' },
+  { q: '¿La tarjeta náutica caduca?', a: `En la mayoría de los estados no: el certificado de educación náutica vale de por vida. ${h.sl('AL')} es una excepción notable, porque allí el documento es una clase de la licencia de conducir. La tabla de esta página y la página de cada estado indican la validez cuando la agencia la publica.` },
+  { q: '¿Necesito la tarjeta para un kayak o una tabla de remo?', a: 'En casi todos los estados, no: la regla cubre las embarcaciones de motor, a menudo a partir de cierta potencia, y las motos acuáticas; algunos estados añaden los veleros a partir de una eslora. Las embarcaciones sin motor siguen sujetas a las reglas de equipo, como llevar un chaleco salvavidas por persona.' },
+  { q: '¿Sirve mi tarjeta en otro estado?', a: 'Casi siempre. Los estados reconocen los certificados de cursos aprobados por NASBLA emitidos en otro estado, y varios eximen a los visitantes durante un tiempo. Lleve la tarjeta y una identificación con foto. Algunos estados, como Nueva York, solo reconocen la tarjeta de su estado de residencia actual. La página de cada estado resume lo que dice su agencia sobre los no residentes.' },
+  { q: '¿Van a cambiar las reglas en los próximos años?', a: `Sí, en varios estados. ${h.sl('MA')} exige la tarjeta a quienes nacieron después del 1 de enero de 1989 desde abril de 2026 y a todos desde abril de 2028; ${h.sl('MN')} adelanta su fecha de corte cada 1 de julio hasta 2028; ${h.sl('UT')} pedirá un curso a todo operador de lancha desde 2027. La herramienta acepta una fecha de salida futura para ver la regla de ese día.` },
+  { q: '¿Cuánto cuesta en total?', a: `Donde se acepta el curso gratuito, solo la tarifa del estado, que va de cero a ${maxFee ? h.m(maxFee.card.stateFee as number) : h.nc} en ${maxFee ? S(maxFee.code).nameL : h.nc}, la más alta de nuestros datos. Donde no se acepta, se suma el precio de un curso aprobado, que fija cada proveedor. La herramienta muestra la vía más barata de su estado.` },
+] : [
+  { q: 'Is there a national boating license in the United States?', a: 'Not for recreational boating. The Coast Guard issues captain\'s licenses to people who carry paying passengers, but education for recreational boaters is set by each state. What people call a "boating license" is usually a course card or certificate, and most states accept another state\'s card when the course is NASBLA-approved.' },
+  { q: 'Does a boater education card expire?', a: `In most states it does not: the boater education certificate is valid for life. ${h.sl('AL')} is a notable exception, because its credential is a class on the driver license. The table on this page and each state page give the validity when the agency publishes it.` },
+  { q: 'Do I need a card for a kayak or a paddleboard?', a: 'In almost every state, no: the rule covers motorboats, often from a set horsepower, and personal watercraft; a few states add sailboats from a set length. Boats without a motor still fall under the equipment rules, such as carrying one life jacket per person.' },
+  { q: 'Is my card valid in another state?', a: 'Almost always. States recognize certificates from NASBLA-approved courses issued in another state, and several exempt visitors for a period. Carry the card and a photo ID. Some states, such as New York, recognize only a card from your current state of residence. Each state page sums up what its agency says about nonresidents.' },
+  { q: 'Will the rules change in the next few years?', a: `Yes, in several states. ${h.sl('MA')} requires the card from people born after January 1, 1989 since April 2026 and from everyone from April 2028; ${h.sl('MN')} moves its cut-off each July 1 until 2028; ${h.sl('UT')} will ask every motorboat operator for a course from 2027. The tool accepts a future outing date to show the rule on that day.` },
+  { q: 'How much does it cost in total?', a: `Where the free course is accepted, only the state fee, which runs from zero to ${maxFee ? h.m(maxFee.card.stateFee as number) : h.nc} in ${maxFee ? S(maxFee.code).nameL : h.nc}, the highest in our data. Where it is not, add the price of an approved course, set by each provider. The tool shows the cheapest route in your state.` },
+];
+const jsonLd = [webApplicationSchema({ name: L.h1, description: L.description, path: route('home', lang), lang }), websiteSchema(lang), organizationSchema(lang), faqSchema(faqs, lang)];
+const groups = GROUPS_ORDER.filter((g) => g !== 'states').map((g) => ({ g, pages: PAGES.filter((p) => p.group === g && hasRoute(p.id, lang)) })).filter((x) => x.pages.length);
+const states = PAGES.filter((p) => p.group === 'states' && hasRoute(p.id, lang));
+const T = (p: (typeof PAGES)[number]) => (es ? p.es! : p.en);
+---
+<PageLayout title={L.title} description={L.description} lang={lang} jsonLd={jsonLd} faqs={faqs}>
+  <header class="mb-3">
+    <h1 class="text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{L.h1}</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{L.intro}</p>
+  </header>
+  <div data-outil class="mb-4"><Tool tool={{ kind: 'check', props: { state: 'FL' } }} lang={lang} primary={true} /></div>
+  <Clamp text={resume} id="clamp-home" lang={lang} class="mb-3" />
+  <p class="mb-8 text-sm text-navy-600">{es ? 'Actualizado el' : 'Last updated'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, es ? 'es-US' : 'en-US')}</time>{es ? ', cada regla leída en la página oficial del estado' : ', each rule read on the state\'s official page'} · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">{es ? 'Cómo se verifica cada estado' : 'How each state is checked'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{es ? 'Quiénes somos' : 'About this site'}</a></p>
+
+  {es ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Este sitio responde a una sola pregunta, con su fecha de nacimiento y su embarcación: ¿la ley de su estado le exige una tarjeta de educación náutica el día en que sale al agua? Y le dice cómo obtenerla al menor costo.</p>
+    <h2>La regla de cada estado, en una tabla</h2>
+    <p>«Quién la necesita» es la regla en vigor hoy, {h.date(h.TODAY)}. Un estado marcado como «aún no verificado» no se ha confirmado todavía en una página oficial: no rellenamos su regla con otra fuente.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>This site answers one question from your date of birth and your boat: does your state's law require a boater education card on the day you go out on the water? Then it tells you how to get one at the lowest cost.</p>
+    <h2>Every state's rule in one table</h2>
+    <p>"Who needs it" is the rule in force today, {h.date(h.TODAY)}. A state marked "not verified yet" has not been confirmed on an official page so far: we do not fill in its rule from another source.</p>
+  </div>
+  )}
+  <Fragment set:html={h.table(es ? ['Estado', 'Quién la necesita', 'Potencia', 'Tarifa', 'Curso gratis'] : ['State', 'Who needs it', 'Power', 'State fee', 'Free course'], rows, es ? `Educación náutica obligatoria en los ${STATES.length} estados y DC. Un guion: no se aplica o no lo publica la agencia.` : `Mandatory boater education in the ${STATES.length} states and DC. A dash: not applicable or not published by the agency.`, ['l', 'l', 'l', 'r', 'l'])} />
+
+  {es ? (
+  <div class="prose prose-slate max-w-none">
+    <h2>Lo que decide la respuesta</h2>
+    <ul>
+      <li><strong>Su fecha de nacimiento.</strong> La mayoría de los estados exigen la tarjeta a quienes nacieron a partir de una fecha: así, los operadores mayores quedan fuera sin tener que volver a clase. La fecha va de los años cincuenta a los noventa según el estado.</li>
+      <li><strong>La embarcación y su motor.</strong> Las motos acuáticas casi siempre están cubiertas. Para las lanchas, muchos estados solo cuentan los motores por encima de una potencia: {fl.hpL ?? h.nc} en Florida, {mn.hpL ?? h.nc} en Minnesota. Los veleros sin motor solo entran en algunos estados, a partir de una eslora.</li>
+      <li><strong>El día de la salida.</strong> {phasing.length ? `${h.list(h.names(phasing))} ${phasing.length > 1 ? 'amplían' : 'amplía'} su regla por etapas en los próximos años, de modo que la respuesta para el verano que viene puede no ser la de hoy.` : 'Varios estados han ampliado su regla por etapas en los últimos años.'} Ponga en la herramienta la fecha de su viaje.</li>
+      <li><strong>Las exenciones.</strong> Ir acompañado por un adulto con tarjeta, alquilar con una lista de verificación del arrendador, tener una licencia de capitán de la Guardia Costera o estar de visita con la tarjeta de otro estado eximen en muchos estados. Cada página de estado las enumera.</li>
+    </ul>
+    <h2>La vía más barata</h2>
+    <p>En {free.length} estados con requisito, la BoatUS Foundation, una organización sin ánimo de lucro, ofrece un curso en línea gratuito y aprobado. {feeStates.length} estados cobran además su propia tarifa por la tarjeta. Donde el curso gratuito no se acepta, como en {h.list(h.names(h.where((s) => s.required === true && s.boatus?.status === 'not-approved')).slice(0, 4))}, hay que tomar un curso aprobado por el estado, a menudo de pago. La <a href={route('free-license', lang)}>página del curso gratuito</a> da el detalle estado por estado.</p>
+    <h2>Practicar antes del examen</h2>
+    <p>El examen del curso cubre las <a href={h.P.sources.navrules.url} target="_blank" rel="nofollow noopener noreferrer">Reglas de Navegación</a> federales, las luces, las señales sonoras, las boyas, el equipo obligatorio y la ley de su estado. El <a href={route('test', lang)}>examen de práctica</a> reúne {h.counts.questions} preguntas escritas por nosotros a partir del <a href={h.P.sources.cfr175.url} target="_blank" rel="nofollow noopener noreferrer">33 CFR</a> y del <a href={h.P.sources.usc2303.url} target="_blank" rel="nofollow noopener noreferrer">46 U.S.C.</a>, más {h.counts.stateQ} preguntas generadas a partir de las reglas verificadas de los estados, cada una con su explicación.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <h2>What decides the answer</h2>
+    <ul>
+      <li><strong>Your date of birth.</strong> Most states require the card from people born on or after a set date, so older operators are left out without going back to class. The date ranges from the 1950s to the 1990s depending on the state.</li>
+      <li><strong>The boat and its engine.</strong> Personal watercraft are almost always covered. For motorboats, many states only count engines above a set power: {fl.hpL ?? h.nc} in Florida, {mn.hpL ?? h.nc} in Minnesota. Sailboats without a motor are covered only in a few states, from a set length.</li>
+      <li><strong>The day of the outing.</strong> {phasing.length ? `${h.list(h.names(phasing))} ${phasing.length > 1 ? 'widen their rule' : 'widens its rule'} in stages over the next years, so the answer for next summer may not be today's.` : 'Several states have widened their rule in stages in recent years.'} Put the date of your trip in the tool.</li>
+      <li><strong>Exemptions.</strong> Being accompanied by an adult card holder, renting with the livery's checklist, holding a Coast Guard captain's license or visiting with another state's card exempt you in many states. Each state page lists them.</li>
+    </ul>
+    <h2>The cheapest route</h2>
+    <p>In {free.length} states with a requirement, the BoatUS Foundation, a nonprofit, offers a free approved online course. {feeStates.length} states also charge their own fee for the card. Where the free course is not accepted, as in {h.list(h.names(h.where((s) => s.required === true && s.boatus?.status === 'not-approved')).slice(0, 4))}, you take a state-approved course, often a paid one. The <a href={route('free-license', lang)}>free course page</a> gives the detail state by state.</p>
+    <h2>Practice before the exam</h2>
+    <p>The course exam covers the federal <a href={h.P.sources.navrules.url} target="_blank" rel="nofollow noopener noreferrer">Navigation Rules</a>, lights, sound signals, buoys, required equipment and your state's law. The <a href={route('test', lang)}>practice test</a> holds {h.counts.questions} questions we wrote from <a href={h.P.sources.cfr175.url} target="_blank" rel="nofollow noopener noreferrer">33 CFR</a> and <a href={h.P.sources.usc2303.url} target="_blank" rel="nofollow noopener noreferrer">46 U.S.C.</a>, plus {h.counts.stateQ} questions generated from the states' verified rules, each with its explanation.</p>
+  </div>
+  )}
+
+  <section class="mt-12" aria-labelledby="guides-title">
+    <h2 id="guides-title" class="text-2xl font-bold text-navy-900">{es ? 'Respuestas por tema' : 'Answers by topic'}</h2>
+    <div class="mt-4 grid gap-x-10 gap-y-6 md:grid-cols-2">
+      {groups.map(({ g, pages }) => (
+        <div>
+          <h3 class="border-b border-navy-200 pb-1 text-sm font-semibold uppercase tracking-wide text-navy-600">{groupLabel(g, lang)}</h3>
+          <ul class="mt-2 space-y-2">{pages.map((p) => <li><a href={route(p.id, lang)} class="font-medium text-accent-700 underline-offset-2 hover:underline">{T(p).nav}</a><span class="block text-sm text-navy-600">{T(p).card}</span></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    {states.length > 0 && <h3 class="mt-8 border-b border-navy-200 pb-1 text-sm font-semibold uppercase tracking-wide text-navy-600">{es ? 'Páginas de los estados más buscados' : 'Most searched states'}</h3>}
+    {states.length > 0 && <p class="mt-2 text-sm leading-7">{states.map((p, i) => <Fragment><a href={route(p.id, lang)} class="text-accent-700 hover:underline">{T(p).nav}</a>{i < states.length - 1 ? ' · ' : ''}</Fragment>)}</p>}
+  </section>
+</PageLayout>

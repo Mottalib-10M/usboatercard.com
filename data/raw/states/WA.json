@@ -1,0 +1,198 @@
+{
+ "code": "WA",
+ "name": "Washington",
+ "es": "Washington",
+ "agency": "Washington State Parks and Recreation Commission",
+ "agencyUrl": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1955-01-01",
+  "ageMax": null,
+  "ageMin": 12,
+  "hpMin": 15,
+  "hpNote": "motor of 15 hp or greater (PWC included)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone 12 or older born in 1955 or later must carry a Washington Boater Education Card to run a boat with a motor of 15 hp or more, PWC included.",
+  "textEs": "Toda persona de 12 años o más nacida en 1955 o después debe llevar la tarjeta de educación náutica de Washington para manejar una embarcación con motor de 15 hp o más, incluidas las motos acuáticas.",
+  "hpInclusive": true,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 14,
+  "note": "No one under 12 may run a boat of 15 hp or more; PWC operators must be at least 14."
+ },
+ "exemptions": [
+  "Born before Jan. 1, 1955.",
+  "Commercial fishing operators with a valid commercial license.",
+  "Holders of a valid U.S. Coast Guard marine operator license.",
+  "Renters who complete the vendor's safety checklist and carry the temporary card.",
+  "Government vessels exempt from registration; permitted racing events.",
+  "60-day grace for new boat buyers (bill of sale) and holders of another state's card."
+ ],
+ "card": {
+  "nameEn": "Washington State Boater Education Card",
+  "stateFee": 10,
+  "feeNote": "$10 check or money order to State Parks for the card after passing a course or equivalency exam; the course certificate works as a temporary card for 60 days. Replacement $5.",
+  "replacementFee": 5,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": null
+ },
+ "nonResident": "Visitors boating under 60 days need no card; after that a Washington card is required (another state's valid card can be exchanged for $10).",
+ "rental": "Renters 12+ complete the vendor's safety checklist and carry a temporary card; no PWC rental to anyone under 16.",
+ "pwcExtra": "PWC operators must be 14 or older; PWCs cannot be rented to anyone under 16.",
+ "penalty": "Civil infraction; waived if the boater shows the court a card within 60 days.",
+ "statute": "RCW 79A.60.640",
+ "sources": [
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Operate a vessel with a 15-horsepower (or greater) motor.",
+   "supports": [
+    "rule",
+    "rule.hpMin",
+    "rule.hpInclusive"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Were born after Jan. 1, 1955.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.640.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.640",
+   "quote": "(j) Any person born before January 1, 1955.",
+   "supports": [
+    "rule.bornOnOrAfter",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Are 12 years of age or older.",
+   "supports": [
+    "rule.ageMin"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.640.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.640",
+   "quote": "Is at least twelve years of age, except that an operator of a personal watercraft shall comply with the age requirements",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.190.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.190",
+   "quote": "A person under the age of fourteen shall not operate a personal watercraft on the waters of this state.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.190.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.190",
+   "quote": "A person shall not lease, hire, or rent a personal watercraft to a person under the age of sixteen.",
+   "supports": [
+    "rental",
+    "pwcExtra"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Are renting a boat, have completed a watercraft safety checklist provided by the vendor and been issued a temporary card which you must carry with you.",
+   "supports": [
+    "rental",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Are an operator of a commercial fishing boat and able to show a valid commercial license.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Are able to show a valid U.S. Coast Guard Marine Operator License.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "You do not need a Boater Education Card if you are visiting from another state or country and boating for less than 60 days.",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Submit a Boater Education Card Application (PDF) and a copy of your certificate along with a check or money order for $10 to:",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "The fee for a replacement card is $5.",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "The Washington State Boater Education Card is valid for your lifetime",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://parks.wa.gov/about/rules-and-safety/boater-education-safety/boater-education-card",
+   "publisher": "Washington State Parks and Recreation Commission",
+   "quote": "Your certificate serves as a temporary card for 60 days, beginning the date of course completion.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.640.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.640",
+   "quote": "Failure to possess a boater education card required by this section is an infraction under chapter 7.84 RCW.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCW/RCW%20%2079A%20TITLE/RCW%20%2079A.%2060%20%20CHAPTER/RCW%20%2079A.%2060%20.640.htm",
+   "publisher": "Washington State Legislature, RCW 79A.60.640",
+   "quote": "The penalty shall be waived if the boater provides proof to the court within sixty days",
+   "supports": [
+    "penalty"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.onlineAllowed"
+ ]
+}

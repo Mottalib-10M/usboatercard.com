@@ -1,0 +1,169 @@
+{
+ "code": "SC",
+ "name": "South Carolina",
+ "es": "Carolina del Sur",
+ "agency": "South Carolina Department of Natural Resources",
+ "agencyUrl": "https://dnr.sc.gov/education/boated.html",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "2007-07-02",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "engine of 10 hp or greater, any PWC or specialty propcraft",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Since Aug. 18, 2023, anyone born after July 1, 2007 must pass an approved boater education course before running a boat with 10 hp or more, a PWC or a specialty propcraft.",
+  "textEs": "Desde el 18 de agosto de 2023, quien nació después del 1 de julio de 2007 debe aprobar un curso de educación náutica antes de manejar una embarcación de 10 hp o más, una moto acuática o una embarcación especial de hélice.",
+  "hpInclusive": true,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "The 2023 law removed the former under-16 operating rule; no separate minimum age is stated."
+ },
+ "exemptions": [
+  "Born on or before July 1, 2007.",
+  "Holders of a USCG vessel operator license or merchant mariner credential (expired ones count).",
+  "Non-residents with a certificate or equivalent from another state.",
+  "Renters holding a valid boat rental safety certificate.",
+  "Accompanied by someone 18+ who is exempt or certified."
+ ],
+ "card": {
+  "nameEn": "South Carolina boating safety certificate",
+  "stateFee": null,
+  "feeNote": "SCDNR's six-hour classroom course is free; online providers charge their own prices. Duplicates for SCDNR/BoatEd courses via ilostmycard.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Non-residents with a boating safety certificate or equivalent from their state are exempt.",
+ "rental": "Renters born after July 1, 2007 can use a boat rental safety certificate (valid 30 days, rental businesses only).",
+ "pwcExtra": null,
+ "penalty": "Civil fine of $50 to $300; not a criminal offense.",
+ "statute": "S.C. Code §50-21-95",
+ "sources": [
+  {
+   "url": "https://dnr.sc.gov/education/boated.html",
+   "publisher": "South Carolina Department of Natural Resources",
+   "quote": "Effective 08/18/2023, Boaters born after July 1, 2007 are required by law to pass an approved boater education course before operating a boat, personal watercraft, or a specialty propcraft powered by 10 hp motor or more.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "a vessel powered by an engine of ten horsepower or greater or equivalent to ten horsepower or greater, a personal watercraft, or a specialty propcraft unless the person:",
+   "supports": [
+    "rule.hpMin",
+    "rule.hpInclusive",
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "(1) was born on or before July 1, 2007;",
+   "supports": [
+    "rule.bornOnOrAfter",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "is in possession of a license to operate a vessel issued by the United States Coast Guard in the person's name, regardless of the expiration date on the license;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "is a nonresident in possession of a boating safety certificate, or an equivalency, issued by another state in the nonresident's name;",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "is accompanied by a person at least eighteen years old who meets one of the criteria in items (1) through (5) of this subsection.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "must be fined not less than fifty dollars and not more than three hundred dollars",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "A violation of this section does not constitute a criminal offense",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://www.scstatehouse.gov/code/t50c021.php",
+   "publisher": "South Carolina General Assembly, Code of Laws Title 50 Ch. 21",
+   "quote": "deleted (9), which related to persons younger than sixteen years of age operating a personal watercraft, specialty propcraft, or vessel",
+   "supports": [
+    "minAge.note"
+   ]
+  },
+  {
+   "url": "https://dnr.sc.gov/education/boated.html",
+   "publisher": "South Carolina Department of Natural Resources",
+   "quote": "The boat rental safety certificate is valid for 30 days from the date of issuance",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://dnr.sc.gov/education/boated.html",
+   "publisher": "South Carolina Department of Natural Resources",
+   "quote": "This six-hour, one-day class provides hands-on learning",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://dnr.sc.gov/education/boated.html",
+   "publisher": "South Carolina Department of Natural Resources",
+   "quote": "SCDNR accepts any National Association of Safe Boating Law Administrators approved course (NASBLA).",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://dnr.sc.gov/education/boated.html",
+   "publisher": "South Carolina Department of Natural Resources",
+   "quote": "Take a Free Boating Course!",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "minAge.pwc",
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity"
+ ]
+}

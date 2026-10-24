@@ -1,0 +1,69 @@
+{
+ "code": "DC",
+ "name": "District of Columbia",
+ "es": "Distrito de Columbia",
+ "agency": "Metropolitan Police Department, Harbor Patrol Unit",
+ "agencyUrl": "https://mpdc.dc.gov/page/boating-safety",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone operating a vessel on District of Columbia waterways must hold a Boating Safety Certificate.",
+  "textEs": "Toda persona que maneje una embarcación en las aguas del Distrito de Columbia debe tener un Boating Safety Certificate.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating Safety Certificate",
+  "stateFee": null,
+  "feeNote": "MPD Harbor Patrol runs a free one-day, 8-hour course (pre-registration by phone).",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://mpdc.dc.gov/page/boating-safety",
+   "publisher": "Metropolitan Police Department",
+   "quote": "Anyone operating a vessel on District of Columbia waterways is required to have a Boating Safety Certificate.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://mpdc.dc.gov/page/boating-safety",
+   "publisher": "Metropolitan Police Department",
+   "quote": "The training is free; photo ID is required.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "minAge",
+  "nonResident",
+  "card.validity"
+ ]
+}

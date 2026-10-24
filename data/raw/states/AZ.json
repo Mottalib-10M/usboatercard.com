@@ -1,0 +1,67 @@
+{
+ "code": "AZ",
+ "name": "Arizona",
+ "es": "Arizona",
+ "agency": "Arizona Game and Fish Department",
+ "agencyUrl": "https://www.azgfd.com/education/boating-education/",
+ "required": false,
+ "rule": {
+  "kind": "none",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Arizona has no general boater education requirement; a course is only mandatory when a court orders it after a boating citation. The state offers free courses.",
+  "textEs": "Arizona no tiene un requisito general de educación náutica; el curso solo es obligatorio cuando un juez lo ordena tras una multa. El estado ofrece cursos gratuitos.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating safety course certificate (voluntary)",
+  "stateFee": null,
+  "feeNote": "AZGFD offers a free home study packet and classes.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+   "publisher": "Arizona Game and Fish Department (archived copy of 2026-04-07; live page answers 403 to scripts)",
+   "quote": "Need to complete a boating safety education course because of a boating ticket? Choose an option below to meet the court’s requirements.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "http://web.archive.org/web/20260407043439/https://www.azgfd.com/education/boating-education/",
+   "publisher": "Arizona Game and Fish Department",
+   "quote": "Fill out the Home Study Packet Request Form or email [email protected] to get your free home study packet.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "required (no explicit official sentence saying no requirement; AZGFD only describes court-ordered and voluntary courses)",
+  "minAge"
+ ]
+}

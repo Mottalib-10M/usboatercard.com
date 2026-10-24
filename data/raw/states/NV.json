@@ -1,0 +1,112 @@
+{
+ "code": "NV",
+ "name": "Nevada",
+ "es": "Nevada",
+ "agency": "Nevada Department of Wildlife",
+ "agencyUrl": "https://www.ndow.org/learn-discover/outdoor-education/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1983-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 15,
+  "hpNote": "motor of more than 15 hp, PWC included; only on interstate waters (e.g. Lake Tahoe, Lake Mead, Lake Mohave, Colorado River)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1983 needs an NDOW-approved boater education course to run a motorboat over 15 hp, PWC included, on Nevada interstate waters.",
+  "textEs": "Quien nació el 1 de enero de 1983 o después necesita un curso de educación náutica aprobado por NDOW para manejar una lancha de más de 15 hp, incluidas las motos acuáticas, en las aguas interestatales de Nevada.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 14,
+  "note": "Children under 14 may not operate a PWC."
+ },
+ "exemptions": [
+  "Born before Jan. 1, 1983.",
+  "Motorboats of 15 hp or less.",
+  "Waters that are not interstate waters."
+ ],
+ "card": {
+  "nameEn": "Boater education card",
+  "stateFee": null,
+  "feeNote": "NDOW mails a card after you pass the mail-in test in its downloadable manual (no fee stated); online courses cost $0-$80 depending on the provider.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": "Minimum age 14 to operate a PWC.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.ndow.org/learn-discover/outdoor-education/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "Nevada boaters born on or after January 1, 1983, are required to complete an NDOW-approved boater education course before operating a boat on interstate waters.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.ndow.org/blog/how-to-register-your-boat-in-nevada/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "This only applies to operators using a motorboat with a motor exceeding 15 horsepower.",
+   "supports": [
+    "rule.hpMin"
+   ]
+  },
+  {
+   "url": "https://www.ndow.org/news/nevada-game-wardens-urge-pwc-safety/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "Anyone born on or after Jan. 1, 1983, who operates a motorboat of more than 15 horsepower on interstate waters, including personal watercraft, must complete a NASBLA-approved boating safety course.",
+   "supports": [
+    "rule",
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.ndow.org/news/nevada-game-wardens-urge-pwc-safety/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "Children under 14 may not operate a personal watercraft.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://www.ndow.org/learn-discover/outdoor-education/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "There are several options for online courses with varying levels of interactive elements and costs.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.ndow.org/learn-discover/outdoor-education/",
+   "publisher": "Nevada Department of Wildlife",
+   "quote": "You can also download a PDF version of the Nevada Boating Education Manual. When you are ready, you can take the test at the back of the book and mail it to the Nevada Department of Wildlife. Once you pass, a boater education card will be mailed to you.",
+   "supports": [
+    "card.feeNote",
+    "card.inPersonExamRequired"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "card.stateFee",
+  "card.validity",
+  "card.replacementFee",
+  "nonResident",
+  "rental",
+  "penalty",
+  "statute"
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "code": "MA",
+ "name": "Massachusetts",
+ "es": "Massachusetts",
+ "agency": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+ "agencyUrl": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1989-01-02",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any motorboat (any vessel with machinery propulsion, PWC included)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Hanson-Milone Act: born after Jan. 1, 1989 from April 1, 2026; everyone by April 1, 2028. No penalties before Sept. 1, 2026.",
+  "textEn": "Under the Hanson-Milone Act, anyone born after Jan. 1, 1989 needs a boater safety certificate to run a motorboat or PWC since April 1, 2026; older operators must have one by April 1, 2028.",
+  "textEs": "Según la Ley Hanson-Milone, quien nació después del 1 de enero de 1989 necesita un certificado de seguridad náutica para manejar una lancha o moto acuática desde el 1 de abril de 2026; los demás deberán tenerlo a más tardar el 1 de abril de 2028.",
+  "hpInclusive": null,
+  "phases": [
+   {
+    "from": "2026-04-01",
+    "bornAfter": "1989-01-01"
+   },
+   {
+    "from": "2028-04-01",
+    "bornAfter": "1800-01-01"
+   }
+  ],
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 16,
+  "note": "PWC only from 16, even with a certificate. The course is open from 12. Someone over 12 without a certificate may operate under direct supervision of a certified person over 18."
+ },
+ "exemptions": [
+  "Direct supervision by a certified person over 18 (operator over 12).",
+  "Holders of a valid merchant mariner credential or similar license.",
+  "Non-residents with a certificate from another U.S. state or territory or Canada.",
+  "Active military, National Guard or Coast Guard members qualified to run motorboats.",
+  "New owners within 6 months of buying a numbered or documented boat, with a temporary certificate.",
+  "Commercial fishing vessel operators; students in an approved course; approved boating safety programs.",
+  "Paddlecraft without a motor; USCG-documented vessels are not motorboats under the Act."
+ ],
+ "card": {
+  "nameEn": "Boater safety certificate",
+  "stateFee": 0,
+  "feeNote": "The state charges no fee for the course or certificate; MEP classes are free, private providers may charge. Replacement via ilostmycard.com.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors with a certificate from any U.S. state or territory or from Transport Canada are exempt; Massachusetts residents need a Massachusetts certificate (out-of-state ones can be converted).",
+ "rental": "Renters are not exempt; the Environmental Police is studying temporary certificates for low-power rentals.",
+ "pwcExtra": "PWC operators must be 16 or older and hold a certificate.",
+ "penalty": "$50 first offense, $100 for later offenses; no penalties before Sept. 1, 2026.",
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "People born after January 1, 1989, must have a boater safety certificate to operate a motorboat after April 1, 2026.",
+   "supports": [
+    "rule",
+    "phases"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "People born on or before January 1, 1989, must have a boater safety certificate to operate a motorboat by April 1, 2028.",
+   "supports": [
+    "rule",
+    "phases"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "MEP will not issue any penalties related to boater safety certificates before September 1, 2026.",
+   "supports": [
+    "rule.phaseIn",
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "A motorboat is any vessel propelled by machinery, even if it is not the main or only source of propulsion.",
+   "supports": [
+    "rule.hpNote"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "PWC operators must be at least 16 years of age and must have a boater safety certificate.",
+   "supports": [
+    "rule.pwc",
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "A person over 12 years old who does not have a boater safety certificate can operate a motorboat if they are directly supervised by a person with a certificate who is over 18 years of age.",
+   "supports": [
+    "exemptions",
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Non-residents with a boater safety certificate or similar document from another U.S. state or territory or Canada.",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Massachusetts residents cannot use an out-of-state certificate when operating on the waters of the commonwealth.",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Operators with a valid, unexpired merchant mariner credential or similar license.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Massachusetts does not currently charge a fee to take a boating safety education course. However, course providers may charge a fee.",
+   "supports": [
+    "card.stateFee",
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "MEP-approved boating safety education courses can be taken either online or in person.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "The certificate is valid for life unless it is revoked.",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Violations may result in a fine of $50 for a first offense or $100 for a second or subsequent offense.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "MEP is considering options for temporary certificates for lower-power motorboat rentals.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://www.mass.gov/info-details/hanson-milone-boater-safety-act-frequently-asked-questions",
+   "publisher": "Massachusetts Environmental Police, Boat and Recreation Vehicle Safety Bureau",
+   "quote": "Students must be at least 12 years of age at the time of the course.",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "card.replacementFee",
+  "statute"
+ ]
+}

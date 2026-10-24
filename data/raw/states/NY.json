@@ -1,0 +1,173 @@
+{
+ "code": "NY",
+ "name": "New York",
+ "es": "Nueva York",
+ "agency": "New York State Office of Parks, Recreation and Historic Preservation",
+ "agencyUrl": "https://parks.ny.gov/activities/boating/boating-education",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any motorized vessel, no hp threshold",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Brianna's Law phase-in by birth year (born on/after Jan 1, 1983 by 2023; on/after Jan 1, 1978 by 2024) ended; all ages since 2025.",
+  "textEn": "Since 2025, everyone who operates a motorized boat in New York, including a PWC, needs a boating safety certificate, whatever their age.",
+  "textEs": "Desde 2025, toda persona que maneje una embarcación con motor en Nueva York, incluida una moto acuática, necesita un certificado de seguridad náutica, sin importar su edad.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 14,
+  "note": "The course is open from age 10. PWC operators must be 14 or older."
+ },
+ "exemptions": [
+  "Non-motorized boats such as kayaks and canoes.",
+  "Adults 18+ renting from a livery, after a safety briefing by livery staff.",
+  "Holders of a U.S. Coast Guard license (carry a copy)."
+ ],
+ "card": {
+  "nameEn": "Safe Boating Certificate",
+  "stateFee": null,
+  "feeNote": "Online providers include the certificate in their course fee; classroom students 18+ buy their certificate online. Replacement $10 at ilostmycard.com.",
+  "replacementFee": 10,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "An out-of-state certificate counts only if issued by the boater's current state of residence.",
+ "rental": "Adults 18+ may rent a motorboat or PWC from a livery without a certificate after a staff safety briefing; under 18 need a certificate.",
+ "pwcExtra": "Minimum age 14 to operate a PWC.",
+ "penalty": null,
+ "statute": "N.Y. Navigation Law §49",
+ "sources": [
+  {
+   "url": "https://dmv.ny.gov/registration/register-a-boat",
+   "publisher": "New York State DMV",
+   "quote": "All motorboat operators regardless of age will need a boating safety certificate beginning in 2025.",
+   "supports": [
+    "rule",
+    "phases"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "all operators of motorized vessels, including personal watercraft (PWCs)",
+   "supports": [
+    "rule",
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "operators of non-motorized boats, such as kayaks and canoes, are not required to take the course at this time",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "Safe Boating Certificates are good for life",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "You can order a replacement certificate online for $10.00 at ilostmycard.com",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "Fees paid to the online provider include the cost of your permanent certificate issued by the provider.",
+   "supports": [
+    "card.feeNote",
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "learning is completed remotely, and successful completion of exams is required to advance through the course.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "temporary certificate that is valid for 90 days until your permanent certificate arrives in the mail",
+   "supports": [
+    "card"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "may rent and operate a motorized boat, including (PWCs) from a livery",
+   "supports": [
+    "rental",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "Persons under the age of 18 can only rent if they hold a safety certificate.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "is only recognized in New York if it was issued from your current state of residence",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "No, but you must carry a copy of your U.S. Coast Guard license on you while boating recreationally.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://parks.ny.gov/activities/boating/boating-education",
+   "publisher": "New York State Office of Parks, Recreation and Historic Preservation",
+   "quote": "is acceptable proof of a safe boating certificate, but only in New York State.",
+   "supports": [
+    "card"
+   ]
+  },
+  {
+   "url": "https://www.nysenate.gov/legislation/laws/NAV/49",
+   "publisher": "New York State Senate, Navigation Law §49",
+   "quote": "unless the operator is fourteen years of age or older",
+   "supports": [
+    "minAge.pwc"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "card.stateFee",
+  "penalty"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "code": "UT",
+ "name": "Utah",
+ "es": "Utah",
+ "agency": "Utah Division of Outdoor Recreation",
+ "agencyUrl": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+ "required": true,
+ "rule": {
+  "kind": "pwcOnly",
+  "bornOnOrAfter": null,
+  "ageMax": 17,
+  "ageMin": 12,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Until Dec. 31, 2026 only PWC operators aged 12-17 need a course. From Jan. 1, 2027 every operator of a motorboat or sailboat must also complete a short state watercraft operator safety course each calendar year and carry proof.",
+  "textEn": "Today only PWC riders aged 12 to 17 need an approved boating safety course. From Jan. 1, 2027 everyone who runs a motorboat or sailboat must also take a short state safety course once every calendar year.",
+  "textEs": "Hoy solo los conductores de motos acuáticas de 12 a 17 años necesitan un curso de seguridad náutica aprobado. Desde el 1 de enero de 2027, toda persona que maneje una lancha o un velero deberá además hacer un breve curso estatal de seguridad una vez por año calendario.",
+  "hpInclusive": null,
+  "phases": [
+   {
+    "from": "2027-01-01",
+    "kind": "all",
+    "ageMax": null,
+    "ageMin": null
+   }
+  ],
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 16,
+  "pwc": 12,
+  "note": "Under 16: motorboat only with a person 18+ on board supervising. PWC from 12 with the course; ages 12-15 also need direct supervision by someone 18+."
+ },
+ "exemptions": [
+  "PWC course: operators 18 and older (until the 2027 annual course applies to all motorboat and sailboat operators).",
+  "From 2027: renters may get a livery safety briefing instead of the annual course."
+ ],
+ "card": {
+  "nameEn": "Boating safety certificate (PWC youth course); from 2027 also proof of the annual watercraft operator safety course",
+  "stateFee": null,
+  "feeNote": "The law lets the division charge a fee for its boating safety course; amount not stated in the statute.",
+  "replacementFee": null,
+  "validity": "Annual course (2027+): proof expires at the end of the calendar year",
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": null,
+ "rental": "From 2027 a livery may rent only to someone with proof of the annual course or after giving a state safety briefing.",
+ "pwcExtra": "PWC riders 12-15 need the course plus direct (visual) supervision by someone 18+; 16-17 need the course only.",
+ "penalty": "Violations are infractions.",
+ "statute": "Utah Code §73-18-15.2; §73-18-15.6 (from 1/1/2027)",
+ "sources": [
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.2",
+   "quote": "A person who is at least 12 years of age or older but under 16 years of age may operate a personal watercraft provided he:",
+   "supports": [
+    "rule",
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.2",
+   "quote": "A person who is at least 16 years of age but under 18 years of age may operate a personal watercraft, if the person: (a) completes a boating safety course approved by the division",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.2",
+   "quote": "A person under 16 years of age may not operate a motorboat on the waters of this state unless the person is under the on-board and direct supervision of a person who is at least 18 years of age.",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.2",
+   "quote": "The division may collect fees set by the division in accordance with Section 63J-1-504 from each person who takes the division's boating safety course",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.2.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.2",
+   "quote": "A violation of this section is an infraction.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.6.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.6 (effective 1/1/2027)",
+   "quote": "A watercraft operator shall complete the course once every calendar year.",
+   "supports": [
+    "rule.phaseIn",
+    "rule.phases"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.6.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.6 (effective 1/1/2027)",
+   "quote": "\"watercraft\" means a motorboat or sailboat.",
+   "supports": [
+    "rule.phaseIn"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.6.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.6 (effective 1/1/2027)",
+   "quote": "The proof of completion expires the day after December 31 in the calendar year which the operator completes the watercraft operator safety course.",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0054.pdf",
+   "publisher": "Utah State Legislature, H.B. 54 (2026 General Session), enrolled copy",
+   "quote": "This bill takes effect on January 1, 2027.",
+   "supports": [
+    "rule.phases"
+   ]
+  },
+  {
+   "url": "https://le.utah.gov/xcode/Title73/Chapter18/73-18-S15.6.html",
+   "publisher": "Utah State Legislature, Utah Code §73-18-15.6 (effective 1/1/2027)",
+   "quote": "the livery provides the individual with a safety briefing as described in Subsection (10) .",
+   "supports": [
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.onlineAllowed",
+  "card.inPersonExamRequired",
+  "card.replacementFee",
+  "nonResident"
+ ]
+}

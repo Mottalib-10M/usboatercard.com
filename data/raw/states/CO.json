@@ -1,0 +1,69 @@
+{
+ "code": "CO",
+ "name": "Colorado",
+ "es": "Colorado",
+ "agency": "Colorado Parks and Wildlife",
+ "agencyUrl": "https://cpw.state.co.us/activities/safety",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 17,
+  "ageMin": 14,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Motorboats and PWC: operators must be 18, except that 14- to 17-year-olds may operate after passing a state-approved boating safety course.",
+  "textEs": "Lanchas con motor y motos acuáticas: hay que tener 18 años, salvo los de 14 a 17 años que aprueben un curso de seguridad náutica aprobado por el estado.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 14,
+  "pwc": 14,
+  "note": "Under 14 may not operate a motorboat or PWC; 14-17 only with the course; 18+ no course required."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating safety course certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://cpw.state.co.us/activities/safety",
+   "publisher": "Colorado Parks and Wildlife",
+   "quote": "In Colorado, anyone operating a motorboat - including personal watercraft such as Jet Skis - must be at least 18 years old.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://cpw.state.co.us/activities/safety",
+   "publisher": "Colorado Parks and Wildlife",
+   "quote": "Individuals aged 14–17 who wish to operate a motorized vessel are required to complete and pass a state-approved boating safety course. Courses may be taken in person, virtually, or fully online through an approved provider.",
+   "supports": [
+    "rule",
+    "minAge",
+    "card.onlineAllowed"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "nonResident"
+ ]
+}

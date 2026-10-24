@@ -1,0 +1,162 @@
+{
+ "code": "OH",
+ "name": "Ohio",
+ "es": "Ohio",
+ "agency": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+ "agencyUrl": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1982-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "boat powered by more than 10 hp (PWC included)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1982 needs proof of boater education (approved course or state proficiency exam) to run a boat over 10 hp, PWC included.",
+  "textEs": "Quien nació el 1 de enero de 1982 o después necesita comprobar su educación náutica (curso aprobado o examen de competencia del estado) para manejar una embarcación de más de 10 hp, incluidas las motos acuáticas.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 16,
+  "note": "Boats over 10 hp: under 12 only with an adult 18+ on board, both certified if born 1982 or later; alone from 12 with a certificate. PWC: none under 12; 12-15 with an adult 18+ on board; alone from 16 with a certificate."
+ },
+ "exemptions": [
+  "Holders of a valid U.S. Coast Guard merchant mariner credential with a master or operator endorsement (carry it on board).",
+  "Boats of 10 hp or less."
+ ],
+ "card": {
+  "nameEn": "Ohio Boater Education Card / certificate",
+  "stateFee": null,
+  "feeNote": "The ODNR proficiency exam at a Watercraft Office is free; course providers set their own prices. Replacement cards for online courses via ilostmycard.com.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Ohio accepts any NASBLA-approved certificate or card from another state or U.S. territory showing name, address and date of birth.",
+ "rental": "Renters born on or after Jan. 1, 1982 of boats over 10 hp must sign that they hold a certificate or pass a short exam (90%+) given by the rental business, valid for that rental only.",
+ "pwcExtra": "PWC: ages 12-15 only with an adult 18+ on board (adult also certified if born 1982 or later); from 16 alone with a certificate.",
+ "penalty": "Fourth-degree misdemeanor: up to $250 and/or 30 days; up to $500 and/or 60 days if linked to a collision, injury or damage.",
+ "statute": "Ohio Rev. Code §1547.05",
+ "sources": [
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Ohio law requires boaters born on or after January 1, 1982, to successfully complete either a boating course or a proficiency exam in order to operate a boat powered by more than 10 horsepower.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Children under 12 may not operate a PWC, not even with an education certificate.",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Children 12 to 15 can operate a PWC as long as they are under the direct supervision of an adult (18 or older) who is onboard",
+   "supports": [
+    "pwcExtra",
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Children 16 or older can operate a PWC as long as they have an education certificate. Adult supervision is not required.",
+   "supports": [
+    "minAge.pwc",
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Children 12 and over may operate any other type of powerboat greater than 10HP as long as they have an education certificate.",
+   "supports": [
+    "minAge.motorboat"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "must produce a certificate of completion of either an approved course or proficiency test not later than 72 hours after being stopped.",
+   "supports": [
+    "card"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Successfully passes an abbreviated exam, with a score of 90 percent or better, administered by the business and valid only for the period of the rental agreement.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/rules-and-regulations/rules-and-regulations-by-division/state-parks-and-watercraft/boating-rules/mandatory-boater-education",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "punishable by a fine of not more than $250, a term of imprisonment of not more than 30 days, or both.",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/discover-and-learn/education-training/boater-education-skills/1-meeting-boater-ed-requirements",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Individuals who possess valid merchant mariner credentials issued by the US Coast Guard with at least one endorsement of master or operator are exempt",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/discover-and-learn/education-training/boater-education-skills/1-meeting-boater-ed-requirements",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "Ohio will accept any certificate or card (including those from another state or U.S. territory)",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/discover-and-learn/education-training/boater-education-skills/1-meeting-boater-ed-requirements",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "There is no fee to take a proficiency exam.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/discover-and-learn/education-training/boater-education-skills/1-meeting-boater-ed-requirements",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "A temporary or permanent certificate is available immediately to download or print upon completion of an on-line course.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://ohiodnr.gov/discover-and-learn/education-training/boater-education-skills/1-meeting-boater-ed-requirements",
+   "publisher": "Ohio Department of Natural Resources, Division of Parks and Watercraft",
+   "quote": "You can order a replacement or updated card for on-line courses through www.ilostmycard.com",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity"
+ ]
+}

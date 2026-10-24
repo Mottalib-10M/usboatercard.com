@@ -1,0 +1,112 @@
+{
+ "code": "MN",
+ "name": "Minnesota",
+ "es": "Minnesota",
+ "agency": "Minnesota Department of Natural Resources",
+ "agencyUrl": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "2000-07-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 25,
+  "hpNote": "motor factory-rated over 25 hp (any PWC)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Born after June 30, 2004 from July 1, 2025; after June 30, 2000 from July 1, 2026; after June 30, 1996 from July 1, 2027; after June 30, 1987 from July 1, 2028.",
+  "textEn": "Minnesota is phasing in a watercraft operator's permit: since July 1, 2026 anyone born after June 30, 2000 needs it for a motorboat over 25 hp or any PWC; the cut-off moves to June 30, 1996 on July 1, 2027 and to June 30, 1987 on July 1, 2028.",
+  "textEs": "Minnesota está ampliando por etapas el permiso de operador: desde el 1 de julio de 2026 lo necesita quien nació después del 30 de junio de 2000 para una lancha de más de 25 hp o cualquier moto acuática; la fecha pasa al 30 de junio de 1996 el 1 de julio de 2027 y al 30 de junio de 1987 el 1 de julio de 2028.",
+  "hpInclusive": false,
+  "phases": [
+   {
+    "from": "2025-07-01",
+    "bornAfter": "2004-06-30"
+   },
+   {
+    "from": "2026-07-01",
+    "bornAfter": "2000-06-30"
+   },
+   {
+    "from": "2027-07-01",
+    "bornAfter": "1996-06-30"
+   },
+   {
+    "from": "2028-07-01",
+    "bornAfter": "1987-06-30"
+   }
+  ],
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 12,
+  "pwc": 12,
+  "note": "Under 12: motorboats under 75 hp only with an accompanying operator; no PWC even with an adult. Any age may run a motor of 25 hp or less without a permit."
+ },
+ "exemptions": [
+  "Motorboat with a motor factory-rated at 25 hp or less (not a PWC).",
+  "Visitors 12-26 holding a valid home-state certificate."
+ ],
+ "card": {
+  "nameEn": "Watercraft operator's permit",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors with a valid home-state certificate do not need a Minnesota permit.",
+ "rental": "Since July 1, 2025 nobody under 18 may rent a motorboat or PWC; renters without a permit take a rental operator exam.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+   "publisher": "Minnesota DNR, 2026 Boating Guide",
+   "quote": "Born after the following dates: • June 30, 2004 (effective July 1, 2025) • June 30, 2000 (effective July 1, 2026) • June 30, 1996 (effective July 1, 2027) • June 30, 1987 (effective July 1, 2028)",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+   "publisher": "Minnesota DNR, 2026 Boating Guide",
+   "quote": "People of any age can operate a motorboat powered by a motor with a factory rating of 25 horsepower or less without a watercraft operator’s permit or an accompanying operator on board.",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+   "publisher": "Minnesota DNR, 2026 Boating Guide",
+   "quote": "Less than 12 years Cannot operate, even with an adult on board.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+   "publisher": "Minnesota DNR, 2026 Boating Guide",
+   "quote": "If you are visiting Minnesota and are between the ages of 12‑26 years and already possess a valid watercraft operator’s certificate/permit issued by your home state, you don’t need to obtain another one from Minnesota.",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://files.dnr.state.mn.us/rlp/regulations/boatwater/boatingguide.pdf",
+   "publisher": "Minnesota DNR, 2026 Boating Guide",
+   "quote": "Effective July 1, 2025, no one under the age of 18 is able to rent or lease a motorboat, including a personal watercraft.",
+   "supports": [
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity"
+ ]
+}

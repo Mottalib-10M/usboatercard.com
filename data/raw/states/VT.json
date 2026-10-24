@@ -1,0 +1,132 @@
+{
+ "code": "VT",
+ "name": "Vermont",
+ "es": "Vermont",
+ "agency": "Vermont State Police, Department of Public Safety",
+ "agencyUrl": "https://vsp.vermont.gov/node/131",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1974-01-02",
+  "ageMax": null,
+  "ageMin": 12,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone 12 or older born after Jan. 1, 1974 needs a boating safety certificate to operate any motorboat, including a PWC.",
+  "textEs": "Toda persona de 12 años o más nacida después del 1 de enero de 1974 necesita un certificado de seguridad náutica para manejar cualquier embarcación a motor, incluida una moto acuática.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Holders of a U.S. Coast Guard license to operate vessels commercially.",
+  "Motorboats on a body of water on private property.",
+  "Born on or before Jan. 1, 1974."
+ ],
+ "card": {
+  "nameEn": "Certificate of boating safety education",
+  "stateFee": null,
+  "feeNote": "Study materials for the equivalency exam are free from Public Safety on request.",
+  "replacementFee": 0,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Any NASBLA-approved certificate from another state or country is accepted.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "23 V.S.A. §3305b",
+ "sources": [
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "An individual born after January 1, 1974 shall not operate a motorboat on the public waters of this State without first obtaining a certificate of boating education.",
+   "supports": [
+    "rule",
+    "statute"
+   ]
+  },
+  {
+   "url": "https://vsp.vermont.gov/node/131",
+   "publisher": "Vermont State Police (Department of Public Safety)",
+   "quote": "Boating safety education is required for any motor boat operator (12 years of age or older) born after January 1, 1974.",
+   "supports": [
+    "rule",
+    "rule.ageMin"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "an individual operating a motorboat on a body of water located on private property;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "an individual who is licensed by the U.S. Coast Guard to operate a vessel for commercial purposes;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "Once issued, the certificate of boating safety education is valid for the lifetime of the individual to whom it was issued",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "The Department of Public Safety shall replace, without charge, a lost or destroyed certificate",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "A boating safety certificate issued in another state or country in accordance with or substantially equivalent to criteria of the National Association of State Boating Law Administrators is sufficient",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://vsp.vermont.gov/node/131",
+   "publisher": "Vermont State Police (Department of Public Safety)",
+   "quote": "The Boat Vermont internet course  is available online for those Vermont residents unable to attend a classroom course.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://legislature.vermont.gov/statutes/section/23/029/03305b",
+   "publisher": "Vermont General Assembly, 23 V.S.A. §3305b",
+   "quote": "Upon request, the Department of Public Safety shall provide, without charge, boating safety education materials to individuals who plan to take the boating safety equivalency examination.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge",
+  "card.stateFee",
+  "rental",
+  "penalty",
+  "pwcExtra"
+ ]
+}

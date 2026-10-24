@@ -1,0 +1,162 @@
+{
+ "code": "MO",
+ "name": "Missouri",
+ "es": "Misuri",
+ "agency": "Missouri State Highway Patrol, Water Patrol Division",
+ "agencyUrl": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": "1984-01-02",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": "any vessel (no hp threshold)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": "Born after Jan. 1, 1984 and before Jan. 1, 2006: card needed on the lakes of the state. From Jan. 1, 2027, anyone born on or after Jan. 1, 2006 needs it on all state waters.",
+  "textEn": "Anyone born after Jan. 1, 1984 needs a Missouri boating safety ID card to operate a vessel on the state's lakes; from Jan. 1, 2027, those born in 2006 or later need it on all state waters.",
+  "textEs": "Quien nació después del 1 de enero de 1984 necesita la tarjeta de identificación de seguridad náutica de Misuri para manejar una embarcación en los lagos del estado; desde el 1 de enero de 2027, los nacidos en 2006 o después la necesitarán en todas las aguas del estado.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Holders of a USCG master, mate or operator license.",
+  "Private lakes or ponds that are not waters of the state.",
+  "Approved events or regattas.",
+  "Non-residents with a NASBLA-approved certificate from another state.",
+  "Active members of the U.S. Armed Forces, reserves or Missouri National Guard, and their spouses.",
+  "Anyone who already completed a NASBLA-approved course."
+ ],
+ "card": {
+  "nameEn": "Boating safety identification card",
+  "stateFee": null,
+  "feeNote": "The Water Patrol may charge a cost-based fee for the card and replacements (amount not set in the statute). A 7-day temporary card from rental or sales businesses costs $9.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": "Non-residents with a NASBLA-approved certificate or license from their state are exempt.",
+ "rental": "Rental and sales businesses can issue a one-time temporary card valid up to 7 days ($9) after an affidavit and a valid driver license.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "RSMo §306.127",
+ "sources": [
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "every person born after January 1, 1984, and before January 1, 2006, or as required pursuant to section 306.128 , who operates a vessel on the lakes of this state shall possess",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "Beginning January 1, 2027, every person born on or after January 1, 2006, or as required pursuant to section 306.128 , who operates a vessel on the waters of this state",
+   "supports": [
+    "rule",
+    "rule.phaseIn"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "A valid master's, mate's, or operator's license issued by the United States Coast Guard.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "Operates a vessel only on a private lake or pond that is not classified as waters of the state;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "Is a nonresident who has proof of a valid boating certificate or license issued by another state",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "Is currently serving in any branch of the United States Armed Forces, reserves, or Missouri National Guard, or any spouse of a person currently in such service",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "Has previously successfully completed a boating safety education course approved by the National Association of State Boating Law Administrators (NASBLA).",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "which is valid for life unless invalidated pursuant to law.",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "The water patrol division may charge a fee for such card or any replacement card that does not substantially exceed the costs of administrating this section.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "for a period of up to seven days, provided that the individual meets the minimum age requirements for operating a vessel in this state.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "The Missouri state highway patrol shall charge a fee of nine dollars for such temporary boating safety identification card.",
+   "supports": [
+    "rental",
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+   "publisher": "Missouri Revisor of Statutes, RSMo §306.127 (version effective Aug. 28, 2026)",
+   "quote": "No individual shall be detained or stopped strictly for the purpose of checking whether the individual possesses a boating safety identification card",
+   "supports": [
+    "card"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge",
+  "pwcExtra",
+  "card.stateFee",
+  "card.replacementFee",
+  "card.onlineAllowed",
+  "card.inPersonExamRequired",
+  "penalty"
+ ]
+}

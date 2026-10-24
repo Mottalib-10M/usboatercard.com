@@ -1,0 +1,210 @@
+{
+ "read": "2026-10-24",
+ "url": "https://boatus.org/free-courses/free-boating-safety-course/",
+ "states": {
+  "AK": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/alaska/"
+  },
+  "CA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/california/"
+  },
+  "CO": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/colorado/"
+  },
+  "HI": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/hawaii/"
+  },
+  "ID": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/idaho/"
+  },
+  "MT": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/montana/"
+  },
+  "NV": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/nevada/"
+  },
+  "OR": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/oregon/"
+  },
+  "UT": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/utah/"
+  },
+  "WA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/washington/"
+  },
+  "WY": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/wyoming/"
+  },
+  "AZ": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/arizona/"
+  },
+  "NM": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-mexico/"
+  },
+  "OK": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/oklahoma/"
+  },
+  "TX": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/texas/"
+  },
+  "IL": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/illinois/"
+  },
+  "IN": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/indiana/"
+  },
+  "IA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/iowa/"
+  },
+  "KS": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/kansas/"
+  },
+  "MI": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/michigan/"
+  },
+  "MN": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/minnesota/"
+  },
+  "MO": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/missouri/"
+  },
+  "NE": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/nebraska/"
+  },
+  "ND": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/north-dakota/"
+  },
+  "OH": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/ohio/"
+  },
+  "SD": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/south-dakota/"
+  },
+  "WI": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/wisconsin/"
+  },
+  "AL": {
+   "status": "not-available",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/alabama/"
+  },
+  "AR": {
+   "status": "not-available",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/arkansas/"
+  },
+  "FL": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/florida/"
+  },
+  "GA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/georgia/"
+  },
+  "KY": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/kentucky/"
+  },
+  "LA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/louisiana/"
+  },
+  "MS": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/mississippi/"
+  },
+  "NC": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/north-carolina/"
+  },
+  "SC": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/south-carolina/"
+  },
+  "TN": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/tennessee/"
+  },
+  "VA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/virginia/"
+  },
+  "DC": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/washington-d-c/"
+  },
+  "WV": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/west-virginia/"
+  },
+  "CT": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/connecticut/"
+  },
+  "DE": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/delaware/"
+  },
+  "ME": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/maine/"
+  },
+  "MD": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/maryland/"
+  },
+  "MA": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/massachusetts/"
+  },
+  "NH": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-hampshire/"
+  },
+  "NJ": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-jersey/"
+  },
+  "NY": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/new-york/"
+  },
+  "PA": {
+   "status": "approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/pennsylvania/"
+  },
+  "RI": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/rhode-island/"
+  },
+  "VT": {
+   "status": "not-approved",
+   "url": "https://boatus.org/free-courses/free-boating-safety-course/vermont/"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+const lang = 'en';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: report a state boating rule`} description="Write to US Boater Card when a state's boater education rule, fee or age looks out of date, or when a practice question seems wrong. We do not issue or replace cards." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. A person reads every message.</p>
+    <h2>A state rule looks out of date</h2>
+    <p>Tell us the state, the rule and, if you have it, the agency page or the bill that changed it. Legislatures often phase in boating education over several years, and agencies update their pages at different times. We read the official page again, correct the record and date the change.</p>
+    <h2>A practice question seems wrong</h2>
+    <p>Give us the first words of the question. Each one is written from a named federal rule; if your state adds to it, we say so in the explanation.</p>
+    <h2>What we cannot do</h2>
+    <p>We are not a state agency or a course. We cannot issue a card, send a replacement, check whether you completed a course or answer for an agency. Please do not send your card number, date of birth or address.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,67 @@
+{
+ "code": "AK",
+ "name": "Alaska",
+ "es": "Alaska",
+ "agency": "Alaska Department of Natural Resources, Office of Boating Safety",
+ "agencyUrl": "https://dnr.alaska.gov/parks/boating/onlinecourses.htm",
+ "required": false,
+ "rule": {
+  "kind": "none",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Alaska has no mandatory boater education. An optional Alaska Boater Education card exists and is useful when boating in states that require one.",
+  "textEs": "Alaska no exige educación náutica. Existe una tarjeta opcional de educación náutica de Alaska, útil para navegar en estados que sí la exigen.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Alaska Boater Education card (optional)",
+  "stateFee": null,
+  "feeNote": "The state also offers a free course, Alaska Water Wise.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://dnr.alaska.gov/parks/boating/onlinecourses.htm",
+   "publisher": "Alaska Department of Natural Resources",
+   "quote": "Alaska is one of the few states that do not require boating education.",
+   "supports": [
+    "required",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dnr.alaska.gov/parks/boating/onlinecourses.htm",
+   "publisher": "Alaska Department of Natural Resources",
+   "quote": "Our free Alaska Water Wise course was designed by us for Alaskan boaters.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge"
+ ]
+}

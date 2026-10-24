@@ -1,0 +1,93 @@
+{
+ "code": "AL",
+ "name": "Alabama",
+ "es": "Alabama",
+ "agency": "Alabama Law Enforcement Agency (Marine Patrol Division)",
+ "agencyUrl": "https://www.alea.gov/dps/marine-patrol/boating-education-and-operator-certificationlicense",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": 12,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Every operator of a motorized vessel, including personal watercraft, needs an Alabama vessel operator license (a \"V\" class on the driver license) or, for nonresidents, a home-state certificate.",
+  "textEs": "Todo operador de una embarcación con motor, incluidas las motos acuáticas, necesita la licencia de operador de embarcaciones de Alabama (clase \"V\" en la licencia de conducir) o, si no reside allí, un certificado de su estado.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 14,
+  "pwc": 14,
+  "note": "Licence possible from 12; ages 12-13 hold a learner license and need a licensed person 21+ on board."
+ },
+ "exemptions": [
+  "Born before April 28, 1954: no written exam (the license is still needed).",
+  "Holders of a valid US Coast Guard motorboat operator license are exempt from the exam."
+ ],
+ "card": {
+  "nameEn": "Vessel operator license (class V)",
+  "stateFee": 41.25,
+  "feeNote": "One-time $5 application fee plus a $36.25 license issuance fee; approved online courses are sold separately by private providers.",
+  "replacementFee": 5,
+  "validity": null,
+  "inPersonExamRequired": true,
+  "onlineAllowed": true
+ },
+ "nonResident": "Since Oct. 1, 2024 a visitor needs a boater certificate from the home state or country, or an Alabama nonresident certification.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.alea.gov/dps/marine-patrol/boating-education-and-operator-certificationlicense",
+   "publisher": "Alabama Law Enforcement Agency",
+   "quote": "A one-time application fee of $5.00 cash will be charged. There will be a $36.25 issuance fee for the license.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://www.alea.gov/dps/marine-patrol/boating-education-and-operator-certificationlicense",
+   "publisher": "Alabama Law Enforcement Agency",
+   "quote": "Must be 12 years old or older to be eligible for a vessel operator's license but cannot operate alone until the age of 14.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.alea.gov/dps/marine-patrol/boating-education-and-operator-certificationlicense",
+   "publisher": "Alabama Law Enforcement Agency",
+   "quote": "Effective October 1, 2024: Nonresidents may operate a vessel upon the waters of this state only after obtaining a valid boater safety certification or vessel operator's certification issued in his or her home state or country",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.alea.gov/dps/marine-patrol/boating-education-and-operator-certificationlicense",
+   "publisher": "Alabama Law Enforcement Agency",
+   "quote": "Any boat operator who was born prior to April 28, 1954",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.alea.gov/dps/driver-license/license-and-id-cards/boatvessel-license-requirements",
+   "publisher": "Alabama Law Enforcement Agency",
+   "quote": "Under age 14, Vessel Learner License only. Must be accompanied by a Vessel Licensed driver that is 21 years old or older.",
+   "supports": [
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity"
+ ]
+}

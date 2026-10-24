@@ -1,0 +1,122 @@
+{
+ "code": "MS",
+ "name": "Mississippi",
+ "es": "Misisipi",
+ "agency": "Mississippi Department of Wildlife, Fisheries, and Parks",
+ "agencyUrl": "https://www.mdwfp.com/enforcement-education/boater-education",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1980-07-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born after June 30, 1980 must pass an approved boater education course before operating a boat or PWC, and carry proof on board.",
+  "textEs": "Quien nació después del 30 de junio de 1980 debe aprobar un curso de educación náutica aprobado antes de manejar una embarcación o moto acuática, y llevar el comprobante a bordo.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "No fixed minimum age, but a child under 12 may run a boat only with a person 21 or older on board."
+ },
+ "exemptions": [
+  "Born on or before June 30, 1980."
+ ],
+ "card": {
+  "nameEn": "Boater education card",
+  "stateFee": null,
+  "feeNote": "MDWFP teaches its six-hour classroom course free; approved online courses are run by private vendors, some paid, some free.",
+  "replacementFee": 3,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "Any person born after June 30, 1980, must complete a boater education course before operating a boat in Mississippi.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "All persons operating a boat or personal watercraft (PWC) on Mississippi’s public waterways, must have, in their possession, proof of successfully completing a boater education course while operating a boat or PWC.",
+   "supports": [
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "Persons under twelve (12) years of age must be accompanied by a person twenty-one (21) years of age or older while on board the boat in order to operate the boat.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "The Mississippi Department of Wildlife, Fisheries, and Parks (MDWFP) offers boater education courses free of charge at locations across the state",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "The fee for a duplicate card is $3.00.",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/boater-education",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "the Mississippi Boating Basics provides an online version of their boating education course.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://www.mdwfp.com/enforcement-education/general-boating-rules-regulations",
+   "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+   "quote": "Effective July 1, 1997, any person born after June 30, 1980 must complete a Boating Safety Course to operate a boat.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dmr.ms.gov/boat-water-safety/",
+   "publisher": "Mississippi Department of Marine Resources",
+   "quote": "The boating education certificate must be carried onboard the vessel whenever it is operated by someone required to have the certificate.",
+   "supports": [
+    "rule"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge.motorboat",
+  "minAge.pwc",
+  "card.stateFee",
+  "card.validity",
+  "nonResident",
+  "statute",
+  "penalty"
+ ]
+}

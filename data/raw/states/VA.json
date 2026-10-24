@@ -1,0 +1,80 @@
+{
+ "code": "VA",
+ "name": "Virginia",
+ "es": "Virginia",
+ "agency": "Virginia Department of Wildlife Resources",
+ "agencyUrl": "https://dwr.virginia.gov/boating/education/",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "10 hp or more",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Every operator of a motorboat with a 10 hp or larger engine, whatever the age, and every PWC operator must carry a boating safety course card.",
+  "textEs": "Todo operador de una lancha con motor de 10 hp o más, de cualquier edad, y todo operador de moto acuática debe llevar la tarjeta de un curso de seguridad náutica.",
+  "hpInclusive": true,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 14,
+  "note": "No PWC under 14; at 14-15 proof of an approved course (not the challenge exam) is required."
+ },
+ "exemptions": [
+  "US Coast Guard master, captain or mate license.",
+  "Virginia registered commercial fisherman.",
+  "Qualified military boat operators.",
+  "Boat registered in another state whose owner meets the home-state requirement."
+ ],
+ "card": {
+  "nameEn": "Boating safety education card (Virginia Lifetime Boater's Card available)",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Boats registered in another state: the home-state education rule applies.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://dwr.virginia.gov/boating/education/",
+   "publisher": "Virginia DWR",
+   "quote": "All PWC operators age 14 and older and all operators (regardless of age) of motorboats with a 10 hp or greater engine need to take a boating safety course.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dwr.virginia.gov/boating/education/",
+   "publisher": "Virginia DWR",
+   "quote": "No person under the age of 14 may operate a PWC.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dwr.virginia.gov/boating/education/",
+   "publisher": "Virginia DWR",
+   "quote": "No – If you are operating a boat registered in another state if you meet the applicable boating safety education requirements of your state of residency.",
+   "supports": [
+    "nonResident"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity"
+ ]
+}

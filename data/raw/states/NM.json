@@ -1,0 +1,152 @@
+{
+ "code": "NM",
+ "name": "New Mexico",
+ "es": "Nuevo México",
+ "agency": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+ "agencyUrl": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1989-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1989 needs a New Mexico boater education card on board to run any motorboat, PWC or undocumented sailboat.",
+  "textEs": "Quien nació el 1 de enero de 1989 o después debe llevar a bordo la tarjeta de educación náutica de Nuevo México para manejar cualquier lancha, moto acuática o velero no documentado.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Born before Jan. 1, 1989.",
+  "Holders of a valid U.S. Coast Guard marine operator license.",
+  "Non-residents with a NASBLA-standard card from another state or country.",
+  "Renters (30 days or less) briefed by the rental agent with a signed checklist.",
+  "Boat bought within the last 30 days, with the bill of sale on board.",
+  "New residents: 45 days with their out-of-state card.",
+  "Government vessels exempt from registration."
+ ],
+ "card": {
+  "nameEn": "New Mexico boater education card",
+  "stateFee": null,
+  "feeNote": "State park ranger and Coast Guard Auxiliary classroom courses are free; online providers set their own price.",
+  "replacementFee": 10,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors with a NASBLA-standard card from their home state or country are exempt; new residents have 45 days.",
+ "rental": "Renters for 30 days or less may skip the card after the rental agent briefs them and they sign a safety checklist.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "18.17.4.8 NMAC",
+ "sources": [
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "You were born before January 1, 1989.",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.srca.nm.gov/wp-content/uploads/attachments/18.017.0004.pdf",
+   "publisher": "New Mexico Administrative Code 18.17.4 NMAC (State Records Center and Archives)",
+   "quote": "A person born on or after January 1, 1989 who operates a motorboat on the state’s waters shall possess a division-issued boater education card and have it onboard the motorboat during its operation",
+   "supports": [
+    "rule",
+    "statute"
+   ]
+  },
+  {
+   "url": "https://www.srca.nm.gov/wp-content/uploads/attachments/18.017.0004.pdf",
+   "publisher": "New Mexico Administrative Code 18.17.4 NMAC (State Records Center and Archives)",
+   "quote": "motorboat includes any vessel propelled or designed to be propelled by sail and that does not have a valid document issued by a federal agency, but does not include a sailboard or windsurf board.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "The New Mexico boater education card is valid for your lifetime",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "The fee for a replacement card is $10.",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "You are not a New Mexico resident and hold a valid boater education card from another state.",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "You are renting a boat and have received safety instructions and have completed a dockside safety checklist provided by the rental agent.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "You have moved to New Mexico from another state and can show a valid boater education card from another state. After 45 days you must have a New Mexico boater education card.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.srca.nm.gov/wp-content/uploads/attachments/18.017.0004.pdf",
+   "publisher": "New Mexico Administrative Code 18.17.4 NMAC (State Records Center and Archives)",
+   "quote": "possesses and has onboard the motorboat a valid marine operator license issued by the United States coast guard that covers the motorboat being operated;",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "Free, instructor-led classes offer student boaters the chance to interact with an experienced teacher",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.emnrd.nm.gov/spd/activities/boating-2/boating-education/",
+   "publisher": "New Mexico Energy, Minerals and Natural Resources Department, State Parks Division",
+   "quote": "If you completed an online course, your official card will be mailed to you by the course provider.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge",
+  "card.stateFee",
+  "penalty",
+  "pwcExtra"
+ ]
+}

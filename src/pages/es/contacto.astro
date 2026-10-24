@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+const lang = 'es';
+---
+<PageLayout title={`Contacto de ${SITE_NAMES[lang]}: avise de una regla estatal`} description="Escriba a Tarjeta Náutica por Estado si una regla, tarifa o edad de educación náutica de un estado parece desactualizada, o si una pregunta de práctica parece errónea." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contacto' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contacto</h1>
+    <p>Correo: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Una persona lee cada mensaje.</p>
+    <h2>Una regla estatal parece desactualizada</h2>
+    <p>Indíquenos el estado, la regla y, si la tiene, la página de la agencia o la ley que la cambió. Las legislaturas suelen introducir la educación náutica por etapas a lo largo de varios años, y las agencias actualizan sus páginas en momentos distintos. Volvemos a leer la página oficial, corregimos el registro y fechamos el cambio.</p>
+    <h2>Una pregunta de práctica parece errónea</h2>
+    <p>Envíenos las primeras palabras de la pregunta. Cada una se escribió a partir de una regla federal concreta; si su estado añade algo, lo decimos en la explicación.</p>
+    <h2>Lo que no podemos hacer</h2>
+    <p>No somos una agencia estatal ni un curso. No podemos emitir una tarjeta, enviar un duplicado, comprobar si terminó un curso ni responder por una agencia. No nos envíe su número de tarjeta, fecha de nacimiento ni dirección.</p>
+    <h2>Editor</h2>
+    <LegalIdentity lang={lang} />
+    <p>Actualizado: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

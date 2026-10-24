@@ -1,0 +1,97 @@
+{
+ "code": "HI",
+ "name": "Hawaii",
+ "es": "Hawái",
+ "agency": "Hawaii DLNR, Division of Boating and Ocean Recreation (DOBOR)",
+ "agencyUrl": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp (sailboats with an auxiliary engine over 10 hp included)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone running a motorized vessel with more than 10 hp in Hawaii waters needs a NASBLA- and state-approved boating course; PWC (thrill craft) also need a separate thrill craft certification.",
+  "textEs": "Quien maneje una embarcación con motor de más de 10 hp en aguas de Hawái necesita un curso náutico aprobado por NASBLA y el estado; las motos acuáticas exigen además una certificación propia (thrill craft).",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "Under 16: needs the certificate and direct supervision by a certified adult 21+."
+ },
+ "exemptions": [
+  "Vessels of 10 hp or less.",
+  "Out-of-state visitors on a voyage from elsewhere staying fewer than 60 days.",
+  "Rental operators who received a state-approved safety briefing.",
+  "Commercial thrill craft customers in state-authorized zones."
+ ],
+ "card": {
+  "nameEn": "Boating safety course certificate (+ thrill craft operator certification for PWC)",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors arriving on a voyage from elsewhere are exempt for fewer than 60 days.",
+ "rental": "Renters are exempt after a state-approved safety briefing.",
+ "pwcExtra": "PWC need a separate thrill craft operator certification on top of the boating course.",
+ "penalty": "$50 to $1,000 per violation.",
+ "statute": "HAR §13-244-15.5",
+ "sources": [
+  {
+   "url": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+   "publisher": "Hawaii DLNR DOBOR",
+   "quote": "To operate a recreational motorized vessel powered by an engine over 10 hp in Hawaiʻi, you must have one credentials: (1) a National Association of State Boating Law Administrators (NASBLA) and State-approved basic boating safety course for motorized vessels.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+   "publisher": "Hawaii DLNR DOBOR",
+   "quote": "Under-16 operators: Must have the required certificate and be directly supervised by an adult (21+ years old) who also holds the required certificate.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+   "publisher": "Hawaii DLNR DOBOR",
+   "quote": "Out-of-state visitors on a voyage originating elsewhere, staying in Hawai‘i for less than 60 calendar days .",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+   "publisher": "Hawaii DLNR DOBOR",
+   "quote": "Rental vessel operators who have received a State-approved safety briefing .",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://dlnr.hawaii.gov/dobor/rbs-faq/",
+   "publisher": "Hawaii DLNR DOBOR",
+   "quote": "Fines: Minimum $50 up to $1,000 per violation.",
+   "supports": [
+    "penalty"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "minAge.pwc"
+ ]
+}

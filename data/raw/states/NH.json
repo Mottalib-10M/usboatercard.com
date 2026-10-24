@@ -1,0 +1,143 @@
+{
+ "code": "NH",
+ "name": "New Hampshire",
+ "es": "Nuevo Hampshire",
+ "agency": "New Hampshire State Police, Marine Patrol",
+ "agencyUrl": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": 16,
+  "hpMin": 25,
+  "hpNote": "motorboat over 25 hp",
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Everyone aged 16 or older who runs a motorboat of more than 25 hp on New Hampshire waters needs a boating education certificate, whatever their birth year.",
+  "textEs": "Toda persona de 16 años o más que maneje una lancha de más de 25 hp en aguas de Nuevo Hampshire necesita un certificado de educación náutica, sin importar su año de nacimiento.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "Certificates are issued from age 16 (a course passed at 15 is certified at 16)."
+ },
+ "exemptions": [
+  "Holders of an unexpired USCG commercial license or a New Hampshire commercial boating license.",
+  "Holders of a NASBLA-approved certificate from another state, or a U.S. Power Squadron or Coast Guard Auxiliary certificate.",
+  "Motorboats of 25 hp or less."
+ ],
+ "card": {
+  "nameEn": "Safe Boater Education Certificate",
+  "stateFee": null,
+  "feeNote": "Online course allowed; adults take the final exam online, under-18s take it in person with a state proctor. In-person retests by a state proctor cost $10; replacements require a written request and the prescribed fee. A one-time 14-day temporary certificate (NH only) is available by test at agent locations.",
+  "replacementFee": null,
+  "validity": "lifetime",
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "NASBLA-approved certificates from other states are accepted.",
+ "rental": "A one-time 14-day temporary certificate, valid only in New Hampshire, can be obtained by passing a test (80%) at an agent location from age 16.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "N.H. RSA ch. 270-D",
+ "sources": [
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "Everyone 16 years of age and older who operates a motorboat over 25 horsepower on New Hampshire waters must have a boating education certificate.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "A boating certificate issued by another State agency and NASBLA-approved.",
+   "supports": [
+    "nonResident",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "An unexpired commercial boating license issued by the US Coast Guard.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "People 18 years of age and older who choose to complete an online course will take their final examination online.",
+   "supports": [
+    "card.onlineAllowed",
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "Students less than 18 years of age who choose to complete an online course must take their final exam in-person, administered by a state proctor.",
+   "supports": [
+    "card.inPersonExamRequired"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "Re-tests are required to be conducted in person by a state proctor at a cost of $10.",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/marine-patrol-laws-rules",
+   "publisher": "New Hampshire State Police, Marine Patrol Laws & Rules (RSA 270-D:13 text)",
+   "quote": "shall be valid for the lifetime of the person",
+   "supports": [
+    "card.validity"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/marine-patrol-laws-rules",
+   "publisher": "New Hampshire State Police, Marine Patrol Laws & Rules (RSA 270-D:13 text)",
+   "quote": "shall replace a lost or destroyed certificate upon written request of the person entitled thereto and payment of the prescribed fee",
+   "supports": [
+    "card.feeNote"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/marine-patrol-laws-rules",
+   "publisher": "New Hampshire State Police, Marine Patrol Laws & Rules (RSA 270-D:13 text)",
+   "quote": "after reaching the age of 15 shall be issued a safe boater education certificate upon attaining the age of 16.",
+   "supports": [
+    "minAge.note"
+   ]
+  },
+  {
+   "url": "https://www.nhsp.dos.nh.gov/our-services/field-operations-bureau/marine-patrol/boating-education/14-day-temporary-safe-boating",
+   "publisher": "New Hampshire State Police, Marine Patrol",
+   "quote": "The 14-Day Temporary Certificate is only a short-term solution for your boating certification and it can only be used once.",
+   "supports": [
+    "rental",
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "rule.pwc",
+  "minAge.motorboat",
+  "minAge.pwc",
+  "card.stateFee",
+  "card.replacementFee",
+  "pwcExtra",
+  "penalty"
+ ]
+}

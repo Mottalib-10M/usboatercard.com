@@ -1,0 +1,104 @@
+{
+ "code": "WY",
+ "name": "Wyoming",
+ "es": "Wyoming",
+ "agency": "Wyoming Game and Fish Department",
+ "agencyUrl": "https://wgfd.wyo.gov/Ask-Game-and-Fish/Trevor,-is-there-a-boating-education-course-I-can",
+ "required": false,
+ "rule": {
+  "kind": "none",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": null,
+  "hpNote": null,
+  "pwc": false,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Wyoming has no mandatory boater education. Operators of a registered motorboat or PWC must be 16, or younger with an adult 18+ aboard.",
+  "textEs": "Wyoming no exige educación náutica obligatoria. Quien maneje una lancha registrada o una moto acuática debe tener 16 años, o menos si va a bordo un adulto de 18 años o más.",
+  "hpInclusive": null,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 16,
+  "pwc": 16,
+  "note": "Under 16 may operate a motorboat or PWC only with an adult 18+ physically aboard and responsible. No age limit for non-motorized craft."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boating safety certificate card (voluntary)",
+  "stateFee": 0,
+  "feeNote": "Game and Fish gives a free Boat America home-study packet and exam; the online courses are free to take but charge $29.95 for the exam and card.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": "Same age rule as motorboats: 16, or younger with an adult 18+ aboard.",
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/Trevor,-is-there-a-boating-education-course-I-can",
+   "publisher": "Wyoming Game and Fish Department",
+   "quote": "Possessing a boating safety certificate card is required by some states - but not in Wyoming - in order to operate motorboats",
+   "supports": [
+    "required",
+    "rule"
+   ]
+  },
+  {
+   "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/Trevor,-is-there-a-boating-education-course-I-can",
+   "publisher": "Wyoming Game and Fish Department",
+   "quote": "The Wyoming Game and Fish Department offers a free “Boat America” home study course packet and exam",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/Trevor,-is-there-a-boating-education-course-I-can",
+   "publisher": "Wyoming Game and Fish Department",
+   "quote": "These courses are free to take but require a $29.95 examination and certificate printing fee.",
+   "supports": [
+    "card.feeNote",
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/span-id-docs-internal-guid-b7711971-7fff-fb9e-601a",
+   "publisher": "Wyoming Game and Fish Department",
+   "quote": "To legally operate a motorboat, the operator must be at least 16 years old. A person under the age of 16 may operate a motorboat as long as they are accompanied by an adult who is at least 18 years old.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/2023-Watercraft-FINAL.pdf",
+   "publisher": "Wyoming Game and Fish Department, 2023 Wyoming Watercraft Regulation",
+   "quote": "by a person under sixteen (16) years of age who is not accompanied by an adult. (This includes personal watercraft, i.e., jet skis.)",
+   "supports": [
+    "minAge.pwc"
+   ]
+  },
+  {
+   "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/span-id-docs-internal-guid-b7711971-7fff-fb9e-601a",
+   "publisher": "Wyoming Game and Fish Department",
+   "quote": "There is no age restriction to operate a non-motorized watercraft, like a canoe, kayak or raft.",
+   "supports": [
+    "minAge.note"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "statute",
+  "penalty",
+  "nonResident",
+  "rental"
+ ]
+}

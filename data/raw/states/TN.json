@@ -1,0 +1,102 @@
+{
+ "code": "TN",
+ "name": "Tennessee",
+ "es": "Tennessee",
+ "agency": "Tennessee Wildlife Resources Agency",
+ "agencyUrl": "https://www.tn.gov/twra/boating/boating-education.html",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1989-01-02",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 8.5,
+  "hpNote": "more than 8.5 hp",
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born after Jan. 1, 1989 needs the TWRA boating safety certificate to run a boat with more than 8.5 hp, unless an adult 18+ born before 1989 is on board to take control.",
+  "textEs": "Quien nació después del 1 de enero de 1989 necesita el certificado de seguridad náutica de la TWRA para manejar una embarcación de más de 8,5 hp, salvo que vaya a bordo un adulto de 18 años o más nacido antes de 1989 que pueda tomar el control.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "An adult 18+ born before Jan. 1, 1989 on board, able to take immediate control.",
+  "Boats with 8.5 hp or less."
+ ],
+ "card": {
+  "nameEn": "Boating Safety Certification of Completion (wallet card)",
+  "stateFee": null,
+  "feeNote": "Replacement cards are bought from a TWRA license agent or online at GoOutdoorsTennessee; amounts not stated on the page read.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": "Visitors born after Jan. 1, 1989 running more than 8.5 hp need a NASBLA-approved certificate, which TWRA accepts.",
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "quote": "If you are a Tennessee resident born after January 1, 1989, and operating a vessel with more than 8.5 horsepower, then you need the certification.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "quote": "The Boating Safety Certification of Completion is not required if there is an adult (18 years old or older, born before January 1, 1989) on board to take immediate control of the vessel.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "quote": "If you were born after January 1, 1989, TWRA will accept any National Association of State Boating Law Administrators (NASBLA) approved boating safety certificate",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "quote": "Get your boating education certificate online!",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://www.tn.gov/twra/boating/boating-education.html",
+   "publisher": "Tennessee Wildlife Resources Agency (Wayback copy of 2026-09-14)",
+   "quote": "students will receive a TWRA-issued Boating Safety Certification of Completion wallet card",
+   "supports": [
+    "card.nameEn"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "rule.pwc",
+  "minAge",
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity",
+  "card.inPersonExamRequired",
+  "rental",
+  "penalty",
+  "statute",
+  "source read from a Wayback copy dated 2026-09-14: tn.gov returns 403 to scripts"
+ ]
+}

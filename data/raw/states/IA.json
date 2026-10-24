@@ -1,0 +1,79 @@
+{
+ "code": "IA",
+ "name": "Iowa",
+ "es": "Iowa",
+ "agency": "Iowa Department of Natural Resources",
+ "agencyUrl": "https://www.iowadnr.gov/things-do/boating/boater-education-safety",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 17,
+  "ageMin": 12,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Ages 12 to 17 need an approved boater education course to run a motorboat over 10 hp or a PWC, unless an experienced person 18+ is on board.",
+  "textEs": "De 12 a 17 años hace falta un curso de educación náutica aprobado para manejar una lancha de más de 10 hp o una moto acuática, salvo que vaya a bordo una persona experimentada de 18 años o más.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "12-17: course or an experienced person 18+ on board."
+ },
+ "exemptions": [
+  "Accompanied on board by an experienced, responsible person 18+."
+ ],
+ "card": {
+  "nameEn": "Iowa boater education certificate",
+  "stateFee": 5,
+  "feeNote": "Online providers add a $5 Iowa state fee for the permanent certificate; the BoatUS Foundation course is the only free course approved by Iowa DNR.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.iowadnr.gov/things-do/boating/boater-education-safety",
+   "publisher": "Iowa DNR",
+   "quote": "Any person 12 - 17 years old, can operate a motorboat over ten horsepower or personal watercraft (PWC) if he or she ... is accompanied on board by a responsible person who is at least 18 years old and experienced in operating the vessel.",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.iowadnr.gov/things-do/boating/boater-education-safety",
+   "publisher": "Iowa DNR",
+   "quote": "The cost is $54.95, plus $5 to Iowa DNR for your permanent ca[rd]",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://www.iowadnr.gov/things-do/boating/boater-education-safety",
+   "publisher": "Iowa DNR",
+   "quote": "The BoatUS Foundation's Online Boating Safety Course is the only free course approved by the Iowa Department of Natural Resources.",
+   "supports": [
+    "card.feeNote"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "nonResident",
+  "minAge"
+ ]
+}

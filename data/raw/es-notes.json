@@ -1,0 +1,551 @@
+{
+ "AK": {
+  "nameEs": "Tarjeta de educación náutica de Alaska (opcional)",
+  "feeNote": "El estado también ofrece un curso gratuito, Alaska Water Wise."
+ },
+ "AL": {
+  "nameEs": "Licencia de operador de embarcación (clase V)",
+  "feeNote": "Tarifa única de solicitud de 5 dólares más una tarifa de emisión de la licencia de 36,25 dólares; los cursos en línea aprobados los venden por separado proveedores privados.",
+  "minAgeNote": "Licencia posible desde los 12 años; los de 12 a 13 años tienen una licencia de aprendiz y necesitan a bordo a una persona con licencia de 21 años o más.",
+  "exemptions": [
+   "Nacidos antes del 28 de abril de 1954: sin examen escrito (la licencia sigue siendo necesaria).",
+   "Los titulares de una licencia válida de operador de lancha de la Guardia Costera de EE. UU. están exentos del examen."
+  ],
+  "nonResident": "Desde el 1 de octubre de 2024, un visitante necesita un certificado náutico de su estado o país de origen, o una certificación de no residente de Alabama."
+ },
+ "AR": {
+  "nameEs": "Certificado de educación náutica",
+  "minAgeNote": "Lancha de 10 hp o más: 12 años o más, o menores con un supervisor de 18 años o más. Moto acuática: 16 años o más; de 12 a 15 años con un supervisor de 18 años o más; menores de 12 con un supervisor de 21 años o más."
+ },
+ "AZ": {
+  "nameEs": "Certificado de curso de seguridad náutica (voluntario)",
+  "feeNote": "AZGFD ofrece un paquete gratuito de estudio en casa y clases."
+ },
+ "CA": {
+  "nameEs": "California Boater Card",
+  "feeNote": "Tarjeta vitalicia emitida por la Division of Boating and Waterways; los cursos son aparte (existen cursos gratuitos y de pago).",
+  "minAgeNote": "Los menores de 16 años no pueden manejar un motor de más de 15 hp (salvo veleros de hasta 30 pies); los de 12 a 15 años pueden hacerlo con un adulto de 18 años o más a bordo.",
+  "exemptions": [
+   "Manejar una embarcación de alquiler.",
+   "Bajo la supervisión directa de un adulto de 18 años o más que tenga la tarjeta.",
+   "Visitante de otro estado que navega menos de 60 días y cumple las normas de su estado (90 días para un visitante extranjero).",
+   "Titulares de una licencia vigente de pesca comercial o de una licencia de operador marino de la Guardia Costera de EE. UU."
+  ],
+  "nonResident": "Un visitante que navega en California menos de 60 días y cumple el requisito de su estado no necesita la tarjeta (90 días para visitantes extranjeros).",
+  "rental": "Quienes alquilan están exentos de la tarjeta.",
+  "penalty": "Infracción: hasta 100 dólares (primera), 250 dólares (segunda), 500 dólares (tercera o más).",
+  "phaseIn": "Implantación gradual por edad desde 2018; desde el 1 de enero de 2025 abarca todas las edades."
+ },
+ "CO": {
+  "nameEs": "Certificado de curso de seguridad náutica",
+  "minAgeNote": "Los menores de 14 años no pueden manejar una lancha ni una moto acuática; de 14 a 17 años solo con el curso; desde los 18 años no se exige curso."
+ },
+ "CT": {
+  "nameEs": "Certificado de navegación segura (SBC) / Certificado de manejo de moto acuática (CPWO)",
+  "feeNote": "Tarifa única de 50 dólares por el certificado; el examen de equivalencia del DEEP cuesta 75 dólares; un certificado temporal de 3 meses cuesta 50 dólares; los duplicados se pueden imprimir gratis.",
+  "minAgeNote": "Los menores de 16 años pueden manejar sin certificado una embarcación que no sea moto acuática solo bajo la supervisión directa de una persona de 18 años o más certificada desde hace al menos dos años; en moto acuática, los menores de 16 solo con una persona así a bordo.",
+  "exemptions": [
+   "Licencia de capitán (master), oficial (mate) o piloto de la Guardia Costera de EE. UU. (no válida para moto acuática ni deportes de arrastre)."
+  ],
+  "nonResident": "Los visitantes necesitan el certificado si su embarcación debe llevar una calcomanía de Connecticut o si navegan más de 60 días al año en el estado."
+ },
+ "DC": {
+  "nameEs": "Certificado de seguridad náutica",
+  "feeNote": "La MPD Harbor Patrol imparte un curso gratuito de un día y 8 horas (inscripción previa por teléfono)."
+ },
+ "DE": {
+  "nameEs": "Certificado de seguridad náutica de Delaware",
+  "minAgeNote": "Moto acuática desde los 14 años con el curso y un adulto a bordo a los 14-15 años; sin acompañante desde los 16 con el certificado."
+ },
+ "FL": {
+  "nameEs": "Tarjeta de identificación de educación en seguridad náutica",
+  "feeNote": "Los precios de los cursos aprobados los fijan los proveedores; la FWC indica opciones gratuitas y de pago.",
+  "exemptions": [
+   "Acompañado a bordo por un titular de la tarjeta de 18 años o más (o una persona exenta) responsable de la embarcación.",
+   "No residente con comprobante de un curso aprobado por NASBLA y una identificación con foto.",
+   "Un certificado de finalización del curso más una identificación con foto sirve durante 90 días.",
+   "Los vendedores autorizados por la FWC venden un examen de certificado temporal de 90 días (solo para Florida)."
+  ],
+  "nonResident": "Los visitantes nacidos el 1 de enero de 1988 o después necesitan comprobante de un curso aprobado por NASBLA (o un certificado temporal) e identificación con foto.",
+  "rental": "Los visitantes pueden alquilar con un certificado temporal de 90 días tras un examen en un vendedor autorizado por la FWC.",
+  "hpNote": "10 hp o más"
+ },
+ "GA": {
+  "nameEs": "Tarjeta de educación náutica",
+  "minAgeNote": "Menores de 12 años: solo embarcaciones de menos de 16 pies, sin motor o de 30 hp o menos, con un adulto competente. De 12 a 15 años: embarcaciones de menos de 16 pies, incluidas motos acuáticas, con el curso o un adulto competente; nada de más de 16 pies.",
+  "exemptions": [
+   "Licencia de capitán (master) de la Guardia Costera de EE. UU.",
+   "Navegar en un lago o estanque privado.",
+   "No residente con comprobante de un curso aprobado por NASBLA o de un examen de equivalencia de otro estado."
+  ],
+  "nonResident": "Los visitantes con comprobante de un curso aprobado por NASBLA de otro estado están exentos."
+ },
+ "HI": {
+  "nameEs": "Certificado de curso de seguridad náutica (+ certificación de operador de thrill craft para moto acuática)",
+  "minAgeNote": "Menores de 16 años: necesitan el certificado y la supervisión directa de un adulto certificado de 21 años o más.",
+  "exemptions": [
+   "Embarcaciones de 10 hp o menos.",
+   "Visitantes de otro estado que llegan en travesía desde otro lugar y se quedan menos de 60 días.",
+   "Operadores de embarcaciones de alquiler que recibieron una instrucción de seguridad aprobada por el estado.",
+   "Clientes de thrill craft comerciales en zonas autorizadas por el estado."
+  ],
+  "nonResident": "Los visitantes que llegan en travesía desde otro lugar están exentos durante menos de 60 días.",
+  "rental": "Quienes alquilan están exentos tras una instrucción de seguridad aprobada por el estado.",
+  "pwcExtra": "Las motos acuáticas necesitan una certificación aparte de operador de thrill craft además del curso náutico.",
+  "penalty": "De 50 a 1.000 dólares por infracción.",
+  "hpNote": "más de 10 hp (incluidos los veleros con motor auxiliar de más de 10 hp)"
+ },
+ "IA": {
+  "nameEs": "Certificado de educación náutica de Iowa",
+  "feeNote": "Los proveedores en línea añaden una tarifa estatal de Iowa de 5 dólares por el certificado permanente; el curso de la BoatUS Foundation es el único curso gratuito aprobado por el DNR de Iowa.",
+  "minAgeNote": "De 12 a 17 años: curso o una persona con experiencia de 18 años o más a bordo.",
+  "exemptions": [
+   "Acompañado a bordo por una persona con experiencia y responsable de 18 años o más."
+  ],
+  "hpNote": "más de 10 hp"
+ },
+ "ID": {
+  "nameEs": "Certificado de educación náutica (voluntario)",
+  "feeNote": "IDPR ofrece clases presenciales gratuitas y una guía y un examen gratuitos de estudio en casa; los vendedores en línea aprobados pueden cobrar.",
+  "minAgeNote": "No hay edad mínima estatal para manejar; algunos condados (p. ej., Benewah, Bonner, Kootenai) fijan normas locales de edad.",
+  "rental": "Las empresas de alquiler de motos acuáticas deben instruir a cada cliente que vaya a manejar la moto acuática; el operador lleva una tarjeta de verificación de bolsillo.",
+  "penalty": "Se ordena un curso tras una condena por BUI o infracciones reiteradas de la ley náutica."
+ },
+ "IL": {
+  "nameEs": "Certificado de seguridad náutica de Illinois",
+  "feeNote": "Los cursos presenciales de instructores voluntarios son gratuitos; los cursos en línea cuestan de 34,95 a 59,95 dólares (cifras del IDNR).",
+  "minAgeNote": "Menores de 10 años: ninguna lancha. De 10 a 11 años: más de 10 hp solo con un padre o un adulto designado de 18 años o más a bordo. De 12 a 17 años: con el certificado o esa supervisión.",
+  "exemptions": [
+   "Nacidos antes del 1 de enero de 1998."
+  ],
+  "hpNote": "más de 10 hp"
+ },
+ "IN": {
+  "nameEs": "Certificado de educación náutica",
+  "minAgeNote": "Sin licencia de conducir: 15 años o más con el curso y una tarjeta de identificación del BMV.",
+  "hpNote": "más de 10 hp"
+ },
+ "KS": {
+  "nameEs": "Certificado de educación en seguridad náutica",
+  "exemptions": [
+   "21 años o más.",
+   "Bajo la supervisión directa y al alcance de la voz de una persona mayor de 17 años que tenga el certificado o esté exenta.",
+   "Velero sin motor de 16 pies 7 pulgadas o menos durante una clase dirigida por un instructor."
+  ]
+ },
+ "KY": {
+  "nameEs": "Certificado de navegación segura de Kentucky",
+  "minAgeNote": "Los menores de 12 años no pueden manejar una moto acuática ni una lancha de más de 10 hp.",
+  "exemptions": [
+   "Una persona de 18 años o más a bordo."
+  ],
+  "nonResident": "Los no residentes de 12 a 17 años necesitan un certificado de Kentucky o uno equivalente de su estado o país.",
+  "hpNote": "más de 10 hp"
+ },
+ "LA": {
+  "nameEs": "Certificado de educación náutica",
+  "feeNote": "El curso presencial del LDWF es gratuito; el curso en línea de BoatUS es gratuito; se puede añadir gratis una mención de educación náutica a la licencia de conducir al renovarla.",
+  "minAgeNote": "Los operadores de moto acuática deben tener 16 años o más.",
+  "exemptions": [
+   "Acompañado por alguien mayor de 18 años que haya completado un curso aprobado (no para moto acuática).",
+   "Capitán con licencia de la Guardia Costera de EE. UU."
+  ],
+  "rental": "Quienes alquilan (18 años o más) embarcaciones de más de 10 hp en una empresa de alquiler aprobada por el estado ven un video de seguridad que otorga una exención de 48 horas.",
+  "hpNote": "más de 10 hp"
+ },
+ "MA": {
+  "nameEs": "Certificado de seguridad náutica",
+  "feeNote": "El estado no cobra por el curso ni por el certificado; las clases de la MEP son gratuitas, los proveedores privados pueden cobrar. Reposición en ilostmycard.com.",
+  "minAgeNote": "Moto acuática solo desde los 16 años, incluso con certificado. El curso está abierto desde los 12 años. Una persona mayor de 12 años sin certificado puede manejar bajo la supervisión directa de una persona certificada mayor de 18 años.",
+  "exemptions": [
+   "Supervisión directa de una persona certificada mayor de 18 años (operador mayor de 12 años).",
+   "Titulares de una credencial válida de marino mercante o de una licencia similar.",
+   "No residentes con un certificado de otro estado o territorio de EE. UU. o de Canadá.",
+   "Miembros en servicio activo de las fuerzas armadas, la Guardia Nacional o la Guardia Costera habilitados para manejar lanchas.",
+   "Nuevos propietarios dentro de los 6 meses posteriores a la compra de una embarcación numerada o documentada, con un certificado temporal.",
+   "Operadores de embarcaciones de pesca comercial; estudiantes de un curso aprobado; programas de seguridad náutica aprobados.",
+   "Embarcaciones de remo sin motor; las embarcaciones documentadas por la USCG no son lanchas según la ley."
+  ],
+  "nonResident": "Los visitantes con un certificado de cualquier estado o territorio de EE. UU. o de Transport Canada están exentos; los residentes de Massachusetts necesitan un certificado de Massachusetts (los de otros estados se pueden convertir).",
+  "rental": "Quienes alquilan no están exentos; la Environmental Police estudia certificados temporales para alquileres de baja potencia.",
+  "pwcExtra": "Los operadores de moto acuática deben tener 16 años o más y tener un certificado.",
+  "penalty": "50 dólares la primera infracción, 100 dólares las siguientes; sin sanciones antes del 1 de septiembre de 2026.",
+  "hpNote": "cualquier lancha (cualquier embarcación con propulsión mecánica, incluidas las motos acuáticas)",
+  "phaseIn": "Ley Hanson-Milone: nacidos después del 1 de enero de 1989 desde el 1 de abril de 2026; todos a más tardar el 1 de abril de 2028. Sin sanciones antes del 1 de septiembre de 2026."
+ },
+ "MD": {
+  "nameEs": "Certificado de educación en seguridad náutica",
+  "feeNote": "El estado repone gratis los certificados perdidos que emitió; se puede emitir con declaración jurada un certificado temporal de 30 días (renovable una vez).",
+  "minAgeNote": "Menores de 16 años: deben tener un certificado e ir supervisados a bordo por una persona certificada (de 18 años o más si la embarcación mide 11 pies o más), o por alguien nacido antes del 1 de julio de 1972.",
+  "exemptions": [
+   "Uso comercial.",
+   "Residentes de otros estados de visita durante 60 días o menos en una embarcación numerada en otro lugar, si tienen 16 años o más o un certificado NASBLA.",
+   "Visitantes extranjeros durante 90 días o menos en una embarcación extranjera.",
+   "Aguas en propiedad privada.",
+   "Una licencia de la Guardia Costera de EE. UU., o un certificado de la USCG Auxiliary, de la Power Squadron o de una escuela, vale como certificado."
+  ],
+  "nonResident": "Se aceptan los certificados aprobados por NASBLA de otros estados; los visitantes de 16 años o más en una embarcación numerada en otro estado están exentos hasta 60 días.",
+  "rental": "Las empresas de alquiler que alquilan embarcaciones de menos de 16 pies deben tener ellas mismas un certificado de seguridad náutica; la ley no establece ninguna exención para quienes alquilan.",
+  "penalty": "Delito menor: hasta 25 dólares la primera infracción, hasta 500 dólares por reincidencia en 2 años; solo se aplica como acción secundaria.",
+  "hpNote": "cualquier embarcación de recreo que deba estar numerada (registrada), sin umbral de hp"
+ },
+ "ME": {
+  "nameEs": "Tarjeta de educación en seguridad náutica",
+  "feeNote": "IFW indica el curso de BoatUS como gratuito (se pide una donación) y cursos en línea de pago.",
+  "minAgeNote": "Menores de 12 años: sin acompañante, menos de 10 hp; de 10 a 25 hp solo con supervisión. Ninguna moto acuática para menores de 16.",
+  "hpNote": "más de 25 hp"
+ },
+ "MI": {
+  "nameEs": "Certificado de seguridad náutica (tarjeta de educación náutica)",
+  "feeNote": "Las copias se reimprimen en el sistema eLicense del DNR; los proveedores de cursos pueden cobrar tarifas.",
+  "minAgeNote": "Menores de 12 años: hasta 6 hp libremente; más de 6 y hasta 35 hp solo con certificado y un supervisor de 16 años o más a bordo; nunca más de 35 hp. Moto acuática: nadie menor de 14; de 14 a 15 años con certificado y un adulto de 21 años o más a bordo o a menos de 100 pies; sin acompañante desde los 16 con certificado.",
+  "exemptions": [
+   "Lanchas de 6 hp o menos.",
+   "Personas nacidas antes del 1 de julio de 1996 (lanchas) o el 31 de diciembre de 1978 o antes (moto acuática)."
+  ],
+  "pwcExtra": "Moto acuática: nadie menor de 14 años; de 14 a 15 años necesitan certificado más un padre, tutor o adulto designado de 21 años o más a bordo o manejando una moto acuática a menos de 100 pies; manejo independiente desde los 16 con certificado.",
+  "hpNote": "motor de más de 6 hp (moto acuática: cualquier persona nacida después del 31 de diciembre de 1978)"
+ },
+ "MN": {
+  "nameEs": "Permiso de operador de embarcación",
+  "minAgeNote": "Menores de 12 años: lanchas de menos de 75 hp solo con un operador acompañante; ninguna moto acuática, ni siquiera con un adulto. A cualquier edad se puede manejar sin permiso un motor de 25 hp o menos.",
+  "exemptions": [
+   "Lancha con motor de potencia nominal de fábrica de 25 hp o menos (no moto acuática).",
+   "Visitantes de 12 a 26 años con un certificado válido de su estado."
+  ],
+  "nonResident": "Los visitantes con un certificado válido de su estado no necesitan un permiso de Minnesota.",
+  "rental": "Desde el 1 de julio de 2025, nadie menor de 18 años puede alquilar una lancha ni una moto acuática; quienes alquilan sin permiso hacen un examen de operador de alquiler.",
+  "hpNote": "motor de potencia nominal de fábrica de más de 25 hp (cualquier moto acuática)",
+  "phaseIn": "Nacidos después del 30 de junio de 2004, desde el 1 de julio de 2025; después del 30 de junio de 2000, desde el 1 de julio de 2026; después del 30 de junio de 1996, desde el 1 de julio de 2027; después del 30 de junio de 1987, desde el 1 de julio de 2028."
+ },
+ "MO": {
+  "nameEs": "Tarjeta de identificación de seguridad náutica",
+  "feeNote": "La Water Patrol puede cobrar una tarifa basada en el costo por la tarjeta y las reposiciones (monto no fijado en la ley). Una tarjeta temporal de 7 días de empresas de alquiler o venta cuesta 9 dólares.",
+  "exemptions": [
+   "Titulares de una licencia de capitán (master), oficial (mate) u operador de la USCG.",
+   "Lagos o estanques privados que no son aguas del estado.",
+   "Eventos o regatas aprobados.",
+   "No residentes con un certificado aprobado por NASBLA de otro estado.",
+   "Miembros activos de las Fuerzas Armadas de EE. UU., las reservas o la Guardia Nacional de Missouri, y sus cónyuges.",
+   "Cualquier persona que ya completó un curso aprobado por NASBLA."
+  ],
+  "nonResident": "Los no residentes con un certificado o licencia aprobado por NASBLA de su estado están exentos.",
+  "rental": "Las empresas de alquiler y venta pueden emitir una tarjeta temporal única válida hasta 7 días (9 dólares) tras una declaración jurada y una licencia de conducir válida.",
+  "hpNote": "cualquier embarcación (sin umbral de hp)",
+  "phaseIn": "Nacidos después del 1 de enero de 1984 y antes del 1 de enero de 2006: tarjeta necesaria en los lagos del estado. Desde el 1 de enero de 2027, cualquier persona nacida el 1 de enero de 2006 o después la necesita en todas las aguas del estado."
+ },
+ "MS": {
+  "nameEs": "Tarjeta de educación náutica",
+  "feeNote": "El MDWFP imparte gratis su curso presencial de seis horas; los cursos en línea aprobados los ofrecen vendedores privados, algunos de pago, otros gratuitos.",
+  "minAgeNote": "No hay edad mínima fija, pero un niño menor de 12 años solo puede manejar una embarcación con una persona de 21 años o más a bordo.",
+  "exemptions": [
+   "Nacidos el 30 de junio de 1980 o antes."
+  ]
+ },
+ "MT": {
+  "nameEs": "Certificado de seguridad para operadores de lanchas de Montana",
+  "feeNote": "El curso de estudio en casa de FWP y el certificado son gratuitos; los cursos privados en línea van de gratis a unos 80 dólares.",
+  "minAgeNote": "12 años o menos: ninguna lancha ni moto acuática de más de 10 hp salvo que haya a bordo alguien de 18 años o más. A los 13-14 años, sin acompañante, necesitan el certificado. Ninguna norma de educación desde los 15 años.",
+  "exemptions": [
+   "Acompañado por alguien de 18 años o más.",
+   "Motor de potencia nominal de 10 hp o menos.",
+   "Operadores de 15 años o más.",
+   "Vale un curso aprobado por NASBLA de otro estado u organización."
+  ],
+  "nonResident": "Se acepta un curso aprobado por NASBLA de otro estado u organización para jóvenes de 13 y 14 años.",
+  "rental": "Hay que tener 18 años o más para alquilar una lancha o moto acuática con motor de más de 10 hp.",
+  "penalty": "Infracciones generales de la ley náutica: multa de hasta 500 dólares y hasta seis meses de cárcel.",
+  "hpNote": "motor de potencia nominal de más de 10 hp (lancha o moto acuática)"
+ },
+ "NC": {
+  "nameEs": "Tarjeta de certificación de seguridad náutica",
+  "feeNote": "La comisión solo guarda registros de sus propios cursos; los proveedores en línea emiten su propio comprobante de finalización.",
+  "minAgeNote": "Moto acuática: sin acompañante desde los 16 años; de 14 a 15 años solo con un adulto de 18 años o más a bordo que cumpla la ley de educación, o llevando comprobante de edad y una tarjeta de seguridad náutica.",
+  "exemptions": [
+   "Embarcaciones con motores de menos de 10 hp."
+  ],
+  "rental": "No se pueden alquilar motos acuáticas a menores de 16 años salvo que cumplan las condiciones para 14-15 años; las motos acuáticas alquiladas deben tener un seguro de al menos 300.000 dólares.",
+  "pwcExtra": "De 14 a 15 años solo pueden manejar con un adulto de 18 años o más a bordo que cumpla la ley de educación, o llevando identificación y una tarjeta de seguridad náutica. Ninguna moto acuática entre la puesta y la salida del sol.",
+  "hpNote": "motor de 10 hp o más (incluidas las motos acuáticas)"
+ },
+ "ND": {
+  "nameEs": "Tarjeta de educación náutica Boat North Dakota",
+  "feeNote": "El manual de estudio en casa y el examen por correo son gratuitos en Game and Fish; las versiones en línea las venden proveedores privados.",
+  "minAgeNote": "Menores de 12 años: ninguna lancha de más de 10 hp salvo que haya a bordo alguien de 18 años o más. De 12 a 15 años, sin acompañante, necesitan el curso. Ninguna norma de educación desde los 16 años.",
+  "exemptions": [
+   "Acompañado por alguien de 18 años o más.",
+   "Motor de 10 hp o menos.",
+   "Operadores de 16 años o más."
+  ],
+  "penalty": "Infracción no penal de clase 2 para un operador menor de edad sin el curso ni un adulto a bordo.",
+  "hpNote": "motor de más de 10 hp (ley); la página de Game and Fish dice al menos 10 hp"
+ },
+ "NE": {
+  "nameEs": "Tarjeta de educación náutica (certificado de seguridad náutica)",
+  "feeNote": "Por ley, la comisión no puede cobrar más de 10 dólares por el curso obligatorio.",
+  "minAgeNote": "Nadie menor de 14 años puede manejar una lancha ni una moto acuática; los menores de 16 no pueden remolcar a una persona.",
+  "exemptions": [
+   "Nacidos el 31 de diciembre de 1985 o antes."
+  ],
+  "nonResident": "Los visitantes pueden usar un certificado aprobado por NASBLA aceptado por su estado; los residentes de Nebraska deben hacer el curso de Nebraska.",
+  "rental": "Quienes alquilan y nacieron después del 31 de diciembre de 1985 también necesitan comprobante de un curso de seguridad náutica.",
+  "pwcExtra": "Los menores de 16 años no pueden remolcar a nadie detrás de una lancha o moto acuática."
+ },
+ "NH": {
+  "nameEs": "Certificado de educación para navegación segura",
+  "feeNote": "Se permite el curso en línea; los adultos hacen el examen final en línea, los menores de 18 años lo hacen en persona con un supervisor estatal. Repetir el examen en persona con un supervisor estatal cuesta 10 dólares; las reposiciones requieren una solicitud por escrito y la tarifa establecida. Hay un certificado temporal único de 14 días (solo NH) disponible mediante examen en puntos de agentes.",
+  "minAgeNote": "Los certificados se emiten desde los 16 años (un curso aprobado a los 15 se certifica a los 16).",
+  "exemptions": [
+   "Titulares de una licencia comercial vigente de la USCG o de una licencia náutica comercial de New Hampshire.",
+   "Titulares de un certificado aprobado por NASBLA de otro estado, o de un certificado de la U.S. Power Squadron o de la Coast Guard Auxiliary.",
+   "Lanchas de 25 hp o menos."
+  ],
+  "nonResident": "Se aceptan los certificados aprobados por NASBLA de otros estados.",
+  "rental": "Se puede obtener un certificado temporal único de 14 días, válido solo en New Hampshire, aprobando un examen (80 %) en un punto de agente desde los 16 años.",
+  "hpNote": "lancha de más de 25 hp"
+ },
+ "NJ": {
+  "nameEs": "Certificado de seguridad náutica de New Jersey",
+  "feeNote": "No se indica tarifa estatal por el certificado; las reposiciones se solicitan a la Marine Services Bureau por correo electrónico o postal. La licencia de embarcación de la MVC, aparte, para aguas sin marea cuesta 18 dólares.",
+  "minAgeNote": "De 13 a 15 años con certificado solo pueden manejar una embarcación con motor eléctrico o una embarcación de 12 pies o más de menos de 10 hp; moto acuática solo desde los 16, visitantes incluidos.",
+  "exemptions": [
+   "Embarcaciones sin motor, como veleros y canoas sin motor.",
+   "Visitantes (hasta 90 días) con un certificado de su estado, una licencia de capitán de la USCG o comprobante de un curso aprobado por NASBLA."
+  ],
+  "nonResident": "Los visitantes pueden usar un certificado de su estado, una licencia de capitán de la USCG o comprobante de un curso aprobado por NASBLA; después de 90 días en aguas de NJ se exige un certificado de New Jersey. Los nuevos residentes necesitan un curso de NJ.",
+  "pwcExtra": "Ninguna moto acuática para menores de 16 años. En aguas sin marea también se necesita una licencia de embarcación de la MVC aparte (16 años o más, 18 dólares) para embarcaciones con motor y motos acuáticas.",
+  "hpNote": "cualquier embarcación con motor (incluso eléctrico) o moto acuática"
+ },
+ "NM": {
+  "nameEs": "Tarjeta de educación náutica de New Mexico",
+  "feeNote": "Los cursos presenciales de los guardaparques estatales y de la Coast Guard Auxiliary son gratuitos; los proveedores en línea fijan su propio precio.",
+  "exemptions": [
+   "Nacidos antes del 1 de enero de 1989.",
+   "Titulares de una licencia válida de operador marino de la Guardia Costera de EE. UU.",
+   "No residentes con una tarjeta con estándar NASBLA de otro estado o país.",
+   "Quienes alquilan (30 días o menos) instruidos por el agente de alquiler, con una lista de verificación firmada.",
+   "Embarcación comprada en los últimos 30 días, con la factura de compra a bordo.",
+   "Nuevos residentes: 45 días con su tarjeta de otro estado.",
+   "Embarcaciones del gobierno exentas de registro."
+  ],
+  "nonResident": "Los visitantes con una tarjeta con estándar NASBLA de su estado o país están exentos; los nuevos residentes tienen 45 días.",
+  "rental": "Quienes alquilan por 30 días o menos pueden prescindir de la tarjeta después de que el agente de alquiler les dé instrucciones y firmen una lista de verificación de seguridad."
+ },
+ "NV": {
+  "nameEs": "Tarjeta de educación náutica",
+  "feeNote": "El NDOW envía por correo una tarjeta después de aprobar el examen por correo de su manual descargable (no se indica tarifa); los cursos en línea cuestan de 0 a 80 dólares según el proveedor.",
+  "minAgeNote": "Los niños menores de 14 años no pueden manejar una moto acuática.",
+  "exemptions": [
+   "Nacidos antes del 1 de enero de 1983.",
+   "Lanchas de 15 hp o menos.",
+   "Aguas que no son interestatales."
+  ],
+  "pwcExtra": "Edad mínima de 14 años para manejar una moto acuática.",
+  "hpNote": "motor de más de 15 hp, incluidas las motos acuáticas; solo en aguas interestatales (p. ej., Lake Tahoe, Lake Mead, Lake Mohave, Colorado River)"
+ },
+ "NY": {
+  "nameEs": "Certificado de navegación segura",
+  "feeNote": "Los proveedores en línea incluyen el certificado en el precio del curso; los alumnos presenciales de 18 años o más compran su certificado en línea. Reposición por 10 dólares en ilostmycard.com.",
+  "minAgeNote": "El curso está abierto desde los 10 años. Los operadores de moto acuática deben tener 14 años o más.",
+  "exemptions": [
+   "Embarcaciones sin motor, como kayaks y canoas.",
+   "Adultos de 18 años o más que alquilan en una empresa de alquiler, tras una instrucción de seguridad del personal.",
+   "Titulares de una licencia de la Guardia Costera de EE. UU. (llevar una copia)."
+  ],
+  "nonResident": "Un certificado de otro estado solo vale si lo emitió el estado de residencia actual del navegante.",
+  "rental": "Los adultos de 18 años o más pueden alquilar una lancha o moto acuática en una empresa de alquiler sin certificado tras una instrucción de seguridad del personal; los menores de 18 necesitan certificado.",
+  "pwcExtra": "Edad mínima de 14 años para manejar una moto acuática.",
+  "hpNote": "cualquier embarcación con motor, sin umbral de hp",
+  "phaseIn": "La implantación gradual de la Brianna's Law por año de nacimiento (nacidos el 1 de enero de 1983 o después, para 2023; el 1 de enero de 1978 o después, para 2024) terminó; todas las edades desde 2025."
+ },
+ "OH": {
+  "nameEs": "Tarjeta / certificado de educación náutica de Ohio",
+  "feeNote": "El examen de competencia del ODNR en una Watercraft Office es gratuito; los proveedores de cursos fijan sus propios precios. Tarjetas de reposición de cursos en línea en ilostmycard.com.",
+  "minAgeNote": "Embarcaciones de más de 10 hp: menores de 12 años solo con un adulto de 18 años o más a bordo, ambos certificados si nacieron en 1982 o después; sin acompañante desde los 12 con certificado. Moto acuática: nadie menor de 12; de 12 a 15 años con un adulto de 18 años o más a bordo; sin acompañante desde los 16 con certificado.",
+  "exemptions": [
+   "Titulares de una credencial válida de marino mercante de la Guardia Costera de EE. UU. con mención de capitán (master) u operador (llevarla a bordo).",
+   "Embarcaciones de 10 hp o menos."
+  ],
+  "nonResident": "Ohio acepta cualquier certificado o tarjeta aprobado por NASBLA de otro estado o territorio de EE. UU. que muestre nombre, dirección y fecha de nacimiento.",
+  "rental": "Quienes alquilan embarcaciones de más de 10 hp y nacieron el 1 de enero de 1982 o después deben firmar que tienen un certificado o aprobar un examen corto (90 % o más) de la empresa de alquiler, válido solo para ese alquiler.",
+  "pwcExtra": "Moto acuática: de 12 a 15 años solo con un adulto de 18 años o más a bordo (el adulto también certificado si nació en 1982 o después); desde los 16, sin acompañante con certificado.",
+  "penalty": "Delito menor de cuarto grado: hasta 250 dólares y/o 30 días; hasta 500 dólares y/o 60 días si está relacionado con una colisión, lesión o daño.",
+  "hpNote": "embarcación de más de 10 hp (incluidas las motos acuáticas)"
+ },
+ "OK": {
+  "nameEs": "Tarjeta de educación en seguridad náutica",
+  "feeNote": "El curso presencial de 6 horas de la Highway Patrol es gratuito; los proveedores privados en línea y de estudio en casa suelen cobrar.",
+  "minAgeNote": "De 12 a 15 años, aun con la tarjeta, necesitan un adulto de 18 años o más a bordo (lancha o velero) o vigilando a menos de 500 yardas (moto acuática).",
+  "exemptions": [
+   "Operadores de 16 años o más.",
+   "Embarcaciones con motor de 10 hp o menos (veleros de menos de 16 pies)."
+  ],
+  "pwcExtra": "Los jóvenes de 12 a 15 años en moto acuática deben estar vigilados por un adulto de 18 años o más a menos de 500 yardas.",
+  "hpNote": "motor de más de 10 hp; también cualquier moto acuática y los veleros de 16 pies o más"
+ },
+ "OR": {
+  "nameEs": "Tarjeta de educación náutica de Oregon",
+  "feeNote": "20 dólares al solicitarla a la Marine Board por correo o en la tienda en línea; los proveedores de cursos pueden pedirla por una tarifa adicional.",
+  "minAgeNote": "De 12 a 15 años: hasta 10 hp sin acompañante; más de 10 hp solo con un titular de la tarjeta de 16 años o más (18 o más para moto acuática) a bordo.",
+  "exemptions": [
+   "Licencia vigente de operador de embarcación de la Guardia Costera de EE. UU.",
+   "Titulares de licencia de pesca comercial que navegan por recreo.",
+   "Adulto sin certificado bajo la supervisión directa de un titular de la tarjeta de 16 años o más (18 o más para moto acuática).",
+   "Quienes alquilan, tras una lista de verificación de seguridad para alquiler de embarcaciones."
+  ],
+  "rental": "Quienes alquilan están exentos, pero deben completar una lista de verificación de seguridad para el alquiler.",
+  "hpNote": "más de 10 hp"
+ },
+ "PA": {
+  "nameEs": "Certificado de educación en seguridad náutica",
+  "feeNote": "Tarifa del certificado permanente: 10 dólares (incluida en el precio de los cursos en línea); el curso puede costar aparte. Certificado temporal válido 60 días. Duplicados en HuntFish.PA.gov.",
+  "minAgeNote": "Nadie de 11 años o menos puede manejar una embarcación de más de 25 hp ni una moto acuática. Los operadores de moto acuática de 12 a 15 años no pueden llevar pasajeros de 15 años o menos ni alquilar una moto acuática; las motos acuáticas alquiladas necesitan un operador de 16 años o más.",
+  "exemptions": [
+   "Embarcaciones con motores de 25 hp o menos (no motos acuáticas).",
+   "Personas nacidas antes del 1 de enero de 1982 (solo lanchas; los operadores de moto acuática siempre necesitan el certificado)."
+  ],
+  "nonResident": "Los visitantes necesitan un certificado de un curso aprobado por NASBLA; los residentes de Pennsylvania necesitan un certificado emitido por la PFBC.",
+  "rental": "No se pueden alquilar motos acuáticas a nadie de 15 años o menos; las empresas de alquiler deben dar a los clientes una orientación de seguridad.",
+  "pwcExtra": "Ninguna moto acuática a los 11 años o menos; de 12 a 15 años no pueden llevar pasajeros de 15 años o menos; ninguna moto acuática entre la puesta y la salida del sol.",
+  "hpNote": "motor de más de 25 hp (moto acuática: todo operador, a cualquier edad)"
+ },
+ "RI": {
+  "nameEs": "Certificado de educación en seguridad náutica",
+  "exemptions": [
+   "Operador en formación supervisado directamente por alguien de 18 años o más a bordo que cumpla el requisito.",
+   "Titulares de una licencia válida de operador de embarcación comercial (USCG, un estado o una provincia).",
+   "No residentes de visita que cumplen las normas de su estado.",
+   "Los nuevos residentes tienen 60 días."
+  ],
+  "nonResident": "Los visitantes que cumplen las normas de su estado están exentos; se acepta cualquier certificado de curso aprobado por NASBLA.",
+  "rental": "Las empresas de alquiler que alquilan embarcaciones de más de 10 hp deben hacer que los clientes sin certificado vean un video corto de seguridad y aprueben un examen escrito.",
+  "penalty": "Primera infracción: hacer un curso aprobado; segunda infracción: multa de hasta 100 dólares.",
+  "hpNote": "maquinaria de propulsión de más de 10 hp; todo operador de moto acuática, sin importar la edad"
+ },
+ "SC": {
+  "nameEs": "Certificado de seguridad náutica de South Carolina",
+  "feeNote": "El curso presencial de seis horas del SCDNR es gratuito; los proveedores en línea cobran sus propios precios. Duplicados de cursos de SCDNR/BoatEd en ilostmycard.",
+  "minAgeNote": "La ley de 2023 eliminó la antigua norma de manejo para menores de 16 años; no se indica una edad mínima aparte.",
+  "exemptions": [
+   "Nacidos el 1 de julio de 2007 o antes.",
+   "Titulares de una licencia de operador de embarcación de la USCG o de una credencial de marino mercante (las vencidas cuentan).",
+   "No residentes con un certificado o equivalente de otro estado.",
+   "Quienes alquilan con un certificado válido de seguridad para alquiler de embarcaciones.",
+   "Acompañado por alguien de 18 años o más que esté exento o certificado."
+  ],
+  "nonResident": "Los no residentes con un certificado de seguridad náutica o equivalente de su estado están exentos.",
+  "rental": "Quienes alquilan y nacieron después del 1 de julio de 2007 pueden usar un certificado de seguridad para alquiler de embarcaciones (válido 30 días, solo en empresas de alquiler).",
+  "penalty": "Multa civil de 50 a 300 dólares; no es un delito penal.",
+  "hpNote": "motor de 10 hp o más, cualquier moto acuática o specialty propcraft"
+ },
+ "SD": {
+  "minAgeNote": "Menores de 12 años: ningún motor de más de 6 hp salvo que haya a bordo alguien de 18 años o más. Menores de 14: ninguna moto acuática de ninguna potencia salvo que haya a bordo alguien de 18 años o más. Los propietarios no pueden dejar manejar a menores de la edad requerida.",
+  "pwcExtra": "Edad mínima de 14 años para manejar una moto acuática sin acompañante; más jóvenes solo con alguien de 18 años o más a bordo."
+ },
+ "TN": {
+  "nameEs": "Certificación de finalización de seguridad náutica (tarjeta de bolsillo)",
+  "feeNote": "Las tarjetas de reposición se compran a un agente de licencias de la TWRA o en línea en GoOutdoorsTennessee; los montos no se indican en la página consultada.",
+  "exemptions": [
+   "Un adulto de 18 años o más nacido antes del 1 de enero de 1989 a bordo, capaz de tomar el control de inmediato.",
+   "Embarcaciones de 8,5 hp o menos."
+  ],
+  "nonResident": "Los visitantes nacidos después del 1 de enero de 1989 que manejan más de 8,5 hp necesitan un certificado aprobado por NASBLA, que la TWRA acepta.",
+  "hpNote": "más de 8,5 hp"
+ },
+ "TX": {
+  "nameEs": "Certificado de educación náutica",
+  "feeNote": "TPWD indica que el precio de los cursos empieza en 10 dólares y varía según el proveedor y el formato.",
+  "minAgeNote": "Sin acompañante desde los 13 años (motor de más de 15 hp, moto acuática, velero de más de 14 pies) con el curso; los menores de 13 necesitan a bordo un operador legal de 18 años o más.",
+  "exemptions": [
+   "Acompañado a bordo por un operador legal de 18 años o más.",
+   "Se puede comprar un aplazamiento único de 15 días donde se venden licencias de caza y pesca."
+  ],
+  "nonResident": "Los visitantes siguen las normas de Texas; se aceptan certificados aprobados por NASBLA de cualquier estado o territorio de EE. UU.",
+  "hpNote": "más de 15 hp"
+ },
+ "UT": {
+  "nameEs": "Certificado de seguridad náutica (curso juvenil de moto acuática); desde 2027 también el comprobante del curso anual de seguridad para operadores de embarcaciones",
+  "feeNote": "La ley permite a la división cobrar una tarifa por su curso de seguridad náutica; el monto no figura en la ley.",
+  "minAgeNote": "Menores de 16 años: lancha solo con una persona de 18 años o más a bordo que supervise. Moto acuática desde los 12 años con el curso; de 12 a 15 años también necesitan la supervisión directa de alguien de 18 años o más.",
+  "exemptions": [
+   "Curso de moto acuática: operadores de 18 años o más (hasta que el curso anual de 2027 se aplique a todos los operadores de lanchas y veleros).",
+   "Desde 2027: quienes alquilan pueden recibir una instrucción de seguridad de la empresa de alquiler en lugar del curso anual."
+  ],
+  "rental": "Desde 2027, una empresa de alquiler solo puede alquilar a alguien con comprobante del curso anual o tras darle una instrucción de seguridad estatal.",
+  "pwcExtra": "Los conductores de moto acuática de 12 a 15 años necesitan el curso más la supervisión directa (visual) de alguien de 18 años o más; los de 16 a 17 solo necesitan el curso.",
+  "penalty": "Las violaciones son infracciones.",
+  "phaseIn": "Hasta el 31 de diciembre de 2026, solo los operadores de moto acuática de 12 a 17 años necesitan un curso. Desde el 1 de enero de 2027, todo operador de una lancha o velero también debe completar cada año calendario un breve curso estatal de seguridad para operadores de embarcaciones y llevar el comprobante."
+ },
+ "VA": {
+  "nameEs": "Tarjeta de educación en seguridad náutica (disponible la Virginia Lifetime Boater's Card)",
+  "minAgeNote": "Ninguna moto acuática para menores de 14 años; a los 14-15 años se exige comprobante de un curso aprobado (no el examen de convalidación).",
+  "exemptions": [
+   "Licencia de capitán (master o captain) u oficial (mate) de la Guardia Costera de EE. UU.",
+   "Pescador comercial registrado en Virginia.",
+   "Operadores militares de embarcaciones calificados.",
+   "Embarcación registrada en otro estado cuyo propietario cumple el requisito de su estado."
+  ],
+  "nonResident": "Embarcaciones registradas en otro estado: se aplica la norma de educación de su estado.",
+  "hpNote": "10 hp o más"
+ },
+ "VT": {
+  "nameEs": "Certificado de educación en seguridad náutica",
+  "feeNote": "Public Safety entrega gratis, a pedido, los materiales de estudio para el examen de equivalencia.",
+  "exemptions": [
+   "Titulares de una licencia de la Guardia Costera de EE. UU. para manejar embarcaciones comercialmente.",
+   "Lanchas en una masa de agua en propiedad privada.",
+   "Nacidos el 1 de enero de 1974 o antes."
+  ],
+  "nonResident": "Se acepta cualquier certificado aprobado por NASBLA de otro estado o país."
+ },
+ "WA": {
+  "nameEs": "Tarjeta de educación náutica del estado de Washington",
+  "feeNote": "10 dólares en cheque o giro postal a State Parks por la tarjeta tras aprobar un curso o un examen de equivalencia; el certificado del curso sirve como tarjeta temporal durante 60 días. Reposición: 5 dólares.",
+  "minAgeNote": "Nadie menor de 12 años puede manejar una embarcación de 15 hp o más; los operadores de moto acuática deben tener al menos 14 años.",
+  "exemptions": [
+   "Nacidos antes del 1 de enero de 1955.",
+   "Operadores de pesca comercial con una licencia comercial válida.",
+   "Titulares de una licencia válida de operador marino de la Guardia Costera de EE. UU.",
+   "Quienes alquilan, completan la lista de verificación de seguridad del vendedor y llevan la tarjeta temporal.",
+   "Embarcaciones del gobierno exentas de registro; eventos de carreras autorizados.",
+   "60 días de gracia para nuevos compradores de embarcaciones (factura de compra) y titulares de la tarjeta de otro estado."
+  ],
+  "nonResident": "Los visitantes que navegan menos de 60 días no necesitan tarjeta; después se exige una tarjeta de Washington (la tarjeta válida de otro estado se puede canjear por 10 dólares).",
+  "rental": "Quienes alquilan, de 12 años o más, completan la lista de verificación de seguridad del vendedor y llevan una tarjeta temporal; no se alquilan motos acuáticas a menores de 16 años.",
+  "pwcExtra": "Los operadores de moto acuática deben tener 14 años o más; no se pueden alquilar motos acuáticas a menores de 16 años.",
+  "penalty": "Infracción civil; se anula si el navegante muestra una tarjeta al tribunal en un plazo de 60 días.",
+  "hpNote": "motor de 15 hp o más (incluidas las motos acuáticas)"
+ },
+ "WI": {
+  "nameEs": "Certificado de seguridad náutica",
+  "feeNote": "Curso presencial del DNR: 10 dólares; cursos por internet: unos 50,95 a 60,95 dólares. Los duplicados se pueden imprimir gratis desde una cuenta Go Wild.",
+  "minAgeNote": "Lanchas: nadie menor de 10 años; de 10 a 11 años solo con un padre, tutor o adulto designado que cumpla los requisitos; de 12 a 15 años con ese adulto o un certificado. Moto acuática: nadie menor de 12; desde los 12 con certificado, la supervisión de un adulto no lo sustituye.",
+  "exemptions": [
+   "Nacidos antes del 1 de enero de 1989.",
+   "Operadores de lancha de 16 años o más acompañados por alguien de 18 años o más que tenga certificado o haya nacido antes de 1989 (no para moto acuática).",
+   "Embarcaciones sin motor."
+  ],
+  "nonResident": "Se aceptan los certificados equivalentes de otros estados.",
+  "rental": "Quienes alquilan, de 16 años o más, en un agente de alquiler con licencia pueden usar un certificado de educación para alquiler de embarcaciones válido hasta el final de ese año calendario; no se alquilan motos acuáticas a menores de 16.",
+  "pwcExtra": "Moto acuática desde los 12 años solo con certificado; un adulto a bordo no lo sustituye. No se alquilan motos acuáticas a menores de 16.",
+  "hpNote": "cualquier lancha (sin umbral de hp), incluidas las motos acuáticas"
+ },
+ "WV": {
+  "nameEs": "Tarjeta de educación náutica (certificado de educación en seguridad náutica)",
+  "feeNote": "Los cursos en línea aprobados tienen una tarifa del vendedor; el DNR entrega gratis, a pedido, los materiales de estudio para el examen de equivalencia.",
+  "exemptions": [
+   "Visitantes de otro estado durante 60 días o menos, de 15 años o más, con un certificado de su estado con estándar NASBLA.",
+   "Visitantes de otro país durante 90 días o menos.",
+   "Uso comercial.",
+   "Una embarcación o moto acuática comprada en los últimos 45 días, si el propietario no tiene cargos previos por infracciones de la ley náutica."
+  ],
+  "nonResident": "Los visitantes de otros estados de 15 años o más con una tarjeta de su estado con estándar NASBLA están exentos hasta 60 días; los visitantes extranjeros, hasta 90 días.",
+  "penalty": "La falta de tarjeta solo se puede sancionar como infracción secundaria, tras una detención por otra infracción; no se indica el monto de la multa."
+ },
+ "WY": {
+  "nameEs": "Tarjeta de certificado de seguridad náutica (voluntaria)",
+  "feeNote": "Game and Fish da gratis un paquete de estudio en casa y un examen de Boat America; los cursos en línea son gratuitos, pero cobran 29,95 dólares por el examen y la tarjeta.",
+  "minAgeNote": "Los menores de 16 años solo pueden manejar una lancha o moto acuática con un adulto de 18 años o más físicamente a bordo y responsable. Sin límite de edad para embarcaciones sin motor.",
+  "pwcExtra": "La misma norma de edad que para lanchas: 16 años, o menos con un adulto de 18 años o más a bordo."
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "code": "MT",
+ "name": "Montana",
+ "es": "Montana",
+ "agency": "Montana Fish, Wildlife & Parks",
+ "agencyUrl": "https://fwp.mt.gov/activities/boating/education",
+ "required": true,
+ "rule": {
+  "kind": "ageBand",
+  "bornOnOrAfter": null,
+  "ageMax": 14,
+  "ageMin": 13,
+  "hpMin": 10,
+  "hpNote": "motor rated at more than 10 hp (motorboat or PWC)",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Only youths aged 13 and 14 need it: to run a motorboat or PWC with a motor over 10 hp alone they must hold a boating safety certificate, unless someone 18 or older is aboard.",
+  "textEs": "Solo lo necesitan los jóvenes de 13 y 14 años: para manejar solos una lancha o moto acuática con motor de más de 10 hp deben tener un certificado de seguridad náutica, salvo que vaya a bordo alguien de 18 años o más.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": 13,
+  "pwc": 13,
+  "note": "Age 12 and under: no motorboat or PWC over 10 hp unless someone 18+ is aboard. Ages 13-14 alone need the certificate. No education rule from age 15."
+ },
+ "exemptions": [
+  "Accompanied by someone 18 or older.",
+  "Motor rated 10 hp or less.",
+  "Operators 15 and older.",
+  "A NASBLA-approved course from another state or organization counts."
+ ],
+ "card": {
+  "nameEn": "Montana Motorboat Operator's Safety Certificate",
+  "stateFee": 0,
+  "feeNote": "The FWP home-study course and certificate are free; private online courses range from free to about $80.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": false,
+  "onlineAllowed": true
+ },
+ "nonResident": "A NASBLA-approved course from another state or organization is accepted for 13- and 14-year-olds.",
+ "rental": "You must be 18 or older to rent a motorboat or PWC with a motor over 10 hp.",
+ "pwcExtra": null,
+ "penalty": "General boating-law violations: fine up to $500 and up to six months in jail.",
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://fwp.mt.gov/activities/boating/education",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "quote": "In Montana youths 13 and 14 years of age may operate a motorboat or a personal watercraft powered by a motor rated at more than 10 horsepower only if:",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/activities/boating/education",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "quote": "they are accompanied by someone 18 years of age or older.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/activities/boating/education",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "quote": "they show evidence of completing another state or organization's NASBLA approved boating safety course",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/activities/boating/education",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "quote": "Persons 13 years of age or older who successfully complete the course will receive a Montana Motorboat Operator's Certificate. The homestudy course is available free of charge.",
+   "supports": [
+    "card.stateFee",
+    "card.nameEn"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/activities/boating/education",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "quote": "Complete the online course. Then take the certification exam online if you wish to receive your Montana Motorboat Operator's Certificate.",
+   "supports": [
+    "card.onlineAllowed"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-boating-laws-final-for-print.pdf",
+   "publisher": "Montana Fish, Wildlife & Parks, 2026 Montana Boating Laws",
+   "quote": "Children 12 years old or younger may not operate a motorboat or a personal watercraft (PWC) powered by a motor rated at more than 10 horsepower unless accompanied by someone 18 years of age or older.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-boating-laws-final-for-print.pdf",
+   "publisher": "Montana Fish, Wildlife & Parks, 2026 Montana Boating Laws",
+   "quote": "A person must be 18 years or older to rent a motorboat or a PWC powered by a motor rated at more than 10 horsepower.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-boating-laws-final-for-print.pdf",
+   "publisher": "Montana Fish, Wildlife & Parks, 2026 Montana Boating Laws",
+   "quote": "A person convicted of violating Montana’s boating laws or regulations may be fined up to $500 and sentenced for up to six months in jail.",
+   "supports": [
+    "penalty"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "card.replacementFee",
+  "statute"
+ ]
+}

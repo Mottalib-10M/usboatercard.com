@@ -1,0 +1,87 @@
+{
+ "code": "LA",
+ "name": "Louisiana",
+ "es": "Luisiana",
+ "agency": "Louisiana Department of Wildlife and Fisheries (LDWF)",
+ "agencyUrl": "https://www.wlf.louisiana.gov/page/boater-education",
+ "required": true,
+ "rule": {
+  "kind": "bornOnOrAfter",
+  "bornOnOrAfter": "1984-01-02",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born after Jan. 1, 1984 needs an LDWF-approved boater education course to run a motorboat over 10 hp (or a qualified adult over 18 on board) and always to run a PWC.",
+  "textEs": "Quien nació después del 1 de enero de 1984 necesita un curso aprobado por LDWF para manejar una lancha de más de 10 hp (o un adulto habilitado mayor de 18 a bordo) y siempre para una moto acuática.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": 16,
+  "note": "PWC operators must be 16 or older."
+ },
+ "exemptions": [
+  "Accompanied by someone over 18 who completed an approved course (not for PWC).",
+  "US Coast Guard licensed captain."
+ ],
+ "card": {
+  "nameEn": "Boater education certificate",
+  "stateFee": 0,
+  "feeNote": "LDWF classroom course is free; the BoatUS online course is free; a free boater education endorsement can be added to the driver license at renewal.",
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": "Renters (18+) of boats over 10 hp from a state-approved livery watch a safety video that gives a 48-hour exemption.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": null,
+ "sources": [
+  {
+   "url": "https://www.wlf.louisiana.gov/page/boater-education",
+   "publisher": "Louisiana Department of Wildlife and Fisheries",
+   "quote": "if you were born after January 1, 1984, you must successfully complete an LDWF-approved boater education course to operate a motorboat over 10 horsepower, unless you are accompanied by someone over age 18 who has a successfully completed an LDWF-approved boater education course",
+   "supports": [
+    "rule",
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://www.wlf.louisiana.gov/page/boater-education",
+   "publisher": "Louisiana Department of Wildlife and Fisheries",
+   "quote": "You must also be age 16 or older to operate a personal watercraft.",
+   "supports": [
+    "minAge"
+   ]
+  },
+  {
+   "url": "https://www.wlf.louisiana.gov/page/boater-education",
+   "publisher": "Louisiana Department of Wildlife and Fisheries",
+   "quote": "LDWF offers a free, in-person boater education course that satisfies boater education requirements.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://www.wlf.louisiana.gov/page/boater-education",
+   "publisher": "Louisiana Department of Wildlife and Fisheries",
+   "quote": "After watching this rental boating safety and education video, individuals have a 48-hour exemption to operate a rented vessel from a state-approved livery.",
+   "supports": [
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "nonResident"
+ ]
+}

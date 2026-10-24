@@ -1,0 +1,134 @@
+{
+ "code": "RI",
+ "name": "Rhode Island",
+ "es": "Rhode Island",
+ "agency": "Rhode Island Department of Environmental Management, Division of Law Enforcement",
+ "agencyUrl": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": "1986-01-01",
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "propulsion machinery of more than 10 hp; any PWC operator regardless of age",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone born on or after Jan. 1, 1986 needs a boating safety certificate to run a vessel with more than 10 hp, and every PWC operator needs one whatever their age.",
+  "textEs": "Quien nació el 1 de enero de 1986 o después necesita un certificado de seguridad náutica para manejar una embarcación de más de 10 hp, y todo operador de moto acuática lo necesita sin importar su edad.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false,
+  "pwcBornOnOrAfter": "1800-01-01"
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": null
+ },
+ "exemptions": [
+  "Operator in training directly supervised by someone 18+ on board who meets the requirement.",
+  "Holders of a valid commercial vessel operator license (USCG, a state or a province).",
+  "Non-residents visiting who meet their home-state rules.",
+  "New residents get 60 days."
+ ],
+ "card": {
+  "nameEn": "Certificate of boating safety education",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": null
+ },
+ "nonResident": "Visitors who meet their home-state rules are exempt; any NASBLA-approved course certificate is accepted.",
+ "rental": "Liveries renting boats over 10 hp must have renters without a certificate watch a short safety video and pass a written test.",
+ "pwcExtra": null,
+ "penalty": "First offense: take an approved course; second offense: fine up to $100.",
+ "statute": "R.I. Gen. Laws §46-22-9.8",
+ "sources": [
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "No person born on or after January 1, 1986 shall operate a vessel that is fitted with propulsion machinery of more than ten (10) horsepower on the waters of this state unless the person shall have successfully completed a boating safety education program",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "Any person operating a personal watercraft as defined in § 46-22-2(6) on the waters of this state shall have successfully completed a boating safety education program",
+   "supports": [
+    "rule.pwc"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "A person who operates a vessel under training, directly supervised by a person on board the vessel who is eighteen (18) years of age or older and meets the requirements of subsection (a);",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "Non-residents temporarily using the waters of this state who meet the requirements of their state of legal residence.",
+   "supports": [
+    "exemptions",
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "New residents of this state will be given sixty (60) days to meet the requirements of this chapter.",
+   "supports": [
+    "exemptions"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "Any person having in his or her possession a certificate of completion of any boating safety course approved by NASBLA shall be considered to be in compliance with this chapter",
+   "supports": [
+    "nonResident"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "shall require all renters who do not comply with this section to watch a short instructional video approved by the director on boating safety for the type of craft rented, and pass a written examination.",
+   "supports": [
+    "rental"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "For a first offense completion of an approved boating safety course; (2)  For a second offense a fine not to exceed one hundred dollars ($100).",
+   "supports": [
+    "penalty"
+   ]
+  },
+  {
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE46/46-22/46-22-9.8.htm",
+   "publisher": "Rhode Island General Assembly, R.I. Gen. Laws §46-22-9.8 (Wayback Machine copy of 2025-03-28)",
+   "quote": "The department shall issue a durable certificate of completion that meets the NASBLA guidelines.",
+   "supports": [
+    "card.nameEn"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "minAge",
+  "card.stateFee",
+  "card.replacementFee",
+  "card.validity",
+  "card.inPersonExamRequired",
+  "card.onlineAllowed"
+ ]
+}

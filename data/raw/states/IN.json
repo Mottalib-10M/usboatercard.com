@@ -1,0 +1,62 @@
+{
+ "code": "IN",
+ "name": "Indiana",
+ "es": "Indiana",
+ "agency": "Indiana Department of Natural Resources, Law Enforcement Division",
+ "agencyUrl": "https://faqs.in.gov/hc/en-us/articles/115005241628-At-what-age-may-a-person-operate-a-motorboat",
+ "required": true,
+ "rule": {
+  "kind": "mixed",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": null,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "To run a motorboat over 10 hp you need a valid driver license; without one, you must be at least 15, have passed a boater education course and hold a BMV ID card.",
+  "textEs": "Para manejar una lancha de más de 10 hp hace falta una licencia de conducir vigente; sin ella, hay que tener al menos 15 años, haber aprobado un curso de educación náutica y tener una tarjeta de identificación del BMV.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": true
+ },
+ "minAge": {
+  "motorboat": 15,
+  "pwc": null,
+  "note": "Without a driver license: 15+ with the course and a BMV ID card."
+ },
+ "exemptions": [],
+ "card": {
+  "nameEn": "Boater education certificate",
+  "stateFee": null,
+  "feeNote": null,
+  "replacementFee": null,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": null,
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "IC 14-15-11",
+ "sources": [
+  {
+   "url": "https://faqs.in.gov/hc/en-us/articles/115005241628-At-what-age-may-a-person-operate-a-motorboat",
+   "publisher": "State of Indiana",
+   "quote": "The operator of a motorboat, of more than 10 horsepower must have a valid driver’s license or be at least 15 years old and have passed a Boater Education Course and possess an identification card issued from the Bureau of Motor Vehicles. IC 14-15-11.",
+   "supports": [
+    "rule",
+    "minAge"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.stateFee",
+  "card.validity",
+  "nonResident",
+  "minAge.pwc"
+ ]
+}

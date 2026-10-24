@@ -1,0 +1,89 @@
+{
+ "code": "OR",
+ "name": "Oregon",
+ "es": "Oregón",
+ "agency": "Oregon State Marine Board",
+ "agencyUrl": "https://www.oregon.gov/osmb/boater-info/pages/boater-education-cards.aspx",
+ "required": true,
+ "rule": {
+  "kind": "all",
+  "bornOnOrAfter": null,
+  "ageMax": null,
+  "ageMin": null,
+  "hpMin": 10,
+  "hpNote": "more than 10 hp",
+  "pwc": true,
+  "sailFtMin": null,
+  "phaseIn": null,
+  "textEn": "Anyone 16 or older needs a boater education card to run a powerboat (PWC included) over 10 hp; youths 12-15 need it to run any motorboat alone.",
+  "textEs": "Toda persona de 16 años o más necesita la tarjeta de educación náutica para manejar una lancha (incluidas motos acuáticas) de más de 10 hp; de 12 a 15 años la necesitan para manejar sola cualquier lancha con motor.",
+  "hpInclusive": false,
+  "phases": null,
+  "altDriverLicense": false
+ },
+ "minAge": {
+  "motorboat": null,
+  "pwc": null,
+  "note": "12-15: up to 10 hp alone; over 10 hp only with a card holder 16+ (18+ for PWC) on board."
+ },
+ "exemptions": [
+  "Current US Coast Guard boat operator license.",
+  "Commercial fishing license holders boating recreationally.",
+  "Uncertified adult under direct supervision of a card holder 16+ (18+ for PWC).",
+  "Renters, after a watercraft rental safety checklist."
+ ],
+ "card": {
+  "nameEn": "Oregon Boater Education Card",
+  "stateFee": 20,
+  "feeNote": "$20 when applying to the Marine Board by mail or online store; course providers may order it for an added fee.",
+  "replacementFee": 16,
+  "validity": null,
+  "inPersonExamRequired": null,
+  "onlineAllowed": true
+ },
+ "nonResident": null,
+ "rental": "Renters are exempt but must complete a rental safety checklist.",
+ "pwcExtra": null,
+ "penalty": null,
+ "statute": "ORS 830.082-830.092",
+ "sources": [
+  {
+   "url": "https://www.oregon.gov/osmb/boater-info/pages/boater-education-cards.aspx",
+   "publisher": "Oregon State Marine Board",
+   "quote": "A person 16 or older will need a boating education card to operate a powerboat (including a PWC) greater than 10 hp.",
+   "supports": [
+    "rule"
+   ]
+  },
+  {
+   "url": "https://www.oregon.gov/osmb/boater-info/pages/boater-education-cards.aspx",
+   "publisher": "Oregon State Marine Board",
+   "quote": "download an application ​ to print and mail in with a check or money order for $20.",
+   "supports": [
+    "card.stateFee"
+   ]
+  },
+  {
+   "url": "https://www.oregon.gov/osmb/boater-info/pages/boater-education-cards.aspx",
+   "publisher": "Oregon State Marine Board",
+   "quote": "The fee for a replacement boater education card is $16.",
+   "supports": [
+    "card.replacementFee"
+   ]
+  },
+  {
+   "url": "https://www.oregon.gov/osmb/boater-info/pages/boater-education-cards.aspx",
+   "publisher": "Oregon State Marine Board",
+   "quote": "Boat renters are exempt from completing a boater education course prior to renting, but must complete a watercraft rental safety checklist prior to departure.",
+   "supports": [
+    "rental"
+   ]
+  }
+ ],
+ "checked": "2026-10-24",
+ "uncertain": [
+  "card.validity",
+  "nonResident",
+  "statute (citation from memory, not re-read)"
+ ]
+}
